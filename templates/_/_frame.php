@@ -30,16 +30,13 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <link href="css/public.css" rel="stylesheet" type="text/css" />
-    <link href="css/a.css" rel="stylesheet" type="text/css" />
-    <link href="css/header.css" rel="stylesheet" type="text/css" />
-    <link href="css/left.css" rel="stylesheet" type="text/css" />
-    <link href="css/tab.css" rel="stylesheet" type="text/css" />
-    <link href="css/message.css" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css" rel="stylesheet" type="text/css" />
-
     <script src="js/jrit.js" language="javascript" type="text/javascript" ></script>
-    <script src="js/public.js" language="javascript" type="text/javascript" ></script>
+
+    <link href="css/frame.css" rel="stylesheet" type="text/css" />
+    <link href="css/article.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/frame.js" language="javascript" type="text/javascript" ></script>
+    <script src="js/article.js" language="javascript" type="text/javascript" ></script>
 
   </head>
   <body lang="zh-tw">
@@ -90,7 +87,7 @@
             <a></a>
           </div>
 
-          <div class='_c'>內容</div>
+          <div class='_c'></div>
 
           <div class='_m'>提示訊息</div>
         </div>

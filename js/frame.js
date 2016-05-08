@@ -17,9 +17,10 @@ $(function () {
     if ($(this).hasClass ('o')) $arrow.first ().click ();
   });
 
-  var $body = $('body'), overflow = $body.css ('overflow');
-  function toggleMenu () { if ($body.hasClass ('s')) $body.removeClass ('s').css ('overflow', overflow); else $body.addClass ('s').css ('overflow', 'hidden'); }
-  $body.find ('> header .fi-m').click (toggleMenu);
-  $body.find ('#_c > div > span').click (toggleMenu);
-  $body.find ('> header nav a').last ().click (function () { window.open ('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '分享', 'scrollbars=yes,resizable=yes,toolbar=no,location=yes,width=550,height=420,top=100,left=' + (window.screen ? Math.round (screen.width / 2 - 275) : 100)); });
+  window.$body = $('body');
+  var overflow = window.$body.css ('overflow');
+  function toggleMenu () { if (window.$body.hasClass ('s')) window.$body.removeClass ('s').css ('overflow', overflow); else window.$body.addClass ('s').css ('overflow', 'hidden'); }
+  window.$body.find ('> header .fi-m').click (toggleMenu);
+  window.$body.find ('> header nav a').last ().click (function () { window.open ('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '分享', 'scrollbars=yes,resizable=yes,toolbar=no,location=yes,width=550,height=420,top=100,left=' + (window.screen ? Math.round (screen.width / 2 - 275) : 100)); });
+  window.$body.find ('#_c > div > span').click (toggleMenu);
 });

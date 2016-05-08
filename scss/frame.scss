@@ -1,0 +1,733 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+@import "_oa";
+
+@include font-face("frame", font-files("frame/frame.eot", "frame/frame.woff", "frame/frame.ttf", "frame/frame.svg"));
+// @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
+[class^="icon-"], [class*=" icon-"], [class^="fi-"], [class*=" fi-"] {font-family: 'frame', "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1;@include font-smoothing(antialiased);}
+// [class^="icon-"], [class*=" icon-"] {font-family: 'icomoon', "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;}
+
+.fi-m:before { content: "\e600"; }.fi-h:before { content: "\f601"; }.fi-c-r:before { content: "\f603"; }.fi-c-l:before { content: "\f604"; }.fi-sr:before { content: "\f605"; }.fi-a-l:before { content: "\f606"; }.fi-mr:before { content: "\f607"; }.fi-t-r:before { content: "\e900"; }.fi-t-l:before { content: "\e901"; }
+
+* {
+  &, &:after, &:before {
+    vertical-align: top;
+    @include box-sizing(border-box);
+    @include selection(rgba(150, 200, 255, 1), rgba(255, 255, 255, 1));
+    @include font-smoothing(antialiased);
+  }
+}
+
+html {
+  height: 100%;
+
+  body {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    background: $mainBackgroundColor $mainBackgroundImage;
+    color: rgba(55, 55, 55, 1);
+
+    @include font-smoothing(antialiased);
+  }
+}
+.fb-like {
+  overflow: hidden;
+}
+
+// frame
+$mobileHorizontalPadding: 10px;
+$mobileVerticalPadding: 15px;
+
+#_c {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $mainWidth;
+  @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+    display: block;
+  }
+  @media screen and (min-width: $mediaTabletWidth) {
+    display: table;
+    min-height: 100%;
+  }
+
+  > div {
+    position: relative;
+    @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+      display: block;
+    }
+    @media screen and (min-width: $mediaTabletWidth) {
+      display: table-row;
+    }
+
+    > div {
+      position: relative;
+
+      display: table-cell;
+      font-size: 13px;
+
+      border-bottom: 1px solid rgba(39, 40, 34, .25);
+      background-color: rgba(255, 255, 255, 1);
+
+      overflow: hidden;
+      z-index: 18;
+
+      @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+        display: block;
+        width: 100%;
+        min-height: 400px;
+        padding: $mobileVerticalPadding $mobileHorizontalPadding;
+        padding-top: $headerMobileHeight + $mobileVerticalPadding;
+        
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        word-break: break-all;
+
+        @include box-shadow(0 0 3px 1px rgba(39, 40, 34, .2));
+      }
+      @media screen and (min-width: $mediaTabletWidth) {
+        padding: 20px;
+        padding-top: $headerHeight + 20px;
+
+        @include box-shadow(0 0 1px rgba(0, 0, 0, .45));
+        @include border-bottom-left-radius(3px);
+      }
+      @media screen and (min-width: #{$mainWidth + 40px}) {
+        @include border-bottom-right-radius(3px);
+        border-right: 1px solid rgba(39, 40, 34, .25);
+      }
+    }
+
+    > span {
+      position: fixed;
+      top: 0;
+      right: -100%;
+
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      
+      background-color: rgba(39, 40, 34, .5);
+      z-index: 23;
+      
+      @include opacity(0);
+      @include transition(all .3s);
+
+      @media screen and (min-width: $mediaTabletWidth) {
+        width: 0;
+        display: none;
+      }
+    }
+  }
+}
+
+// header
+
+$navLeftWidth: 250px;
+$navRightWidth: 50px;
+$mobileHorizontalPadding: 10px;
+
+body > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  border-top: 5px solid rgba(39, 40, 34, .25);
+  z-index: 20;
+
+  background-color: $mainColor;
+
+  @include box-shadow(0 0 1px rgba(0, 0, 0, 1));
+  @include transition(all .3s);
+  
+  @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+    height: $headerMobileHeight;
+    padding: 0 $mobileHorizontalPadding;
+    &, *, *:before, *:after {
+      line-height: $headerMobileHeight - 2px;
+    }
+
+    &.h {
+      top: -$headerMobileHeight;
+    }
+  }
+  @media screen and (min-width: #{$mediaTabletWidth}) {
+    height: $headerHeight;
+    &, *, *:before, *:after {
+      line-height: $headerHeight - 2px;
+    }
+    
+    &.h {
+      top: -$headerHeight;
+    }
+  }
+
+  nav {
+    display: inline-block;
+    width: $mainWidth;
+    height: 100%;
+    max-width: 100%;
+    @include clearfix();
+
+    > * {
+      float: left;
+      display: inline-block;
+      height: 100%;
+    }
+
+    > a {
+      padding: 0;
+
+      color: rgba(255, 255, 255, 1.00);
+
+      font-size: 30px;
+      font-weight: bold;
+
+      text-decoration: none;
+      letter-spacing: 10px;
+      white-space: nowrap;
+      cursor: pointer;
+      @include text-shadow(0 0 1px rgba(68, 76, 148, 1));
+
+
+      &[href] {
+        width: $navLeftWidth;
+        padding-left: 5px;
+        text-align: left;
+
+        @media screen and (min-width: #{$mainWidth + 20px}) {
+          padding-left: 0;
+        }
+        @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+          width: 0;
+          display: none;
+        }
+      }
+      &:not([href]) {
+        width: $navRightWidth;
+        text-align: right;
+      
+        @include opacity(0.75);
+        @include transition(opacity .3s);
+
+        @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+          font-size: 25px;
+        }
+        &:before {
+          @include icomoon-font('frame') { content: "\f605"; };
+        }
+        &:hover {
+          @include opacity(1);
+        }
+      }
+    }
+    > div {
+      text-align: left;
+      width: calc(100% - #{$navLeftWidth + $navRightWidth});
+
+      @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+        width: calc(100% - #{$navRightWidth});
+      }
+      > * {
+        display: inline-block;
+        float: left;
+        height: 100%;
+        margin: 0;
+      }
+      > a {
+        width: 40px;
+        font-size: 30px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        cursor: pointer;
+        @include text-shadow(0 0 1px rgba(68, 76, 148, 1));
+
+        &:before {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          line-height: $headerMobileHeight - 2px;
+        }
+        @media screen and (min-width: $mediaTabletWidth) {
+          display: none;
+        }
+      }
+
+      > h1 {
+        padding-left: 5px;
+        width: calc(100% - 40px - 5px);
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 3px;
+
+        @include overflow-docx3();
+        @include text-shadow(0 0 1px rgba(68, 76, 148, 1));
+
+        @media screen and (min-width: 0) and (max-width: #{$mediaMiniMobileWidth - 1px}) {
+          font-size: 18px;
+          line-height: $headerMobileHeight - 2px;
+        }
+        @media screen and (min-width: $mediaMiniMobileWidth) and (max-width: #{$mediaTabletWidth - 1px}) {
+          font-size: 21px;
+          line-height: $headerMobileHeight - 2px;
+        }
+        @media screen and (min-width: $mediaTabletWidth) {
+          font-size: 24px;
+          line-height: $headerHeight - 2px;
+        }
+      }
+    }
+  }
+}
+
+// left
+#_c {
+  > div {
+    aside {
+      position: relative;
+      display: table-cell;
+      width: $wrapperLeftWidth;
+
+      padding: 0;
+      padding-top: $headerHeight;
+      padding-bottom: 50px;
+
+      z-index: 15;
+
+      @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+        position: fixed;
+        left: 0 - $wrapperLeftMobileWidth - 2px;
+
+        display: inline-block;
+        width: $wrapperLeftMobileWidth;
+        height: 100%;
+        padding-top: 0;
+
+        z-index: 25;
+
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        background: $mainBackgroundColor $mainBackgroundImage;
+        @include opacity(0);
+        @include transition(all .3s);
+      }
+
+      header {
+        position: relative;
+        
+        display: inline-block;
+        width: 100%;
+        padding: 10px 5px;
+        
+        color: rgba(255, 255, 255, 1);
+        font-size: 40px;
+        font-weight: bold;
+        
+        background-color: $mainColor;
+        
+        overflow: hidden;
+        z-index: 1;
+        @include text-shadow(0 0 5px rgba(68, 76, 148, 1));
+
+        > span {
+          display: inline-block;
+          width: 100%;
+        }
+
+        @media screen and (min-width: $mediaTabletWidth) {
+          display: none;
+        }
+      }
+
+
+      h4 {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        padding: 5px;
+        margin-top: 10px;
+        height: 30px;
+        font-weight: bold;
+      }
+      div {
+        position: relative;
+        border-top: 1px solid rgba(39, 40, 34, .15);
+        border-bottom: 1px solid rgba(39, 40, 34, .25);
+        padding: 5px 0;
+        background-color: rgba(255, 255, 255, 1);
+
+        @media screen and (min-width: $mainWidth) {
+          border-left: 1px solid rgba(39, 40, 34, .15);
+          @include border-left-radius(3px);
+        }
+        + div {
+          margin-top: 15px;
+        }
+        a {
+          @include a(0, false, rgba(36, 36, 36, .7), rgba(45, 45, 45, 1));
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          text-align: left;
+          padding: 5px;
+          vertical-align: middle;
+          line-height: 28px;
+          padding-left: 15px;
+          font-size: 15px;
+          
+          &.l {
+            display: none;
+            + a {
+              &:after {
+                left: 0;
+                width: 100%;
+              }
+            }
+          }
+          &.a {
+            font-weight: bold;
+            padding-left: 12px;
+            color: $mainColor;
+            border-left: 3px solid $mainColor;
+          }
+          &:before {
+            vertical-align: middle;
+            font-size: 20px;
+            margin-right: 10px;
+          }
+          &:not(:first-child) {
+            $paddingLeft: 40px;
+
+            &:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: $paddingLeft + 3px;
+              display: inline-block;
+              width: calc(100% - #{$paddingLeft + 3px});
+              height: 1px;
+              background-color: rgba(39, 40, 34, .15);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// tab
+$arrowWidth: 30px;
+._t {
+  position: fixed;
+  top: $headerHeight;
+  left: $wrapperLeftWidth;
+
+  display: inline-block;
+  width: calc(100% - #{$wrapperLeftWidth});
+  height: $tabHeight;
+
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 109;
+
+  @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+    top: $headerMobileHeight;
+    left: 0;
+    width: 100%;
+    height: $tabMobileHeight;
+  }
+
+  @media screen and (min-width: $mainWidth) {
+    left: calc(((100% - #{$mainWidth}) / 2) + #{$wrapperLeftWidth});
+    width: $mainWidth - $wrapperLeftWidth - 1px * 2;
+  }
+
+  @include box-shadow(0 0 1px rgba(100, 100, 100, .75));
+  @include clearfix();
+  @include transition(all .3s);
+
+  &.h {
+    top: 0;
+  }
+  &.o {
+    > a {
+      width: $arrowWidth;
+      display: inline-block;
+      @include opacity(1);
+    }
+    > div {
+      width: calc(100% - #{$arrowWidth * 2});
+    }
+  }
+  > div, > a {
+    float: left;
+    display: inline-block;
+    height: 100%;
+  }
+  > a {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+    line-height: $tabHeight + 5px;
+
+    @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+      line-height: $tabMobileHeight + 5px;
+    }
+    cursor: pointer;
+    color: rgba(148, 148, 148, 1);
+    @include opacity(0);
+    @include transition(all .3s);
+    
+    &:hover {
+      color: rgba(91, 91, 91, 1);
+    }
+    &.d {
+      color: rgba(222, 222, 222, 1);
+      cursor: not-allowed;
+    }
+    &:first-child {
+      &:before {
+        @include icomoon-font('frame') { content: "\f604"; };
+      }
+    }
+    &:last-child {
+      &:before {
+        @include icomoon-font('frame') { content: "\f603"; };
+      }
+    }
+  }
+  > div {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    padding-top: 5px;
+    overflow: hidden;
+    @include transition(all .3s);
+
+    > div {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      @include transition(all .3s);
+      @include clearfix();
+      
+      a {
+        float: left;
+        display: inline-block;
+        height: 100%;
+        line-height: $tabHeight + 2px;
+        
+        padding: {
+          top: auto;
+          bottom: auto;
+          left: 20px;
+          right: 20px;
+        };
+
+        text-decoration: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        color: rgba(123, 123, 123, 1);
+        font-size: 15px;
+        @include transition(all .3s);
+
+        @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+          line-height: $tabMobileHeight + 2px;
+        }
+        &:hover {
+          color: rgba(79, 79, 79, 1);
+        }
+        &.a {
+          color: $mainColor;
+          font-weight: bold;
+          border-bottom: 2px solid $mainColor;
+        }
+      }
+    }
+  }
+  ~ ._c {
+    margin-top: $tabHeight;
+    @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+      margin-top: $tabMobileHeight;
+    }
+  }
+  ~ ._m {
+    @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+      @include animation(_m2_m_s 5s);
+    }
+    @media screen and (min-width: #{$mediaTabletWidth}) {
+      @include animation(_m2_t_s 5s);
+    }
+  }
+}
+
+// message
+._m {
+  position: absolute;
+  left: 0;
+  
+  display: inline-block;
+  width: 100%;
+  
+  padding: 10px;
+  border-right: 0;
+  border-left: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1.00);
+
+  background-color: rgba(234, 67, 53, 1.00);
+  z-index: 108;
+
+  @include opacity(0);
+  @include border-radius(0);
+  @include text-shadow(0 0 1px rgba(68, 76, 148, .4));
+  
+  @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+    top: -$msgMobileHeight;
+    height: $msgMobileHeight;
+    
+    @include animation(_m_m_s 5s);
+  }
+  @media screen and (min-width: #{$mediaTabletWidth}) {
+    top: -$msgHeight;
+    height: $msgHeight;
+
+    @include animation(_m_t_s 5s);
+  }
+}
+
+// footer
+body > footer {
+  margin: 0 auto;
+  padding: 50px 0;
+  @include clearfix();
+
+  @media screen and (min-width: 0px) and (max-width: #{$mediaMiniMobileWidth - 1px}) {
+    padding-top: 50px;
+    $footerWidth: 220px;
+    > div {
+      &:first-child, &:last-child {
+        width: calc(50% - #{$footerWidth / 2});
+      }
+      &:not(:first-child):not(:last-child) {
+        font-size: 14px;
+        width: $footerWidth;
+      }
+    }
+  }
+  @media screen and (min-width: $mediaMiniMobileWidth) {
+    padding-top: 100px;
+    $footerWidth: 250px;
+    > div {
+      &:first-child, &:last-child {
+        width: calc(50% - #{$footerWidth / 2});
+      }
+      &:not(:first-child):not(:last-child) {
+        width: $footerWidth;
+      }
+    }
+  }
+
+  > div {
+    float: left;
+    height: 100%;
+
+    &:first-child, &:last-child {
+      display: inline-block;
+      background-color: rgba(202, 200, 199, 1);
+      height: 1px;
+      margin-top: 20px;
+    }
+    &:not(:first-child):not(:last-child) {
+      display: inline-block;
+
+      > div {
+        &:first-child {
+          color: rgba(120, 120, 120, 1);
+          font-weight: bold;
+        }
+        &:last-child {
+          margin-top: 5px;
+          color: rgba(105, 105, 105, 1);
+          
+          a {
+            @include a;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+body {
+  &.s {
+    #_c {
+      > div {
+        aside {
+          @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+            left: 0;
+            @include box-shadow(0 0 5px 1px rgba(39, 40, 34, .3), 1px 0 1px rgba(39, 40, 34, .3));
+            @include opacity(1);
+          }
+        }
+        > span {
+          right: 0;
+          @include opacity(1);
+        }
+      }
+    }
+  }
+}
+
+@include keyframes(_m_m_s){
+  0% { top: -$msgMobileHeight; @include opacity(0); }
+  5% { top: -$msgMobileHeight; @include opacity(0); }
+  15% { top: $headerMobileHeight; @include opacity(1); }
+  90% { top: $headerMobileHeight; @include opacity(1); }
+  100% { top: -$msgMobileHeight; @include opacity(0); }
+}
+
+@include keyframes(_m_t_s){
+  0% { top: -$msgHeight; @include opacity(0); }
+  5% { top: -$msgHeight; @include opacity(0); }
+  15% { top: $headerHeight; @include opacity(1); }
+  90% { top: $headerHeight; @include opacity(1); }
+  100% { top: -$msgHeight; @include opacity(0); }
+}
+
+@include keyframes(_m2_m_s){
+  0% { top: -$msgMobileHeight; @include opacity(0); }
+  5% { top: -$msgMobileHeight; @include opacity(0); }
+  15% { top: $headerMobileHeight + $tabMobileHeight - 1px; @include opacity(1); }
+  90% { top: $headerMobileHeight + $tabMobileHeight - 1px; @include opacity(1); }
+  100% { top: -$msgMobileHeight; @include opacity(0); }
+}
+@include keyframes(_m2_t_s){
+  0% { top: -$msgHeight; @include opacity(0); }
+  5% { top: -$msgHeight; @include opacity(0); }
+  15% { top: $headerHeight + $tabHeight - 1px; @include opacity(1); }
+  90% { top: $headerHeight + $tabHeight - 1px; @include opacity(1); }
+  100% { top: -$msgHeight; @include opacity(0); }
+}
