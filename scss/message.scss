@@ -1,0 +1,40 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+@import "_oa";
+
+._m {
+  position: absolute;
+  left: 0;
+  
+  display: inline-block;
+  width: 100%;
+  
+  padding: 10px;
+  border-right: 0;
+  border-left: 0;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1.00);
+
+  background-color: rgba(234, 67, 53, 1.00);
+  z-index: 108;
+
+  @include opacity(0);
+  @include border-radius(0);
+  @include text-shadow(0 0 1px rgba(68, 76, 148, .4));
+  
+  @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+    top: -$msgMobileHeight;
+    height: $msgMobileHeight;
+    
+    @include animation(_m_m_s 5s);
+  }
+  @media screen and (min-width: #{$mediaTabletWidth}) {
+    top: -$msgHeight;
+    height: $msgHeight;
+
+    @include animation(_m_t_s 5s);
+  }
+}

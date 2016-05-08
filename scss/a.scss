@@ -1,0 +1,160 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+@import "_oa";
+
+@include font-face("frame", font-files("frame/frame.eot", "frame/frame.woff", "frame/frame.ttf", "frame/frame.svg"));
+// @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
+[class^="icon-"], [class*=" icon-"], [class^="fi-"], [class*=" fi-"] {font-family: 'frame', "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1;@include font-smoothing(antialiased);}
+// [class^="icon-"], [class*=" icon-"] {font-family: 'icomoon', "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;}
+
+.fi-m:before { content: "\e600"; }.fi-h:before { content: "\f601"; }.fi-s:before { content: "\f602"; }.fi-c-r:before { content: "\f603"; }.fi-c-l:before { content: "\f604"; }.fi-sr:before { content: "\f605"; }.fi-a-l:before { content: "\f606"; }.fi-mr:before { content: "\f607"; }
+
+* {
+  &, &:after, &:before {
+    vertical-align: top;
+    @include box-sizing(border-box);
+    @include selection(rgba(150, 200, 255, 1), rgba(255, 255, 255, 1));
+    @include font-smoothing(antialiased);
+  }
+}
+
+html {
+  height: 100%;
+
+  body {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    background: $mainBackgroundColor $mainBackgroundImage;
+    color: rgba(55, 55, 55, 1);
+
+    @include font-smoothing(antialiased);
+  }
+}
+
+
+$mobileHorizontalPadding: 10px;
+$mobileVerticalPadding: 15px;
+
+#_c {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $mainWidth;
+  @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+    display: block;
+  }
+  @media screen and (min-width: $mediaTabletWidth) {
+    display: table;
+    min-height: 100%;
+  }
+
+  > div {
+    position: relative;
+    @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+      display: block;
+    }
+    @media screen and (min-width: $mediaTabletWidth) {
+      display: table-row;
+    }
+
+    > div {
+      position: relative;
+
+      display: table-cell;
+      font-size: 13px;
+
+      border-bottom: 1px solid rgba(39, 40, 34, .25);
+      background-color: rgba(255, 255, 255, 1);
+
+      overflow: hidden;
+      z-index: 18;
+
+      @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+        display: block;
+        width: 100%;
+        min-height: 400px;
+        padding: $mobileVerticalPadding $mobileHorizontalPadding;
+        padding-top: $headerMobileHeight + $mobileVerticalPadding;
+        
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        word-break: break-all;
+
+        @include box-shadow(0 0 3px 1px rgba(39, 40, 34, .2));
+      }
+      @media screen and (min-width: $mediaTabletWidth) {
+        padding: 20px;
+        padding-top: $headerHeight + 20px;
+
+        @include box-shadow(0 0 1px rgba(0, 0, 0, .45));
+        @include border-bottom-left-radius(3px);
+      }
+      @media screen and (min-width: #{$mainWidth + 40px}) {
+        @include border-bottom-right-radius(3px);
+        border-right: 1px solid rgba(39, 40, 34, .25);
+      }
+    }
+
+    > span {
+      position: fixed;
+      top: 0;
+      right: -100%;
+
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      
+      background-color: rgba(39, 40, 34, .5);
+      z-index: 23;
+      
+      @include opacity(0);
+      @include transition(all .3s);
+
+      @media screen and (min-width: $mediaTabletWidth) {
+        width: 0;
+        display: none;
+      }
+    }
+  }
+}
+
+@include keyframes(_m_m_s){
+  0% { top: -$msgMobileHeight; @include opacity(0); }
+  5% { top: -$msgMobileHeight; @include opacity(0); }
+  15% { top: $headerMobileHeight; @include opacity(1); }
+  90% { top: $headerMobileHeight; @include opacity(1); }
+  100% { top: -$msgMobileHeight; @include opacity(0); }
+}
+
+@include keyframes(_m_t_s){
+  0% { top: -$msgHeight; @include opacity(0); }
+  5% { top: -$msgHeight; @include opacity(0); }
+  15% { top: $headerHeight; @include opacity(1); }
+  90% { top: $headerHeight; @include opacity(1); }
+  100% { top: -$msgHeight; @include opacity(0); }
+}
+
+@include keyframes(_m2_m_s){
+  0% { top: -$msgMobileHeight; @include opacity(0); }
+  5% { top: -$msgMobileHeight; @include opacity(0); }
+  15% { top: $headerMobileHeight + $tabMobileHeight - 1px; @include opacity(1); }
+  90% { top: $headerMobileHeight + $tabMobileHeight - 1px; @include opacity(1); }
+  100% { top: -$msgMobileHeight; @include opacity(0); }
+}
+@include keyframes(_m2_t_s){
+  0% { top: -$msgHeight; @include opacity(0); }
+  5% { top: -$msgHeight; @include opacity(0); }
+  15% { top: $headerHeight + $tabHeight - 1px; @include opacity(1); }
+  90% { top: $headerHeight + $tabHeight - 1px; @include opacity(1); }
+  100% { top: -$msgHeight; @include opacity(0); }
+}

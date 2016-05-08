@@ -45,17 +45,5 @@ html {
 
     @include font-smoothing(antialiased);
     
-    #container {
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      max-width: $mainWidth;
-
-      padding: 0 10px;
-
-      @media screen and (min-width: #{$mainWidth}) {
-        padding: 0;
-      }
-    }
   }
 }
