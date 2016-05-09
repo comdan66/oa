@@ -7,7 +7,7 @@
 
 @include font-face("frame", font-files("frame/frame.eot", "frame/frame.woff", "frame/frame.ttf", "frame/frame.svg"));
 // @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
-[class^="icon-"], [class*=" icon-"], [class^="fi-"], [class*=" fi-"] {font-family: 'frame', "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1;@include font-smoothing(antialiased);}
+[class^="icon-"], [class*=" icon-"], [class^="fi-"], [class*=" fi-"] {font-family: 'frame', Roboto,'Helvetica Neue',Helvetica,Arial,'Hiragino Maru Gothic ProN','メイリオ','ヒラギノ丸ゴ ProN W4','微軟正黑體',Meiryo,'Droid Sans';speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1;@include font-smoothing(antialiased);}
 // [class^="icon-"], [class*=" icon-"] {font-family: 'icomoon', "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;}
 
 .fi-m:before { content: "\e600"; }.fi-h:before { content: "\f601"; }.fi-c-r:before { content: "\f603"; }.fi-c-l:before { content: "\f604"; }.fi-sr:before { content: "\f605"; }.fi-a-l:before { content: "\f606"; }.fi-mr:before { content: "\f607"; }.fi-t-r:before { content: "\e900"; }.fi-t-l:before { content: "\e901"; }
@@ -32,7 +32,8 @@ html {
     width: 100%;
     height: 100%;
     font-size: 15px;
-    font-family: "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-family: Roboto,'Helvetica Neue',Helvetica,Arial,'Hiragino Maru Gothic ProN','メイリオ','ヒラギノ丸ゴ ProN W4','微軟正黑體',Meiryo,'Droid Sans';
+    // font-family: "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     background: $mainBackgroundColor $mainBackgroundImage;
     color: rgba(55, 55, 55, 1);
 
@@ -133,7 +134,7 @@ $mobileVerticalPadding: 15px;
 
 // header
 
-$navLeftWidth: 250px;
+$navLeftWidth: 230px;
 $navRightWidth: 50px;
 $mobileHorizontalPadding: 10px;
 
@@ -192,13 +193,13 @@ body > header {
       color: rgba(255, 255, 255, 1.00);
 
       font-size: 30px;
-      font-weight: bold;
+      // font-weight: bold;
 
       text-decoration: none;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
       white-space: nowrap;
       cursor: pointer;
-      @include text-shadow(0 0 1px rgba(68, 76, 148, 1));
+      @include text-shadow(0 0 1px rgba(68, 76, 148, .5));
 
 
       &[href] {
@@ -251,7 +252,7 @@ body > header {
         text-align: center;
         color: rgba(255, 255, 255, 1);
         cursor: pointer;
-        @include text-shadow(0 0 1px rgba(68, 76, 148, 1));
+        @include text-shadow(0 0 1px rgba(68, 76, 148, .5));
 
         &:before {
           display: inline-block;
@@ -271,9 +272,10 @@ body > header {
         font-size: 18px;
         text-align: left;
         letter-spacing: 3px;
+        font-weight: normal;
 
         @include overflow-docx3();
-        @include text-shadow(0 0 1px rgba(68, 76, 148, 1));
+        @include text-shadow(0 0 1px rgba(68, 76, 148, .5));
 
         @media screen and (min-width: 0) and (max-width: #{$mediaMiniMobileWidth - 1px}) {
           font-size: 18px;
@@ -333,13 +335,13 @@ body > header {
         
         color: rgba(255, 255, 255, 1);
         font-size: 40px;
-        font-weight: bold;
+        // font-weight: bold;
         
         background-color: $mainColor;
         
         overflow: hidden;
         z-index: 1;
-        @include text-shadow(0 0 5px rgba(68, 76, 148, 1));
+        @include text-shadow(0 0 5px rgba(68, 76, 148, .5));
 
         > span {
           display: inline-block;
@@ -357,9 +359,30 @@ body > header {
         margin: 0;
         text-align: left;
         padding: 5px;
-        margin-top: 10px;
-        height: 30px;
-        font-weight: bold;
+        margin-top: 15px;
+        // height: 30px;
+        font-weight: normal;
+
+        width: $wrapperLeftWidth;
+        @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+          width: $wrapperLeftMobileWidth;
+        }
+        @include overflow-docx3();
+        
+        span {
+          display: inline-block;
+          color: rgba(234, 67, 53, 1.00);
+        }
+        
+        &:after {
+          content: attr(title);
+          display: block;
+          font-weight: normal;
+          font-size: 10px;
+          margin-top: 5px;
+          color: rgba(130, 130, 130, 1);
+          font-style: italic;
+        }
       }
       div {
         position: relative;
@@ -379,14 +402,30 @@ body > header {
           @include a(0, false, rgba(36, 36, 36, .7), rgba(45, 45, 45, 1));
           position: relative;
           display: inline-block;
-          width: 100%;
           text-align: left;
-          padding: 5px;
+          padding: 8px;
           vertical-align: middle;
           line-height: 28px;
-          padding-left: 15px;
+          padding-left: 12px;
           font-size: 15px;
           
+          width: $wrapperLeftWidth;
+          @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+            width: $wrapperLeftMobileWidth;
+          }
+          @include split-left(30px, 'img', 'span');
+          img {
+            height: 30px;
+            @include box-shadow(0 0 1px rgba(0, 0, 0, .5));
+            @include border-radius(50%);
+            @include scale(1);
+            @include opacity(.85);
+            @include transition(all .3s);
+          }
+          span {
+            padding-left: 13px;
+            @include overflow-docx3();
+          }
           &.l {
             display: none;
             + a {
@@ -397,10 +436,23 @@ body > header {
             }
           }
           &.a {
-            font-weight: bold;
-            padding-left: 12px;
+            // font-weight: bold;
+            padding-left: 9px;
             color: $mainColor;
             border-left: 3px solid $mainColor;
+            
+            img {
+              @include scale(1.35);
+              @include opacity(1);
+            }
+          }
+          &:hover {
+            &:not(.a) {
+              img {
+                @include scale(1.35);
+                @include opacity(.9);
+              }
+            }
           }
           &:before {
             vertical-align: middle;
@@ -408,7 +460,7 @@ body > header {
             margin-right: 10px;
           }
           &:not(:first-child) {
-            $paddingLeft: 40px;
+            $paddingLeft: 50px;
 
             &:after {
               content: '';
@@ -557,7 +609,7 @@ $arrowWidth: 30px;
         }
         &.a {
           color: $mainColor;
-          font-weight: bold;
+          // font-weight: bold;
           border-bottom: 2px solid $mainColor;
         }
       }
@@ -591,7 +643,7 @@ $arrowWidth: 30px;
   border-right: 0;
   border-left: 0;
   font-size: 18px;
-  font-weight: bold;
+  // font-weight: bold;
   color: rgba(255, 255, 255, 1.00);
 
   background-color: rgba(234, 67, 53, 1.00);

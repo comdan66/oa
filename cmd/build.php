@@ -31,4 +31,5 @@ $files = array_map (function ($file) {
   return (pathinfo ($file, PATHINFO_EXTENSION) == 'php') && (preg_match ('/^_/', $file) == '_');
 }));
 
-foreach ($files as $file) write_file (FCPATH . $file . HTML, load_view (FCPATH . TPL_DIR . $file . EXT, array ()));
+foreach ($files as $file)
+  write_file (FCPATH . $file . HTML, load_view (FCPATH . TPL_DIR . $file . EXT, array ()));
