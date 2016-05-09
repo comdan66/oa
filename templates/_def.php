@@ -86,7 +86,7 @@ if (!function_exists ('load_css_js')) {
     });
 
     return implode ('', array_map (function ($name) use ($type) {
-      return $type == 'css' ? "<link href='" . $name . "' 'css/frame.css' rel='stylesheet' type='text/css' />" : '<script src="' . $name . '" language="javascript" type="text/javascript" ></script>';
+      return $type == 'css' ? "<link href='" . $name . "' rel='stylesheet' type='text/css' />" : '<script src="' . $name . '" language="javascript" type="text/javascript" ></script>';
     }, $name_list));
   }
 }
