@@ -3,6 +3,9 @@
 include_once '_def.php';
 $menus = menus ();
 $title = '北港迎媽祖';
+$now = 'mazu';
+
+$np = np ($menus, $now);
 
 $header = view ('_' . DIRECTORY_SEPARATOR . 'header', array (
   'logo' => logo (),
@@ -12,14 +15,14 @@ $header = view ('_' . DIRECTORY_SEPARATOR . 'header', array (
 $left = view ('_' . DIRECTORY_SEPARATOR . 'left', array (
   'mobile_logo' => array ('Logo 1', 'Logo 2'),
   'menus' => $menus,
-  'href' => base_url ('mazu')
+  'href' => base_url ($now)
 ));
 
 $tab = view ('_' . DIRECTORY_SEPARATOR . 'tab', array (
   'tabs' => array (
       // array ('text' => '簡敘', 'href' => base_url ('index')),
     ),
-  'href' => base_url ('mazu')
+  'href' => base_url (isset ($now_tab) && $now_tab ? $now_tab : $now)
 ));
 
 $msg = view ('_' . DIRECTORY_SEPARATOR . 'msg', array (
@@ -31,6 +34,9 @@ $footer = view ('_' . DIRECTORY_SEPARATOR . 'footer', array (
   'href' => 'https://www.facebook.com/comdan66'
 ));
 
-$content = view ('content' . DIRECTORY_SEPARATOR . 'mazu', array ());
+$content = view ('content' . DIRECTORY_SEPARATOR . (isset ($now_tab) && $now_tab ? $now_tab : $now), array (
+    'title' => $title,
+    'np' => $np
+  ));
 
 echo load_frame ($title, $content, $header, $left, $tab, $msg, $footer);

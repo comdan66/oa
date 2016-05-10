@@ -14,9 +14,10 @@ if (!defined ('EXT')) define ('EXT', '.php');
 if (!defined ('TPL_DIR')) define ('TPL_DIR', 'templates' . DIRECTORY_SEPARATOR);
 
 define ('LOGO', "個人簡歷");
-define ('TITLE', "Hi I'm OA");
+define ('TITLE', "iOA");
 define ('DESC', "Hi，您好！我叫吳政賢，2011年畢業於淡江大學資訊工程學系，主修電腦相關課程，在學期間主要使用的程式語言有 C語言、Java，而對於 web 網站開發經驗從大三就有 php 的實作的經驗了..");
 define ('KEYWORDS', "吳政賢, OA Wu, iOA, Java 小畫家, Java MSN, Java Plurker, Java Assembler, Arduino 新銳 機器人, php 相簿, php 空間, php 部落格, STYLEWALL");
+define ('FB_UID', "100000100541088");
 define ('FB_ADMINS', "100000100541088");
 define ('FB_APP_ID', "640377126095413");
 define ('FB_ARTICLE_AUTHOR', "https://www.facebook.com/comdan66");
@@ -34,7 +35,15 @@ class Assets {
     return self::$assets;
   }
 }
+if (!function_exists ('avatar_url')) {
+  function avatar_url ($w = 100, $h = 100) {
+    $size = array ();
+    array_push ($size, isset ($w) && $w ? 'width=' . $w : '');
+    array_push ($size, isset ($h) && $h ? 'height=' . $h : '');
 
+    return 'https://graph.facebook.com/' . FB_UID . '/picture' . (($size = implode ('&', array_filter ($size))) ? '?' . $size : '');
+  }
+}
 if (!function_exists ('base_url')) {
   function base_url () {
     $uri = array_filter (func_get_args ());
@@ -42,10 +51,10 @@ if (!function_exists ('base_url')) {
   }
 }
 
-if (!function_exists ('site_url')) {
-  function site_url () {
+if (!function_exists ('image_url')) {
+  function image_url () {
     $uri = array_filter (func_get_args ());
-    return PROTOCOL . DOMAIN . '/' . implode ('/', $uri);
+    return PROTOCOL . DOMAIN . '/' . 'img' . '/' . (defined('ENV') ? 'compressor' . '/' : '') . implode ('/', $uri);
   }
 }
 
@@ -92,7 +101,7 @@ if (!function_exists ('load_css_js')) {
 }
 if (!function_exists ('title')) {
   function title ($title = '') {
-    return ($title ? $title . ' ' : '') . TITLE;
+    return ($title ? $title . ' - ' : '') . TITLE;
   }
 }
 if (!function_exists ('logo')) {
@@ -156,6 +165,31 @@ if (!function_exists ('load_frame')) {
       ));
   }
 }
+if (!function_exists ('np')) {
+  function np ($menus, $now) {
+    $items = array ();
+    foreach ($menus as $menu)
+      foreach ($menu['items'] as $item)
+        array_push ($items, $item);
+
+    $p = $item = $n = null;
+
+    for ($i = 0; $i < count ($items); $i++) {
+      if ($i - 1 >= 0) $p = $items[$i - 1];
+      if ($i + 1 < count($items)) $n = $items[$i + 1];
+
+      if ($items[$i]['href'] == base_url ($now)) {
+        $item = $items[$i];
+        break;        
+      }
+    }
+
+    return $p && $n ? array (
+        'p' => $p,
+        'n' => $n
+      ) : array ();
+  }
+}
 if (!function_exists ('menus')) {
   function menus () {
 
@@ -164,38 +198,38 @@ if (!function_exists ('menus')) {
         'group' => '基本資料',
         'desc' => '',
         'items' => array (
-          array ('text' => '關於 OA', 'href' => base_url ('index'), 'icon' => 'index.jpg'),
+          array ('text' => '關於 OA', 'href' => base_url ('index'), 'icon' => image_url('left', 'index.jpg')),
         )),
       array (
         'group' => '網頁<span>全端</span>作品',
         'desc' => '(PHP、JavaScript、MySQL、CSS)',
         'items' => array (
-          array ('text' => '北港迎媽祖', 'href' => base_url ('mazu'), 'icon' => 'mazu.jpg'),
-          array ('text' => 'ThetaS 360', 'href' => base_url ('360'), 'icon' => '360.jpg'),
-          array ('text' => 'weather', 'href' => base_url ('weather'), 'icon' => 'weather.jpg'),
-          array ('text' => 'point in polygon', 'href' => base_url ('point-in-polygon'), 'icon' => 'point-in-polygon.jpg'),
-          array ('text' => 'GitHub Blog', 'href' => base_url ('github-blog'), 'icon' => 'github-blog.jpg'),
-          array ('text' => 'instagram_maps', 'href' => base_url ('instagram-maps'), 'icon' => 'instagram-maps.jpg'),
-          array ('text' => '大庄媽 GPS', 'href' => base_url ('haotien'), 'icon' => 'haotien.jpg'),
-          array ('text' => '六房媽祖 GPS', 'href' => base_url ('liu-fang-mazu'), 'icon' => 'liu-fang-mazu.jpg'),
-          array ('text' => '大四 PHP 相簿', 'href' => base_url ('php-album'), 'icon' => 'php-album.jpg'),
-          array ('text' => '大四 PHP 空間、部落格', 'href' => base_url ('php-box'), 'icon' => 'php-box.jpg'),
+          array ('text' => '北港迎媽祖', 'href' => base_url ('mazu'), 'icon' => image_url('left', 'mazu.jpg')),
+          array ('text' => 'ThetaS 360', 'href' => base_url ('360'), 'icon' => image_url('left', '360.jpg')),
+          array ('text' => 'weather', 'href' => base_url ('weather'), 'icon' => image_url('left', 'weather.jpg')),
+          array ('text' => 'point in polygon', 'href' => base_url ('point-in-polygon'), 'icon' => image_url('left', 'point-in-polygon.jpg')),
+          array ('text' => 'GitHub Blog', 'href' => base_url ('github-blog'), 'icon' => image_url('left', 'github-blog.jpg')),
+          array ('text' => 'instagram_maps', 'href' => base_url ('instagram-maps'), 'icon' => image_url('left', 'instagram-maps.jpg')),
+          array ('text' => '大庄媽 GPS', 'href' => base_url ('haotien'), 'icon' => image_url('left', 'haotien.jpg')),
+          array ('text' => '六房媽祖 GPS', 'href' => base_url ('liu-fang-mazu'), 'icon' => image_url('left', 'liu-fang-mazu.jpg')),
+          array ('text' => '大四 PHP 相簿', 'href' => base_url ('php-album'), 'icon' => image_url('left', 'php-album.jpg')),
+          array ('text' => '大四 PHP 空間、部落格', 'href' => base_url ('php-box'), 'icon' => image_url('left', 'php-box.jpg')),
         )),
       array (
         'group' => 'JavaScript 作品',
         'desc' => '',
         'items' => array (
 
-          array ('text' => 'Google Maps 大富翁', 'href' => base_url ('richman'), 'icon' => 'richman.jpg'),
-          array ('text' => '雙北市行政區域範圍座標', 'href' => base_url ('taipei-towns'), 'icon' => 'taipei-towns.jpg'),
-          array ('text' => 'maze 迷宮遊戲', 'href' => base_url ('maze'), 'icon' => 'maze.jpg'),
-          array ('text' => 'flickr 搜尋器', 'href' => base_url ('flickr'), 'icon' => 'flickr.jpg'),
-          array ('text' => 'jQuery imgLiquid', 'href' => base_url ('img-liquid'), 'icon' => 'img-liquid.jpg'),
-          array ('text' => 'jQuery scrollSliderView', 'href' => base_url ('scroll-slider-view'), 'icon' => 'scroll-slider-view.jpg'),
-          array ('text' => 'jQuery navbar', 'href' => base_url ('navbar'), 'icon' => 'navbar.jpg'),
-          array ('text' => 'Google Maps Menu Tools', 'href' => base_url ('google-maps-menu'), 'icon' => 'google-maps-menu.jpg'),
-          array ('text' => 'mobileScrollView', 'href' => base_url ('mobile-scroll-view'), 'icon' => 'mobile-scroll-view.jpg'),
-          array ('text' => 'u2 Youtube 播放器', 'href' => base_url ('u2'), 'icon' => 'u2.jpg'),
+          array ('text' => 'Google Maps 大富翁', 'href' => base_url ('richman'), 'icon' => image_url('left', 'richman.jpg')),
+          array ('text' => '雙北市行政區域範圍座標', 'href' => base_url ('taipei-towns'), 'icon' => image_url('left', 'taipei-towns.jpg')),
+          array ('text' => 'maze 迷宮遊戲', 'href' => base_url ('maze'), 'icon' => image_url('left', 'maze.jpg')),
+          array ('text' => 'flickr 搜尋器', 'href' => base_url ('flickr'), 'icon' => image_url('left', 'flickr.jpg')),
+          array ('text' => 'jQuery imgLiquid', 'href' => base_url ('img-liquid'), 'icon' => image_url('left', 'img-liquid.jpg')),
+          array ('text' => 'jQuery scrollSliderView', 'href' => base_url ('scroll-slider-view'), 'icon' => image_url('left', 'scroll-slider-view.jpg')),
+          array ('text' => 'jQuery navbar', 'href' => base_url ('navbar'), 'icon' => image_url('left', 'navbar.jpg')),
+          array ('text' => 'Google Maps Menu Tools', 'href' => base_url ('google-maps-menu'), 'icon' => image_url('left', 'google-maps-menu.jpg')),
+          array ('text' => 'mobileScrollView', 'href' => base_url ('mobile-scroll-view'), 'icon' => image_url('left', 'mobile-scroll-view.jpg')),
+          array ('text' => 'u2 Youtube 播放器', 'href' => base_url ('u2'), 'icon' => image_url('left', 'u2.jpg')),
           array ('text' => '大四 jQuery Game', 'href' => base_url ('')),
 
         )),

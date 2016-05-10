@@ -37,7 +37,7 @@
   </li>
 </ul>
 
-<div class='np'>
+<div id='_np'>
   <figure class='p'>
     <a href=''>
       <img src='' />

@@ -4,6 +4,7 @@
  */
 
 @import "_oa";
+
 ._c {
   $figureHeight: 250px;
   $figureMinHeight: 170px;
@@ -99,6 +100,7 @@
     font-size: 13px;
     color: rgba(157, 157, 170, 1);
     @include clearfix();
+    line-height: 20px;
 
     @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
       margin-top: 25px;
@@ -135,33 +137,71 @@
       }
     }
     span {
+      display: inline-block;
+      font-weight: bold;
     }
     time {
+      display: inline-block;
     }
   }
   > article {
     word-wrap: break-word; 
-    word-break: break-all;
+    word-break: break-word;
+
     margin-top: 60px;
     @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
       margin-top: 50px;
     }
     &, * {
-      font-family: "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, Monaco !important;
+      // font-family: "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, Monaco !important;
+      font-family: Roboto,'Helvetica Neue',Helvetica,Arial,'Hiragino Maru Gothic ProN','メイリオ','ヒラギノ丸ゴ ProN W4','微軟正黑體',Meiryo,'Droid Sans';
+    }
+
+    a {
+      position: relative;
+      padding: 0;
+      padding-bottom: 0;
+      border-bottom-color: rgba(42, 90, 149, 0.25);
+      display: inline-block;
+      text-decoration: none;
+      font-weight: normal;
+      color: rgba(105, 139, 180, 1.00);
+      padding: 0 1px;
+      @include transition(all .3s);
+      
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(149, 173, 202, 1.00);
+      }
+
+      &:hover {
+        color: rgba(12, 65, 109, .85);
+        &:before {
+          background-color: rgba(105, 139, 180, 1.00);
+        }
+      }
     }
     p {
       font-size: 16px;
       margin: 5px 0;
-      margin: 15.5px auto;
+      margin: 20px auto;
       color: rgba(85, 85, 85, 1);
-      line-height: 1.7em;
-
-      a {
-        @include a(1px, true);
-        padding: 0;
-        padding-bottom: 0;
-        border-bottom-color: rgba(42, 90, 149, 0.25);
+      &, a {
+        line-height: 1.7em;
       }
+      // a {
+      //   @include a(1px, true);
+      //   padding: 0;
+      //   padding-bottom: 0;
+      //   border-bottom-color: rgba(42, 90, 149, 0.25);
+      // }
       img {
         // width: auto !important;
         // height: auto !important;
@@ -178,6 +218,24 @@
         }
       }
     }
+    blockquote {
+      margin: 0;
+      padding: 15px;
+      padding-left: 25px;
+      position: relative;
+      color: rgba(80, 80, 80, 1);
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        display: inline-block;
+        width: 5px;
+        height: calc(100% - 7px * 2);
+        background-color: rgba(231, 231, 231, 1.00);
+      }
+    }
     ul {
       margin: 15.5px auto;
       margin-bottom: 20px;
@@ -185,9 +243,17 @@
 
       li {
         color: rgba(100, 100, 100, 1);
+        font-size: 15px;
+        line-height: 1.7em;
+        b {
+          display: inline-block;
+        }
+        &, a {
+          line-height: 1.7em;
+        }
 
         + li {
-          margin-top: 5px;
+          margin-top: 10px;
         }
       }
     }
@@ -196,10 +262,10 @@
     position: relative;
     list-style-type: none;
     padding-left: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     display: block;
-    padding-top: 35px;
-    margin-top: 35px;
+    padding-top: 50px;
+    margin-top: 55px;
 
     &:before {
       content: '';
@@ -316,6 +382,7 @@
         display: inline-block;
         width: 50px;
         height: 50px;
+        font-weight: normal;
         @include border-radius(50%);
         @include opacity(.8);
         @include box-shadow(0 0 1px rgba(39, 40, 34, .1), 0 0 10px rgba(39, 40, 34, .1));
@@ -334,6 +401,7 @@
           font-weight: bold;
           font-size: 15px;
           line-height: 1.5em;
+          font-weight: normal;
           
           &:before {
             content: '上一篇';

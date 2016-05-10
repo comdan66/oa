@@ -20,7 +20,7 @@ if (!(isset ($mobile_logo) && isset ($menus) && isset ($href))) return; ?>
         $_href = isset ($item['href']) && $item['href'] ? ' href="' . $item['href'] . '"' : '';
         $_class = isset ($item['class']) && $item['class'] ? ' class="' . (isset ($item['href']) && $item['href'] && $href == $item['href'] ? $item['class'] . ' a' : $item['class']) . '"' : (isset ($item['href']) && $item['href'] && $href == $item['href'] ? ' class="a"' : '');
         $_target = isset ($item['target']) && $item['target'] ? ' target="' . $item['target'] . '"' : ''; ?>
-        <a<?php echo $_href . $_class . $_target;?>><img src='<?php echo PROTOCOL . DOMAIN . '/img/left/' . (isset ($item['icon']) && $item['icon'] ? $item['icon'] : '_d4.png');?>'><span><?php echo $_text;?></span></a>
+        <a<?php echo $_href . $_class . $_target;?>><img src='<?php echo isset ($item['icon']) && $item['icon'] ? $item['icon'] : image_url ('_d4.png');?>'><span><?php echo $_text;?></span></a>
 <?php } ?>
     </div>  
 <?php
