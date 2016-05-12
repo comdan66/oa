@@ -5,14 +5,14 @@ require 'compass/import-once/activate'
 
 http_path = "/"
 
-fonts_dir = "font"
-fonts_path = "../font"
+fonts_dir = "assets/font"
+fonts_path = "../assets/font"
 
-images_dir = "img"
-images_path = "../img"
+images_dir = "assets/img"
+images_path = "../assets/img"
 
-css_dir = "../css"
-sass_dir = "../scss"
+css_dir = "../views"
+sass_dir = "../views"
 
 add_import_path = "./imports"
 additional_import_paths = ["./imports"]
