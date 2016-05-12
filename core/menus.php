@@ -6,7 +6,7 @@ return array (
       )),
     array ('group' => '網頁<span>全端</span>作品', 'title' => '(php、JavaScript、MySQL、CSS)', 'items' => array (
         array ('type' => 'article', 'text' => '北港迎媽祖', 'file' => 'mazu'),
-        array ('type' => 'article', 'text' => '全景相簿 Theta S 360', 'file' => '360'),
+        array ('type' => 'article', 'text' => '全景相簿 Theta S 360', 'file' => 'theta-s-360'),
         array ('type' => 'article', 'text' => 'Weather Maps 天氣地圖', 'file' => 'weather-maps'),
         array ('type' => 'article', 'text' => 'Point in Polygon 範圍內取點', 'file' => 'point-in-polygon'),
         array ('type' => 'article', 'text' => 'Google Maps 大富翁', 'file' => 'x'),
