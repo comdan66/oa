@@ -58,7 +58,7 @@
             <h4<?php echo isset ($menus['title']) && $menus['title'] ? ' title="' . $menus['title'] . '"': '';?>><?php echo $menus['group'];?></h4>
             <div>
         <?php foreach ($menus['items'] as $item) {
-                if (in_array ($item['type'], array ('article', 'list'))) { ?>
+                if (in_array ($item['type'], array ('article', 'more', 'free'))) { ?>
                   <a<?php echo $item['active'] ? ' class="a"': '';?> href="<?php echo $item['url'];?>"><img src='<?php echo $item['img'];?>'><span><?php echo $item['text'];?></span></a>
           <?php }
               } ?>
@@ -80,21 +80,6 @@
               </div>
       <?php } ?>
             <?php echo $_content;?>
-
-      <?php if (isset ($_np) && $_np && ((isset($_np['p']) && $_np['p']) || (isset($_np['n']) && $_np['n']))) { ?>
-              <div id='_np'>
-          <?php foreach ($_np as $key => $value) {
-                  if (!(in_array ($key, array ('p', 'n')) && $value)) continue; ?>
-                  <figure class='<?php echo $key;?>'>
-                    <a href='<?php echo $value['url'];?>'>
-                      <img src='<?php echo $value['img'];?>' />
-                    </a>
-                    <figcaption><a href='<?php echo $value['url'];?>'><?php echo $value['text'];?></a></figcaption>
-                  </figure>
-          <?php }?>
-              </div>
-            <?php 
-            } ?>
           </div>
     <?php if ($_message) { ?>
             <div class='_m'><?php echo $_message;?></div>
@@ -107,7 +92,7 @@
     <footer>
       <div></div>
       <div>
-        <div><?php echo $title;?> ©<?php echo date ('Y');?></div>
+        <div><?php echo $_site_title;?> ©<?php echo date ('Y');?></div>
         <div>如有相關問題歡迎與<a href="" target="_blank">作者</a>討論。</div>
       </div>
       <div></div>

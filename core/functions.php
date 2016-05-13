@@ -97,19 +97,24 @@ if (!function_exists ('merge_asset')) {
 if (!function_exists ('np')) {
   function np (&$menus, $file) {
     $items = array ();
+    $p = $c = $n = null;
 
     foreach ($menus as &$menu)
       foreach ($menu['items'] as &$item) {
         $item['img'] = img_url ('left', $item['file'] . '.jpg');
         $item['og_img'] = img_url ('og', $item['file'] . '.jpg');
         $item['url'] = base_url ($item['file'] . EXTENSION);
-
         $item['active'] = $item['file'] == $file;
-        if (in_array ($item['type'], array ('article'))) {
+
+        if (in_array ($item['type'], array ('free', 'article'))) {
           array_push ($items, $item);
-        } else if ($item['type'] == 'list') {
+        } else if ($item['type'] == 'more') {
           foreach ($item['sub'] as &$sub) {
-            if (in_array ($sub['type'], array ('article'))) {
+
+            $sub['img'] = img_url ('left', $sub['file'] . '.jpg');
+            $sub['url'] = base_url ($sub['file'] . EXTENSION);
+        
+            if (in_array ($sub['type'], array ('free', 'article'))) {
               if ($sub['active'] = $sub['file'] == $file)
                 $item['active'] = true;
 
@@ -117,16 +122,26 @@ if (!function_exists ('np')) {
             }
           }
         }
+
+        if ($item['active'] && ($item['type'] == 'more')) {
+          $c = $item;
+          $n = $c['sub'][0];
+        }
+        if (!$c) $p = $item;
       }
-    $p = $c = $n = null;
-
-    for ($i = 0; $i < count ($items); $i++) {
-      if ($i - 1 >= 0) $p = $items[$i - 1];
-      if ($i + 1 < count($items)) $n = $items[$i + 1];
-      if ($items[$i]['active'] && ($c = $items[$i]))
-        break;        
-    }
-
+// echo '<meta http-equiv="Content-type" content="text/html; charset=utf-8" /><pre>';
+// var_dump ($items);
+// exit ();
+    if (!$c && !($p = $c = $n = null))
+      for ($i = 0; $i < count ($items); $i++) {
+        if ($i - 1 >= 0) $p = $items[$i - 1];
+        if ($i + 1 < count($items)) $n = $items[$i + 1];
+        if ($items[$i]['active'] && ($c = $items[$i]))
+          break;        
+      }
+// echo '<meta http-equiv="Content-type" content="text/html; charset=utf-8" /><pre>';
+// var_dump ($p, $c, $n);
+// exit ();
     return $c && ($p || $n) ? array (
         'p' => $p,
         'n' => $n,
@@ -150,5 +165,11 @@ if (!function_exists ('img_url')) {
 if (!function_exists ('oa_meta')){
   function oa_meta ($attributes = array ()) {
     return $attributes ? '<meta ' . implode (' ', array_map (function ($attribute, $value) { return $attribute . '="' . $value . '"'; }, array_keys ($attributes), $attributes)) . ' />' : '';
+  }
+}
+
+if (!function_exists ('remove_ckedit_tag')) {
+  function remove_ckedit_tag ($text) {
+    return preg_replace ("/\s+/", " ", preg_replace ("/&#?[a-z0-9]+;/i", "", str_replace ('▲', '', trim (strip_tags ($text)))));
   }
 }

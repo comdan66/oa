@@ -6,6 +6,7 @@ include_once 'functions.php';
 Class Controller {
   public $site_title = 'iOA';
   public $np = array ();
+  public $current = null;
   private $file = null;
   private $logo_string = "個人簡歷";
   private $vars = array ();
@@ -27,11 +28,13 @@ Class Controller {
     if (!$this->np = np ($this->menus, $file ? $file : $this->file))
       exit ('np error!');
 
+    $this->current = $this->np['c'];
+
     $this->add_meta (array ('http-equiv' => 'Content-Language', 'content' => 'zh-tw'))
          ->add_meta (array ('http-equiv' => 'Content-type', 'content' => 'text/html; charset=utf-8'))
          ->add_meta (array ('name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui'))
-         ->add_js ('frame.js')
-         ->add_css ('frame.css')
+         ->add_js ('_frame' . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js')
+         ->add_css ('_frame' . DIRECTORY_SEPARATOR . CONTENT_NAME . '.css')
          ->add_meta (array ('name' => 'robots', 'content' => 'index,follow'))
 
          ->add_meta (array ('name' => 'keywords', 'content' => KEYWORDS))
@@ -97,27 +100,33 @@ Class Controller {
     return $this;
   }
 
-  public function article ($setting) {
+  public function more ($setting) {
     $return = $setting ($this);
 
-    if ($tags = array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), $return['tags'], $return['keywords'])))
+    return $this->add ('h1', $this->current['text'])
+                ->_view ('more');
+  }
+  public function article ($setting) {
+
+    $return = $setting ($this);
+
+    if ($tags = array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), $this->current['tags'], $this->current['keywords'])))
       foreach ($tags as $i => $tag)
         if (!$i) $this->add_meta (array ('property' => 'article:section', 'content' => $tag))->add_meta (array ('property' => 'article:tag', 'content' => $tag));
         else $this->add_meta (array ('property' => 'article:tag', 'content' => $tag));
-           
     if ($also_list = array_filter (array ($this->np['p'], $this->np['n'])))
       foreach ($also_list as $also)
         $this->add_meta (array ('property' => 'og:see_also', 'content' => $also['url']));
 
-    return $this->set_json_ld (array (
+    $this->set_json_ld (array (
         '@context' => 'http://schema.org', '@type' => 'Article',
         'mainEntityOfPage' => array (
           '@type' => 'WebPage',
           '@id' => $this->np['c']['url']),
-        'headline' => $return['title'],
+        'headline' => $this->current['text'],
         'image' => array ('@type' => 'ImageObject', 'url' => $this->np['c']['og_img'], 'height' => 630, 'width' => 1200),
-        'datePublished' => date ('c', strtotime ($return['created_at'])),
-        'dateModified' => date ('c', strtotime ($return['updated_at'])),
+        'datePublished' => date ('c', strtotime ($this->current['created_at'])),
+        'dateModified' => date ('c', strtotime ($this->current['updated_at'])),
         'author' => array (
             '@type' => 'Person', 'name' => MY_NAME, 'url' => MY_FB_URL,
             'image' => array ('@type' => 'ImageObject', 'url' => avatar_url (MY_FB_UID, 300, 300), 'height' => 300, 'width' => 300)
@@ -126,42 +135,52 @@ Class Controller {
             '@type' => 'Organization', 'name' => $this->site_title,
             'logo' => array ('@type' => 'ImageObject', 'url' => img_url ('amp_title.png'), 'width' => 600, 'height' => 60)
           ),
-        'description' => $return['description']
-      ))->add ('title', $return['title'])
-        ->add ('h1', $return['title'])
-        ->add ('tags', $return['tags'])
-        ->add ('created_at', $return['created_at'])
-        ->add ('updated_at', $return['updated_at'])
-         
-        ->add_js ('article.js')
-        ->add_css ('article.css')
+        'description' => remove_ckedit_tag ($this->current['description'])
+      ));
 
-        ->add_meta (array ('name' => 'keywords', 'content' => implode (',', $return['keywords']) . ',' . KEYWORDS))
-        ->add_meta (array ('name' => 'description', 'content' => ''))
-        ->add_meta (array ('property' => 'og:title', 'content' => $return['title'] . ' - ' . $this->site_title))
-        ->add_meta (array ('property' => 'og:description', 'content' => $return['description']))
-        ->add_meta (array ('property' => 'og:image', 'tag' => 'larger', 'content' => $img = $this->np['c']['og_img'], 'alt' => $return['title'] . ' - ' . $this->site_title))
-        ->add_meta (array ('property' => 'og:image:type', 'tag' => 'larger', 'content' => 'image/' . pathinfo ($img, PATHINFO_EXTENSION)))
-        ->add_meta (array ('property' => 'og:image:width', 'tag' => 'larger', 'content' => '1200'))
-        ->add_meta (array ('property' => 'og:image:height', 'tag' => 'larger', 'content' => '630'))
-        ->add_meta (array ('property' => 'article:modified_time', 'content' => date ('c', strtotime ($return['created_at']))))
-        ->add_meta (array ('property' => 'article:published_time', 'content' => date ('c', strtotime ($return['updated_at']))))
-        ->_view ();
+    foreach ($return as $key => $value)
+      $this->add ($key, $value);
+
+    return $this->add ('h1', $this->current['text'])
+
+
+                ->add_meta (array ('name' => 'keywords', 'content' => implode (',', $this->current['keywords']) . ',' . KEYWORDS))
+                ->add_meta (array ('name' => 'description', 'content' => remove_ckedit_tag ($this->current['description'])))
+                ->add_meta (array ('property' => 'og:title', 'content' => $this->current['text'] . ' - ' . $this->site_title))
+                ->add_meta (array ('property' => 'og:description', 'content' => remove_ckedit_tag ($this->current['description'])))
+                ->add_meta (array ('property' => 'og:image', 'tag' => 'larger', 'content' => $img = $this->np['c']['og_img'], 'alt' => $this->current['text'] . ' - ' . $this->site_title))
+                ->add_meta (array ('property' => 'og:image:type', 'tag' => 'larger', 'content' => 'image/' . pathinfo ($img, PATHINFO_EXTENSION)))
+                ->add_meta (array ('property' => 'og:image:width', 'tag' => 'larger', 'content' => '1200'))
+                ->add_meta (array ('property' => 'og:image:height', 'tag' => 'larger', 'content' => '630'))
+                ->add_meta (array ('property' => 'article:modified_time', 'content' => date ('c', strtotime ($this->current['created_at']))))
+                ->add_meta (array ('property' => 'article:published_time', 'content' => date ('c', strtotime ($this->current['updated_at']))))
+                ->_view ('article');
   }
-  private function _view () {
+  private function _view ($type = '') {
     if (!file_exists ($view_path = VIEW . $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . EXT))
       exit ('No view file');
 
     $content = $this->load_view (VIEW . $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . EXT, array_merge ($this->vars, array (
-        '_np' => $this->np,
-        '_site_title' => $this->site_title,
+        'alt' => $this->current['text'] . '-' . $this->site_title,
+        'current' => $this->current,
+        'site_title' => $this->site_title,
       )));
 
-    if (file_exists (VIEW . $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js'))
-      $this->add_js ($this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js');
+    if ($type)
+      $content = $this->add_js ('_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js')
+                      ->add_css ('_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . '.css')
+                      ->load_view (VIEW . '_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . EXT, array_merge ($this->vars, array (
+                          'current' => $this->current,
+                          '_np' => $this->np,
+                          '_site_title' => $this->site_title,
+                          '_article' => $content
+                        )));
 
-    if (file_exists (VIEW . $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . '.css'))
-      $this->add_css ($this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . '.css');
+    if (file_exists (VIEW . ($tmp = $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js')))
+      $this->add_js ($tmp);
+
+    if (file_exists (VIEW . ($tmp = $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . '.css')))
+      $this->add_css ($tmp);
 
     $js_list = array ();
     $css_list = array ();
@@ -202,7 +221,8 @@ Class Controller {
     else $no_error = true;
     if (!$no_error) exit ('Error or No any tab_index!');
 
-    return $this->load_view (VIEW . 'frame' . EXT, array_merge ($this->vars, array (
+    return $this->load_view (VIEW . '_frame' . DIRECTORY_SEPARATOR . CONTENT_NAME . EXT, array_merge ($this->vars, array (
+        '_site_title' => $this->site_title,
         '_metas' => $this->metas,
         '_title' => (isset ($this->vars['title']) ? $this->vars['title'] . ' - ' : '') . $this->site_title,
         '_message' => isset ($this->vars['message']) ? $this->vars['message'] : '',
@@ -220,7 +240,7 @@ Class Controller {
   }
   public function view ($setting) {
     $setting ($this);
-    
+    return $this->_view ();
   }
   private function load_view ($__o__p__ = '', $__o__d__ = array ()) {
     if (!$__o__p__) return '';

@@ -4,4 +4,5 @@
  */
 
 $(function () {
+  window.$body.find ('#_c ._c figure a').imgLiquid ({verticalAlign: 'center'});
 });

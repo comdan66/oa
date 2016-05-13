@@ -450,7 +450,7 @@ body > header {
               height: 100%;
               background-color: $mainColor;
               @include border-right-radius(2px);
-              @include animation(_l_a .8s);
+              @include animation(_l_a 1s);
             }
             img {
               @include scale(1.35);
@@ -946,5 +946,6 @@ body {
 }
 @include keyframes(_l_a){
   0% { top: 50%; height: 0; }
+  50% { top: 50%; height: 0; }
   100% { top: 0; height: 100%;}
 }

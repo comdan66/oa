@@ -7,8 +7,10 @@
 
 include_once '../core/controller.php';
 
-$html = Controller::load ()->article (function ($view) {
-  return array ();
+$html = Controller::load ()->more (function ($view) {
+  
+  // $view-> array (
+  //   );
 });
 
 if (!defined ('ENV')) echo $html;
