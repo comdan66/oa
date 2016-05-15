@@ -7,4 +7,5 @@ cmd/node_modules/*
 cmd/.sass-cache/*
 cmd/npm-debug.log
 
-/assets/*
+/assets/css/*
+/assets/js/*
