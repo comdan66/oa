@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set ('Asia/Taipei');
+
 define ('KEYWORDS', '吳政賢, OA Wu, iOA');
 
 define ('EXT', '.php');
