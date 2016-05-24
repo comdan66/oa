@@ -102,6 +102,8 @@ if (!function_exists ('np')) {
     foreach ($menus as &$menu)
       foreach ($menu['items'] as &$item) {
         $item['img'] = img_url ('left', $item['file'] . '.jpg');
+        $item['cover'] = img_url ('cover', $item['file'] . '.jpg');
+
         $item['og_img'] = img_url ('og', $item['file'] . '.jpg');
         $item['url'] = base_url ($item['file'] . EXTENSION);
         $item['active'] = $item['file'] == $file;
@@ -112,6 +114,9 @@ if (!function_exists ('np')) {
           foreach ($item['sub'] as &$sub) {
 
             $sub['img'] = img_url ('left', $sub['file'] . '.jpg');
+            $sub['cover'] = img_url ('cover', $sub['file'] . '.jpg');
+            $sub['og_img'] = img_url ('og', $sub['file'] . '.jpg');
+
             $sub['url'] = base_url ($sub['file'] . EXTENSION);
         
             if (in_array ($sub['type'], array ('free', 'article'))) {
@@ -129,9 +134,8 @@ if (!function_exists ('np')) {
         }
         if (!$c) $p = $item;
       }
-// echo '<meta http-equiv="Content-type" content="text/html; charset=utf-8" /><pre>';
-// var_dump ($items);
-// exit ();
+    if ($c['file'] != $file) $c = null;
+      
     if (!$c && !($p = $c = $n = null))
       for ($i = 0; $i < count ($items); $i++) {
         if ($i - 1 >= 0) $p = $items[$i - 1];

@@ -4,7 +4,7 @@
     <article>
       <figure>
         <a href='<?php echo $article['url'];?>'>
-          <img alt='<?php echo $article['text'] . ' - ' . $_site_title;?>' src='https://scontent-tpe1-1.xx.fbcdn.net/t31.0-8/s2048x2048/13112921_1301235629889776_3834403946826605026_o.jpg' />
+          <img alt='<?php echo $article['text'] . ' - ' . $_site_title;?>' src='<?php echo $article['cover'];?>' />
         </a>
         <figcaption><?php echo $article['text'] . ' - ' . $_site_title;?></figcaption>
       </figure>

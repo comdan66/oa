@@ -103,6 +103,8 @@ Class Controller {
   public function more ($setting) {
     $return = $setting ($this);
 
+    $this->add ('title', $this->current['text']);
+
     return $this->add ('h1', $this->current['text'])
                 ->_view ('more');
   }
@@ -140,6 +142,8 @@ Class Controller {
 
     foreach ($return as $key => $value)
       $this->add ($key, $value);
+
+    $this->add ('title', $this->current['text']);
 
     return $this->add ('h1', $this->current['text'])
 

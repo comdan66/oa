@@ -1,0 +1,5 @@
+<p>看到這標題我想板上很多大大們可能會覺的市面上已經很多資源了，沒想到還有人自己刻，而我也是寫完分享給朋友，才知道已經有人做過，不過既然刻了，就分享一下！</p>
+<p>首先，目的是為了利用 GitHub 所提供的 <a href='https://pages.github.com/' target='_blank'>GitHub.io</a> 以及 Branch gh-pages 建置出靜態的網站，所以必須利用 php 去將 .md 的 Markdown 文件轉成 .html 的靜態文件，並且加入 <b>標簽</b>、<b>分頁</b> 等功能！</p>
+<p>所以說，整個系統基本上就是利用 php 指令執行 build.php 這隻檔案，編譯出這些 html 靜態頁面，而在編譯時利用 <span class='path'>lib/oa/helper.php</span> 內的 <b>load_view</b> function，可以使用 <span class='path'>templates/</span> 內的版型匯出 html，最後也會產生 sitmap、robots.txt 加強 SEO 搜尋排行曝光度。若有用過 <a href='https://codeigniter.org.tw/' target='_blank'>CodeIgniter</a> 的話，應該就會很熟悉 load_view 的用法！</p>
+<p>如果想要將他變成自己的 Blog 的話，在 GitHub 上有一個名為 <a href='https://github.com/comdan66/blog/tree/pure' target='_blank'>pure</a> 的 Branch，裡面就是一個乾淨的版本，可以直接修改 <span class='path'>config/</span> 內的設定檔，不過記得修改完後，要再用 php build.php 重新建立靜態頁，完成後也可以放置於 Dropbox 的 public 資料夾使用。</p>
+<p><iframe src="https://www.youtube.com/embed/pUBWKUEb7Do" frameborder="0" allowfullscreen></iframe><br/>▲ Youtube 教學影片</p>

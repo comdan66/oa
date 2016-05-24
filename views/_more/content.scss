@@ -8,17 +8,81 @@
 
   section {
     @include clearfix();
-    
+  
+    @media screen and (min-width: 0) and (max-width: #{520px - 1px}) {
+
+      article {
+        width: calc(100% / 1 - 10px);
+        margin: 10px 5px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        height: 200px + 180px;
+        > figure {
+          height: 160px;
+        }
+        > h2 {
+          // height: 45px;
+        }
+        > a {
+          padding-top: 180px;
+        }
+      }
+    }
+    @media screen and (min-width: 520px) {
+      article {
+        height: 240px + 180px;
+        margin: 10px;
+        > figure {
+          height: 180px;
+        }
+        > h2 {
+          height: 65px;
+        }
+        > a {
+          padding-top: 110px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 520px) and (max-width: #{800px - 1px}) {
+      article {
+        width: calc(100% / 2 - 20px);
+      }
+    }
+    @media screen and (min-width: 800px) and (max-width: #{$mediaTabletWidth - 1px}) {
+      article {
+        width: calc(100% / 3 - 20px);
+      }
+    }
+    @media screen and (min-width: $mediaTabletWidth) and (max-width: #{1111px - 1px}) {
+      article {
+        width: calc(100% / 2 - 20px);
+      }
+    }
+    @media screen and (min-width: 1111px) and (max-width: #{$mainWidth - 1px}) {
+      article {
+        width: calc(100% / 3 - 20px);
+      }
+    }
+    @media screen and (min-width: $mainWidth) {
+      article {
+        width: calc(100% / 4 - 20px);
+      }
+    }
+
     article {
       float: left;
       position: relative;
       display: inline-block;
-      width: calc(100% / 3 - 20px);
-      margin: 10px;
-      height: 240px + 180px;
       overflow: hidden;
       @include border-radius(3px);
       @include box-shadow(0 0 1px rgba(0, 0, 0, .7));
+// mediaMiniMobileWidth
+// mediaMobileWidth
+// mediaTabletWidth
 
       > figure {
         position: relative;
@@ -26,7 +90,6 @@
         margin: 0;
         padding: 0;
         width: 100%;
-        height: 180px;
 
         a {
           position: relative;
@@ -51,7 +114,6 @@
         }
       }
       > h2 {
-        height: 65px;
         display: inline-block;
         width: 100%;
         * {
@@ -75,6 +137,7 @@
         position: relative;
         z-index: 1;
         display: inline-block;
+        width: 100%;
 
         font-size: 14px;
         line-height: 23px;
@@ -92,7 +155,6 @@
         display: inline-block;
         width: 100%;
         height: 100%;
-        padding-top: 110px;
         font-size: 14px;
         z-index: 2;
         text-decoration: none;

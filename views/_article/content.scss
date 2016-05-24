@@ -206,6 +206,13 @@
       &, a {
         line-height: 1.7em;
       }
+      iframe {
+        width: 100%;
+        height: 300px;
+        @media screen and (min-width: $mediaTabletWidth) {
+          height: 500px;
+        }
+      }
       // a {
       //   @include a(1px, true);
       //   padding: 0;
