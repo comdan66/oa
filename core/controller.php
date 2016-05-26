@@ -1,4 +1,9 @@
-<?php 
+<?php
+
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
 
 include_once 'defines.php';
 include_once 'functions.php';
@@ -24,7 +29,7 @@ Class Controller {
       if (!(($trace = debug_backtrace (DEBUG_BACKTRACE_PROVIDE_OBJECT)) && isset ($trace[1]['file']) && ($this->file = pathinfo (pathinfo ($trace[1]['file'], PATHINFO_BASENAME), PATHINFO_FILENAME))))
         exit ('debug_backtrace error!');
 
-    $this->menus = include_once ('menus.php');
+    $this->menus = include ('menus.php');
     if (!$this->np = np ($this->menus, $file ? $file : $this->file))
       exit ('np error!');
 
@@ -193,10 +198,12 @@ Class Controller {
       $js_list = array_map (function ($t) { return (!preg_match ('/^https?:\/\//', $t['url']) ? '/' . VIEW_NAME : '') . $t['url']; }, $this->js_list);
       $css_list = array_map (function ($t) { return (!preg_match ('/^https?:\/\//', $t['url']) ? '/' . VIEW_NAME : '') . $t['url']; }, $this->css_list);
     } else {
+      $bom = pack ('H*','EFBBBF');
+
       $temp = '';
       foreach ($this->js_list as $js) {
         if ($js['merge']) {
-          $temp .= read_file (VIEW . $js['url']) . "\n";
+          $temp .= preg_replace("/^$bom/", '', read_file (VIEW . $js['url'])) . "\n";
         } else {
           merge_asset ($js_list, $temp, 'js');
           array_push ($js_list, $js['url']);
@@ -206,7 +213,7 @@ Class Controller {
 
       foreach ($this->css_list as $css) {
         if ($css['merge']) {
-          $temp .= read_file (VIEW . $css['url']) . "\n";
+          $temp .= preg_replace("/^$bom/", '', read_file (VIEW . $css['url'])) . "\n";
         } else {
           merge_asset ($css_list, $temp, 'css');
           array_push ($css_list, $css['url']);

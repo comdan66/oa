@@ -8,7 +8,6 @@
 include_once '../core/controller.php';
 
 $html = Controller::load ()->article (function ($view) {
-  
   return array ();
 });
 

@@ -2,7 +2,7 @@
 
 include_once '../core/controller.php';
 
-echo Controller::load ()->view (function ($view) {
+$html = Controller::load ()->view (function ($view) {
   $view->add ('xxx', 'x')
        ->add ('title', 'xxx')
        ->add ('h1', 'xx')
@@ -11,3 +11,6 @@ echo Controller::load ()->view (function ($view) {
        ->add_tab ('ta', '分頁 2')
        ->set_tab_index ('index');
 });
+
+if (!defined ('ENV')) echo $html;
+else return $html;

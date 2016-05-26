@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
 if (!function_exists ('avatar_url')) {
   function avatar_url ($fb_id, $w = 100, $h = 100) {
     $size = array ();
@@ -162,7 +167,7 @@ if (!function_exists ('base_url')) {
 if (!function_exists ('img_url')) {
   function img_url () {
     $uri = array_filter (func_get_args ());
-    return PROTOCOL . DOMAIN . '/' . 'assets/img/' . (defined('ENV') ? '' : 'ori/') . implode ('/', $uri);
+    return PROTOCOL . DOMAIN . '/' . 'assets/' . (defined('ENV') ? 'img/' : 'img_ori/') . implode ('/', $uri);
   }
 }
 
@@ -174,6 +179,6 @@ if (!function_exists ('oa_meta')){
 
 if (!function_exists ('remove_ckedit_tag')) {
   function remove_ckedit_tag ($text) {
-    return preg_replace ("/\s+/", " ", preg_replace ("/&#?[a-z0-9]+;/i", "", str_replace ('▲', '', trim (strip_tags ($text)))));
+    return preg_replace ("/ +/", " ", preg_replace ("/&#?[a-z0-9]+;/i", "", str_replace ('▲', '', trim (strip_tags ($text)))));
   }
 }

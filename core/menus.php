@@ -1,5 +1,13 @@
 <?php 
 
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+include_once 'defines.php';
+include_once 'functions.php';
+
 return array (
     array ('group' => '基本資料', 'title' => '', 'items' => array (
         array (
@@ -102,7 +110,7 @@ return array (
             'title' => 'Google Maps 大富翁',
             'keywords' => array ('Google Maps 大富翁', '大富翁', 'OA-richman', 'Google Maps Richman', 'Richman'),
             'tags' => array ('Google Maps', '大富翁'),
-            'description' => '這是一個使用 Google Maps JavaScript API 製作的大富翁遊戲！基本上是利用 Google Maps Markers 以及 Polyline 所建置出路線、節點、角色、計分、蓋房... 等設計！',
+            'description' => "這是一個使用 <a href='https://developers.google.com/maps/documentation/javascript/?hl=zh-tw' target='_blank'>Google Maps JavaScript API</a> 製作的大富翁遊戲！基本上是利用 Google Maps Markers 以及 Polyline 所建置出路線、節點、角色、計分、蓋房... 等設計！",
             'created_at' => '2015-05-04 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
@@ -163,7 +171,7 @@ return array (
                 'text' => 'Instagram Maps',
                 'keywords' => array ('instagram', 'Google Maps', 'MarkerClusterer', 'MarkerWithLabel', 'LatLngBounds', 'AJAX'),
                 'tags' => array ('instagram', 'Google Maps', 'MarkerClusterer', 'MarkerWithLabel', 'LatLngBounds'),
-                'description' => "<a href='https://www.instagram.com/' target='_blank'>Instagram</a> App 當中有一項很特別的功能是我很喜愛的，就是地圖模式的瀏覽照片，而且 Instagram 將這項功能優化得不錯，使得當地圖縮小時，密集的 Marker 會合成一個 Marker，而這樣的地圖功能在 <a href='https://developers.google.com/maps/documentation/javascript/?hl=zh-tw' target='_blank'>Google Mpas JavaScript API</a> 上可以實作得到！",
+                'description' => "<a href='https://www.instagram.com/' target='_blank'>Instagram</a> App 當中有一項很特別的功能是我很喜愛的，就是地圖模式的瀏覽照片，而且 Instagram 將這項功能優化得不錯，使得當地圖縮小時，密集的 Marker 會合成一個 Marker，而這樣的地圖功能在 <a href='https://developers.google.com/maps/documentation/javascript/?hl=zh-tw' target='_blank'>Google Maps JavaScript API</a> 上可以實作得到！",
                 'created_at' => '2015-06-29 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
@@ -395,9 +403,9 @@ return array (
                 'type' => 'article',
                 'file' => 'google-maps-menu',
                 'text' => 'Google Maps Menu',
-                'keywords' => array (),
-                'tags' => array (),
-                'description' => "",
+                'keywords' => array ('Google Maps', 'Google Maps Marker', 'Google Maps Polyline', 'Excel', '路徑'),
+                'tags' => array ('Google Maps', 'Google Maps Marker', 'Google Maps Polyline'),
+                'description' => "此作品主要在於開發出可以在 Google Maps 上面編輯基本路徑的功能，利用 <a href='https://developers.google.com/maps/documentation/javascript/?hl=zh-tw' target='_blank'>Google Maps JavaScript API</a> 設計出規劃路線的工具，並且可以匯出路間經緯度 <a href='https://products.office.com/zh-tw/excel' target='_blank'>Excel</a>。",
                 'created_at' => '2015-11-05 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
@@ -407,28 +415,30 @@ return array (
                 'resources' => array (
                     'Live Demo' => 'http://comdan66.github.io/OA-googleMapsMenu/index.html',
                     'GitHub' => 'https://github.com/comdan66/OA-googleMapsMenu',
-                    'Youtube' => '',
-                    'PTT Soft_Job' => '',
                   )
               ),
             array (
                 'type' => 'article',
                 'file' => 'taipei-towns',
                 'text' => '雙北市行政區域範圍座標',
-                'keywords' => array (),
-                'tags' => array (),
-                'description' => "",
-                'created_at' => '',
+                'keywords' => array ('Google Maps', '雙北市行政區域範圍座標', '雙北市範圍座標', '範圍座標'),
+                'tags' => array ('Google Maps'),
+                'description' => "雙北市行政區域範圍座標，藉由大家一起來維護劃分出雙北市甚至於全台灣的行政區域、鄉鎮區域的範圍座標。",
+                'created_at' => '2015-12-09 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
+                    'Live Demo' => 'http://comdan66.github.io/TaipeiTowns/index.html',
+                    'GitHub' => 'https://github.com/comdan66/TaipeiTowns',
                   ),
                 'resources' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                    'Youtube' => '',
-                    'PTT Soft_Job' => '',
+                    'Live Demo' => 'http://comdan66.github.io/TaipeiTowns/index.html',
+                    'GitHub' => 'https://github.com/comdan66/TaipeiTowns',
+                    'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/916800425023990/',
+                    'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1449695345.A.4C2.html',
+                    '臺北市鄰界圖' => 'http://data.taipei/opendata/datalist/datasetMeta?oid=6d864ede-c482-4f33-bb89-5be19dc772e1',
+                    '交通路網數值圖服務網' => 'https://gist-map.motc.gov.tw/Complex/MapTopic',
+                    'Shapefile to GeoJSON' => 'http://kuro.tw/posts/2015/05/05/note-shapefile-to-geojson',
+                    '村里界圖(WGS84經緯度)' => 'https://sheethub.com/data.gov.tw/村里界圖(WGS84經緯度)',
                   )
               ),
             )),
@@ -436,42 +446,43 @@ return array (
     array ('group' => 'php 工具、框架開發', 'title' => '', 'items' => array (
         array (
             'type' => 'article',
-            'file' => 'php-elastica-search',
-            'text' => 'ElasticaSearch',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
+            'file' => 'oaci',
+            'text' => "OACI (OA's CodeIgniter)",
+            'keywords' => array ('CodeIgniter', 'Ruby on Rails', 'RubyGems', 'Redis', 'ElasticaSearch', 'carrierwave', 'PHP ActiveRecord', 'OrmUploader', 'ImageImagickUtility', 'ImageGdUtility', 'ImageUplader', 'FileUploader'),
+            'tags' => array ('CodeIgniter', 'Redis', 'ElasticaSearch', 'PHP ActiveRecord'),
+            'description' => "這是一個以 <a href='https://ellislab.com/codeigniter/user-guide/installation/downloads.html' target='_blank'>CodeIgniter 2.1.4</a> 為基礎版本，將其新增進階功能的一套好用的 php Framework，加入了 <a href='http://www.phpactiverecord.org/' target='_blank'>PHP ActiveRecord</a> 並且與 OrmUploader 讓圖片網址處理更方便，以及多樣的前後端整併。",
+            'created_at' => '2014-11-11 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
+                'Live Demo' => 'https://www.youtube.com/watch?&v=svomGfqxZvg',
+                'GitHub' => 'https://github.com/comdan66/oaci',
               ),
             'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
+                'Live Demo' => 'https://www.youtube.com/watch?&v=svomGfqxZvg',
+                'GitHub' => 'https://github.com/comdan66/oaci',
               )
           ),
         array (
             'type' => 'article',
-            'file' => 'oaci',
-            'text' => "OACI (OA's CodeIgniter)",
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
+            'file' => 'php-elastica-search',
+            'text' => 'ElasticaSearch',
+            'keywords' => array ('php', 'ElasticaSearch'),
+            'tags' => array ('php', 'ElasticaSearch'),
+            'description' => "這是一套 <a href='https://www.elastic.co/' target='_blank'>ElasticaSearch</a> 基本 Create、Read、Update、Delete(CRUD) 的使用工具，其工具主要目的就是將資料撈出來並且物件化，架構於 <a href='https://github.com/ruflin/Elastica' target='_blank'>Elastica Library</a>，將讀取出來的資料物件化，以及包裝成方便開發的工具。",
+            'created_at' => '2015-08-26 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
+                'Live Demo' => 'http://comdan66.github.io/OA-ElasticaSearch/guide/index.html',
+                'GitHub' => 'https://github.com/comdan66/OA-ElasticaSearch',
               ),
             'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
+                'Live Demo' => 'http://comdan66.github.io/OA-ElasticaSearch/guide/index.html',
+                'GitHub' => 'https://github.com/comdan66/OA-ElasticaSearch',
+                'PTT PHP' => 'https://www.ptt.cc/bbs/PHP/M.1440735206.A.FC7.html',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1440735487.A.4C1.html',
+                'Facebook PHP 台灣' => 'https://www.facebook.com/groups/199493136812961/permalink/850647258364209/',
+                'Facebook Backend 台灣 (Backend Tw)' => 'https://www.facebook.com/groups/616369245163622/permalink/725753477558531/',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/877530442284322/',
               )
           ),
       )),
@@ -479,21 +490,24 @@ return array (
         array (
             'type' => 'article',
             'file' => 'material-web-design',
-            'text' => 'Material Design',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
+            'text' => 'Material Web Design',
+            'keywords' => array ('Material', 'Gulp', 'Compass'),
+            'tags' => array ('Material', 'Gulp', 'Compass'),
+            'description' => "這套前端工具主要是參考 <a href='https://www.google.com/design/spec/material-design/introduction.html' target='_blank'>Material UI</a> 風格設計，並且這是一個藉由 <a href='http://compass-style.org/' target='_blank'>Compass</a>、<a href='http://www.w3schools.com/html/' target='_blank'>HTML</a> 以及 <a href='https://jquery.com/' target='_blank'>jQuery</a>..等各種前端工具實作的 Material UI Design for Web，開發者可以自行使用 scss 或者 css 來做修改，目前是使用 jQuery 來達到更多 UI 回饋效果。",
+            'created_at' => '2014-12-08 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
+                'Live Demo' => 'http://comdan66.github.io/OA-material/',
+                'GitHub' => 'https://github.com/comdan66/OA-material',
               ),
             'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
+                'Live Demo' => 'http://comdan66.github.io/OA-material/',
+                'GitHub' => 'https://github.com/comdan66/OA-material',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1418573892.A.E39.html',
+                'PTT Soft_Job 2' => 'https://www.ptt.cc/bbs/Soft_Job/M.1439537367.A.64B.html',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/766343336736367/',
+                'Facebook Front-End Developers Taiwan 2' => 'https://www.facebook.com/groups/f2e.tw/permalink/871517822885584/',
+                "Tedshd's GitHub" => 'https://github.com/tedshd/material_design_for_web',
               )
           )
       )),
@@ -501,330 +515,334 @@ return array (
         array (
             'type' => 'article',
             'file' => 'catmap',
-            'text' => 'Cat Map',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
+            'text' => 'CatMap',
+            'keywords' => array ('Instagram', 'Facebook'),
+            'tags' => array ('iOS', 'Object-C', 'REMarkerClusterer', 'AFNetworking', 'AsyncImageView'),
+            'description' => "此作是我第一個比較完整的 iOS 的 App，主要利用基本的 iOS 元件製作照相上傳、分享、地圖功能，以下是我一些學習的筆記與心得！",
+            'created_at' => '2015-07-05 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
+                'Live Demo' => 'https://www.youtube.com/watch?&v=HTgfTjmS2UI',
+                'GitHub' => 'https://github.com/comdan66/catmap_ios',
+                '後端 php GitHub' => 'https://github.com/comdan66/catmap_php',
+                'Web 網站' => 'http://catmap.ioa.tw/maps',
               ),
             'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
+                'Live Demo' => 'https://www.youtube.com/watch?&v=HTgfTjmS2UI',
+                'GitHub' => 'https://github.com/comdan66/catmap_ios',
+                '後端 php GitHub' => 'https://github.com/comdan66/catmap_php',
+                'Web 網站' => 'http://catmap.ioa.tw/maps',
+                'Facebook Demo' => 'https://www.facebook.com/comdan66/videos/1115490615130946/',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/MacDev/M.1436114088.A.832.html',
               )
           ),
-        array (
-            'type' => 'article',
-            'file' => 'oa-hud',
-            'text' => 'OAHUD',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          )
+        // array (
+        //     'type' => 'article',
+        //     'file' => 'oa-hud',
+        //     'text' => 'OAHUD',
+        //     'keywords' => array (),
+        //     'tags' => array (),
+        //     'description' => "",
+        //     'created_at' => '',
+        //     'updated_at' => date ('Y-m-d H:i:s'),
+        //     'main_links' => array (
+        //         'Live Demo' => '',
+        //         'GitHub' => '',
+        //       ),
+        //     'resources' => array (
+        //         'Live Demo' => '',
+        //         'GitHub' => '',
+        //         'Youtube' => '',
+        //         'PTT Soft_Job' => '',
+        //       )
+        //   )
       )),
-    array ('group' => '接案作品', 'title' => '', 'items' => array (
-        array (
-            'type' => 'article',
-            'file' => 'zeusdesign',
-            'text' => '宙思設計',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          ),
-        array ('type' => 'more', 'text' => '更多接案作品..', 'file' => 'more-works', 'sub' => array (
-          array (
-              'type' => 'article',
-              'file' => 'hoga',
-              'text' => '嘉豪光學',
-              'keywords' => array (),
-              'tags' => array (),
-              'description' => "",
-              'created_at' => '',
-              'updated_at' => date ('Y-m-d H:i:s'),
-              'main_links' => array (
-                  'Live Demo' => '',
-                  'GitHub' => '',
-                ),
-              'resources' => array (
-                  'Live Demo' => '',
-                  'GitHub' => '',
-                  'Youtube' => '',
-                  'PTT Soft_Job' => '',
-                )
-            ),
-            array (
-                'type' => 'article',
-                'file' => 'chitorch',
-                'text' => '奇拓',
-                'keywords' => array (),
-                'tags' => array (),
-                'description' => "",
-                'created_at' => '',
-                'updated_at' => date ('Y-m-d H:i:s'),
-                'main_links' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                  ),
-                'resources' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                    'Youtube' => '',
-                    'PTT Soft_Job' => '',
-                  )
-              ),
-            array (
-                'type' => 'article',
-                'file' => 'bto',
-                'text' => '億進建築 BTO',
-                'keywords' => array (),
-                'tags' => array (),
-                'description' => "",
-                'created_at' => '',
-                'updated_at' => date ('Y-m-d H:i:s'),
-                'main_links' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                  ),
-                'resources' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                    'Youtube' => '',
-                    'PTT Soft_Job' => '',
-                  )
-              ),
-            array (
-                'type' => 'article',
-                'file' => 'harmonizedesign',
-                'text' => '寬堂空間設計',
-                'keywords' => array (),
-                'tags' => array (),
-                'description' => "",
-                'created_at' => '',
-                'updated_at' => date ('Y-m-d H:i:s'),
-                'main_links' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                  ),
-                'resources' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                    'Youtube' => '',
-                    'PTT Soft_Job' => '',
-                  )
-              ),
-            array (
-                'type' => 'article',
-                'file' => 'ofna',
-                'text' => 'OFNA',
-                'keywords' => array (),
-                'tags' => array (),
-                'description' => "",
-                'created_at' => '',
-                'updated_at' => date ('Y-m-d H:i:s'),
-                'main_links' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                  ),
-                'resources' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                    'Youtube' => '',
-                    'PTT Soft_Job' => '',
-                  )
-              ),
-            array (
-                'type' => 'article',
-                'file' => 'vg',
-                'text' => '鉅臣 VG',
-                'keywords' => array (),
-                'tags' => array (),
-                'description' => "",
-                'created_at' => '',
-                'updated_at' => date ('Y-m-d H:i:s'),
-                'main_links' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                  ),
-                'resources' => array (
-                    'Live Demo' => '',
-                    'GitHub' => '',
-                    'Youtube' => '',
-                    'PTT Soft_Job' => '',
-                  )
-              ),
-          )),
-      )),
-    array ('group' => 'Java 作品開發', 'title' => '', 'items' => array (
-        array (
-            'type' => 'article',
-            'file' => 'freshman-java-painter',
-            'text' => '大一 Java 小畫家',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          ),
-        array (
-            'type' => 'article',
-            'file' => 'sophomore-java-msn',
-            'text' => '大二 Java MSN',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          ),
-        array (
-            'type' => 'article',
-            'file' => 'sophomore-java-assembler',
-            'text' => '大二 Java Assembler',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          ),
-        array (
-            'type' => 'article',
-            'file' => 'junior-java-plurker',
-            'text' => '大三 Java Plurker',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          ),
-      )),
-    array ('group' => '其他', 'title' => '', 'items' => array (
-        array (
-            'type' => 'article',
-            'file' => 'senior-arduino-micro-lit',
-            'text' => '大四 Arduino 新銳展翅創意競賽',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          ),
-        array (
-            'type' => 'article',
-            'file' => 'stylewall',
-            'text' => '風尚專案 STYLEWALL 多語系',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          ),
-        array (
-            'type' => 'article',
-            'file' => 'c-comic-book',
-            'text' => 'C語言 漫畫下載器',
-            'keywords' => array (),
-            'tags' => array (),
-            'description' => "",
-            'created_at' => '',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-              ),
-            'resources' => array (
-                'Live Demo' => '',
-                'GitHub' => '',
-                'Youtube' => '',
-                'PTT Soft_Job' => '',
-              )
-          ),
-      ))
+    // array ('group' => '接案作品', 'title' => '', 'items' => array (
+    //     array (
+    //         'type' => 'article',
+    //         'file' => 'zeusdesign',
+    //         'text' => '宙思設計',
+    //         'keywords' => array (),
+    //         'tags' => array (),
+    //         'description' => "",
+    //         'created_at' => '',
+    //         'updated_at' => date ('Y-m-d H:i:s'),
+    //         'main_links' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //           ),
+    //         'resources' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //             'Youtube' => '',
+    //             'PTT Soft_Job' => '',
+    //           )
+    //       ),
+    //     array ('type' => 'more', 'text' => '更多接案作品..', 'file' => 'more-works', 'sub' => array (
+    //       array (
+    //           'type' => 'article',
+    //           'file' => 'hoga',
+    //           'text' => '嘉豪光學',
+    //           'keywords' => array (),
+    //           'tags' => array (),
+    //           'description' => "",
+    //           'created_at' => '',
+    //           'updated_at' => date ('Y-m-d H:i:s'),
+    //           'main_links' => array (
+    //               'Live Demo' => '',
+    //               'GitHub' => '',
+    //             ),
+    //           'resources' => array (
+    //               'Live Demo' => '',
+    //               'GitHub' => '',
+    //               'Youtube' => '',
+    //               'PTT Soft_Job' => '',
+    //             )
+    //         ),
+    //         array (
+    //             'type' => 'article',
+    //             'file' => 'chitorch',
+    //             'text' => '奇拓',
+    //             'keywords' => array (),
+    //             'tags' => array (),
+    //             'description' => "",
+    //             'created_at' => '',
+    //             'updated_at' => date ('Y-m-d H:i:s'),
+    //             'main_links' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //               ),
+    //             'resources' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //                 'Youtube' => '',
+    //                 'PTT Soft_Job' => '',
+    //               )
+    //           ),
+    //         array (
+    //             'type' => 'article',
+    //             'file' => 'bto',
+    //             'text' => '億進建築 BTO',
+    //             'keywords' => array (),
+    //             'tags' => array (),
+    //             'description' => "",
+    //             'created_at' => '',
+    //             'updated_at' => date ('Y-m-d H:i:s'),
+    //             'main_links' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //               ),
+    //             'resources' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //                 'Youtube' => '',
+    //                 'PTT Soft_Job' => '',
+    //               )
+    //           ),
+    //         array (
+    //             'type' => 'article',
+    //             'file' => 'harmonizedesign',
+    //             'text' => '寬堂空間設計',
+    //             'keywords' => array (),
+    //             'tags' => array (),
+    //             'description' => "",
+    //             'created_at' => '',
+    //             'updated_at' => date ('Y-m-d H:i:s'),
+    //             'main_links' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //               ),
+    //             'resources' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //                 'Youtube' => '',
+    //                 'PTT Soft_Job' => '',
+    //               )
+    //           ),
+    //         array (
+    //             'type' => 'article',
+    //             'file' => 'ofna',
+    //             'text' => 'OFNA',
+    //             'keywords' => array (),
+    //             'tags' => array (),
+    //             'description' => "",
+    //             'created_at' => '',
+    //             'updated_at' => date ('Y-m-d H:i:s'),
+    //             'main_links' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //               ),
+    //             'resources' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //                 'Youtube' => '',
+    //                 'PTT Soft_Job' => '',
+    //               )
+    //           ),
+    //         array (
+    //             'type' => 'article',
+    //             'file' => 'vg',
+    //             'text' => '鉅臣 VG',
+    //             'keywords' => array (),
+    //             'tags' => array (),
+    //             'description' => "",
+    //             'created_at' => '',
+    //             'updated_at' => date ('Y-m-d H:i:s'),
+    //             'main_links' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //               ),
+    //             'resources' => array (
+    //                 'Live Demo' => '',
+    //                 'GitHub' => '',
+    //                 'Youtube' => '',
+    //                 'PTT Soft_Job' => '',
+    //               )
+    //           ),
+    //       )),
+    //   )),
+    // array ('group' => 'Java 作品開發', 'title' => '', 'items' => array (
+    //     array (
+    //         'type' => 'article',
+    //         'file' => 'freshman-java-painter',
+    //         'text' => '大一 Java 小畫家',
+    //         'keywords' => array (),
+    //         'tags' => array (),
+    //         'description' => "",
+    //         'created_at' => '',
+    //         'updated_at' => date ('Y-m-d H:i:s'),
+    //         'main_links' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //           ),
+    //         'resources' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //             'Youtube' => '',
+    //             'PTT Soft_Job' => '',
+    //           )
+    //       ),
+    //     array (
+    //         'type' => 'article',
+    //         'file' => 'sophomore-java-msn',
+    //         'text' => '大二 Java MSN',
+    //         'keywords' => array (),
+    //         'tags' => array (),
+    //         'description' => "",
+    //         'created_at' => '',
+    //         'updated_at' => date ('Y-m-d H:i:s'),
+    //         'main_links' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //           ),
+    //         'resources' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //             'Youtube' => '',
+    //             'PTT Soft_Job' => '',
+    //           )
+    //       ),
+    //     array (
+    //         'type' => 'article',
+    //         'file' => 'sophomore-java-assembler',
+    //         'text' => '大二 Java Assembler',
+    //         'keywords' => array (),
+    //         'tags' => array (),
+    //         'description' => "",
+    //         'created_at' => '',
+    //         'updated_at' => date ('Y-m-d H:i:s'),
+    //         'main_links' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //           ),
+    //         'resources' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //             'Youtube' => '',
+    //             'PTT Soft_Job' => '',
+    //           )
+    //       ),
+    //     array (
+    //         'type' => 'article',
+    //         'file' => 'junior-java-plurker',
+    //         'text' => '大三 Java Plurker',
+    //         'keywords' => array (),
+    //         'tags' => array (),
+    //         'description' => "",
+    //         'created_at' => '',
+    //         'updated_at' => date ('Y-m-d H:i:s'),
+    //         'main_links' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //           ),
+    //         'resources' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //             'Youtube' => '',
+    //             'PTT Soft_Job' => '',
+    //           )
+    //       ),
+    //   )),
+    // array ('group' => '其他', 'title' => '', 'items' => array (
+    //     array (
+    //         'type' => 'article',
+    //         'file' => 'senior-arduino-micro-lit',
+    //         'text' => '大四 Arduino 新銳展翅創意競賽',
+    //         'keywords' => array (),
+    //         'tags' => array (),
+    //         'description' => "",
+    //         'created_at' => '',
+    //         'updated_at' => date ('Y-m-d H:i:s'),
+    //         'main_links' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //           ),
+    //         'resources' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //             'Youtube' => '',
+    //             'PTT Soft_Job' => '',
+    //           )
+    //       ),
+    //     array (
+    //         'type' => 'article',
+    //         'file' => 'stylewall',
+    //         'text' => '風尚專案 STYLEWALL 多語系',
+    //         'keywords' => array (),
+    //         'tags' => array (),
+    //         'description' => "",
+    //         'created_at' => '',
+    //         'updated_at' => date ('Y-m-d H:i:s'),
+    //         'main_links' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //           ),
+    //         'resources' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //             'Youtube' => '',
+    //             'PTT Soft_Job' => '',
+    //           )
+    //       ),
+    //     array (
+    //         'type' => 'article',
+    //         'file' => 'c-comic-book',
+    //         'text' => 'C語言 漫畫下載器',
+    //         'keywords' => array (),
+    //         'tags' => array (),
+    //         'description' => "",
+    //         'created_at' => '',
+    //         'updated_at' => date ('Y-m-d H:i:s'),
+    //         'main_links' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //           ),
+    //         'resources' => array (
+    //             'Live Demo' => '',
+    //             'GitHub' => '',
+    //             'Youtube' => '',
+    //             'PTT Soft_Job' => '',
+    //           )
+    //       ),
+    //   ))
   );

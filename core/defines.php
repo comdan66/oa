@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
 date_default_timezone_set ('Asia/Taipei');
 
 define ('KEYWORDS', '吳政賢, OA Wu, iOA');
@@ -9,7 +14,7 @@ define ('EXTENSION', defined('ENV') ? '.html' : '.php');
 define ('FCPATH', implode (DIRECTORY_SEPARATOR, explode (DIRECTORY_SEPARATOR, dirname (str_replace (pathinfo (__FILE__, PATHINFO_BASENAME), '', __FILE__)))) . '/');
 
 define ('PROTOCOL', "http://");
-define ('DOMAIN', defined('ENV') ? 'oa.ioa.tw' : 'oa.ioa.tw');
+if (!defined ('DOMAIN')) define ('DOMAIN', 'oa.ioa.tw');
 
 define ('VIEW_NAME', 'views' . DIRECTORY_SEPARATOR);
 define ('VIEW', FCPATH . VIEW_NAME);
