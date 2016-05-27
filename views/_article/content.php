@@ -1,6 +1,6 @@
 <figure>
   <a href='<?php echo $current['url'];?>'>
-    <img alt='<?php echo $current['text'] . ' - ' . $_site_title;?>' src='<?php echo $current['og_img'];?>' />
+    <img alt="<?php echo $current['text'] . ' - ' . $_site_title;?>" src='<?php echo $current['og_img'];?>' />
   </a>
   <figcaption><?php echo $current['text'] . ' - ' . $_site_title;?></figcaption>
 </figure>
