@@ -28,9 +28,9 @@ gulp.task ('minify', function () {
   gulp.run ('minify-html');
 });
 gulp.task ('js-uglify', function () {
-  gulp.src ('./root/js/**/*.js')
+  gulp.src ('./root/assets/js/**/*.js')
       .pipe (uglifyJS ())
-      .pipe (gulp.dest ('./root/js/'));
+      .pipe (gulp.dest ('./root/assets/js/'));
 });
 gulp.task ('minify-html', function () {
   gulp.src ('./root/*.html')
