@@ -1,4 +1,4 @@
-<p><a class='n' href='http://comdan66.github.io/OA-material/' target='_blank'><img width='800' alt='<?php echo $alt;?>' src='<?php echo img_url ('articles', 'material-web-design', '02.jpg');?>' /></a><br/>▲ 各種 Material UI 元素</p>
+<p><a class='n' href='http://comdan66.github.io/OA-material/' target='_blank'><img width='800' alt="<?php echo $alt;?>" src='<?php echo img_url ('articles', 'material-web-design', '02.jpg');?>' /></a><br/>▲ 各種 Material UI 元素</p>
 <br />
 <p>以下是基本的介紹：</p>
 <ul>

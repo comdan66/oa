@@ -2,7 +2,7 @@
 
 include_once '../core/controller.php';
 
-$html = Controller::load ()->view (function ($view) {
+$html = Controller::load ('index')->view (function ($view) {
   
   $view->add ('xxx', 'x')
        ->add ('title', 'xxx')
@@ -10,7 +10,7 @@ $html = Controller::load ()->view (function ($view) {
        // ->add_js ('article')
        ->add_tab ('index', '基本簡介')
        ->add_tab ('university', '大學時期')
-       ->set_tab_index ('index');
+       ->set_tab_index ('university');
 });
 
 if (!defined ('ENV')) echo $html;

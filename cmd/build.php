@@ -52,11 +52,66 @@ echo str_repeat ('-', 80) . "\n";
 // ========================================================================
 // ========================================================================
 
+echo ' ➜ ' . color ('列出舊 css 檔案', 'g');
+$files = array ();
+merge_array_recursive (directory_list ('root/assets/css'), $files, 'root/assets/css');
+$files = array_filter ($files, function ($file) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), array ('css')); });
+echo color ('(' . ($c = count ($files)) . ')', 'g') . ' - 100% - ' . color ('成功取得舊 css 檔案', 'C') . "\n";
+echo str_repeat ('-', 80) . "\n";
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+
+$i = 0;
+if ($files = array_filter (array_map (function ($file) use (&$i, $c) {
+  echo sprintf ("\r" . ' ➜ ' . color ('刪除舊 css 檔案(' . $c . ')', 'g') . " - % 3d%% ", ceil ((++$i * 100) / $c));
+  return !@unlink ($file);
+}, $files))) {
+  echo '- ' . color ('刪除舊檔案失敗！', 'r') . "\n";
+  echo str_repeat ('=', 80) . "\n";
+  return;
+}
+echo '- ' . color ('刪除舊檔案成功！', 'C') . "\n";
+echo str_repeat ('-', 80) . "\n";
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+
+echo ' ➜ ' . color ('列出舊 JavaScript 檔案', 'g');
+$files = array ();
+merge_array_recursive (directory_list ('root/assets/js'), $files, 'root/assets/js');
+$files = array_filter ($files, function ($file) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), array ('js')); });
+echo color ('(' . ($c = count ($files)) . ')', 'g') . ' - 100% - ' . color ('成功取得舊 JavaScript 檔案', 'C') . "\n";
+echo str_repeat ('-', 80) . "\n";
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+
+$i = 0;
+if ($files = array_filter (array_map (function ($file) use (&$i, $c) {
+  echo sprintf ("\r" . ' ➜ ' . color ('刪除舊 JavaScript 檔案(' . $c . ')', 'g') . " - % 3d%% ", ceil ((++$i * 100) / $c));
+  return !@unlink ($file);
+}, $files))) {
+  echo '- ' . color ('刪除舊檔案失敗！', 'r') . "\n";
+  echo str_repeat ('=', 80) . "\n";
+  return;
+}
+echo '- ' . color ('刪除舊檔案成功！', 'C') . "\n";
+echo str_repeat ('-', 80) . "\n";
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+
 $menus = array ();
 foreach (include ('root' . DIRECTORY_SEPARATOR . 'core' . DIRECTORY_SEPARATOR . 'menus.php') as $group)
   foreach ($group['items'] as $menu) {
     if (isset ($menu['file'])) array_push ($menus, $menu['file'] . '.php');
     if (isset ($menu['sub'])) foreach ($menu['sub'] as $sub) if (isset ($sub['file'])) array_push ($menus, $sub['file'] . '.php');
+    if (isset ($menu['tabs'])) foreach ($menu['tabs'] as $tab) array_push ($menus, $tab . '.php');
   }
 
 // ========================================================================

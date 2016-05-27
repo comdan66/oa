@@ -13,7 +13,8 @@ return array (
         array (
             'type' => 'free',
             'text' => '關於 OA',
-            'file' => 'index'
+            'file' => 'index',
+            'tabs' => array ('university')
           ),
       )),
     array ('group' => '網頁<span>全端</span>作品', 'title' => '(php、JavaScript、MySQL、CSS)', 'items' => array (

@@ -190,7 +190,7 @@ echo str_repeat ('-', 80) . "\n";
 echo ' ➜ ' . color ('取出 Image 檔案', 'g');
 $files = array ();
 merge_array_recursive (directory_map ('../assets/img'), $files, '../assets/img');
-$files = array_filter ($files, function ($file) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), array ('png', 'jpg', 'jpeg', 'gif')); });
+$files = array_filter ($files, function ($file) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), array ('png', 'jpg', 'jpeg', 'gif', 'svg')); });
 $files = array_map (function ($file) { return array ('path' => $file, 'uri' => preg_replace ('/^(\.\.\/)/', '', $file)); }, $files);
 echo color ('(' . count ($files) . ')', 'g');
 echo ' - 100% - ' . color ('取出 Image 檔案成功！', 'C') . "\n";
