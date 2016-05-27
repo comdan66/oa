@@ -31,7 +31,7 @@
             <a class='fi-a-l' href='<?php echo $back_href;?>'></a>
     <?php } ?>
           <a class='fi-m'></a>
-          <h1><?php echo $h1;?></h1>
+          <h1><?php echo isset ($h1) ? $h1 : '';?></h1>
         </div>
 
         <a></a>
@@ -67,18 +67,18 @@
           } ?>
         </aside>
         <div>
+    <?php if ($_tabs) { ?>
+            <div class='_t'>
+              <a></a>
+              <div><div>
+          <?php foreach ($_tabs as $tab) { ?>
+                  <a<?php echo $tab['active'] ? ' class="a"' : '';?> href='<?php echo $tab['href'];?>'><?php echo $tab['text'];?></a>
+          <?php } ?>
+            </div></div>
+              <a></a>
+            </div>
+    <?php } ?>
           <div class='_c'>
-      <?php if ($_tabs) { ?>
-              <div class='_t'>
-                <a></a>
-                <div><div>
-            <?php foreach ($_tabs as $tab) { ?>
-                    <a<?php echo $tab['active'] ? ' class="a"' : '';?> href='<?php echo $tab['href'];?>'><?php echo $tab['text'];?></a>
-            <?php } ?>
-              </div></div>
-                <a></a>
-              </div>
-      <?php } ?>
             <?php echo $_content;?>
           </div>
     <?php if ($_message) { ?>
@@ -97,7 +97,6 @@
       </div>
       <div></div>
     </footer>
-
 
     <div id='fb-root'></div>
 

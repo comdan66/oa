@@ -1,0 +1,354 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+@import "_oa";
+#_c > div > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+._c {
+  display: inline-block;
+  @media screen and (min-width: 540px) {
+  }
+  @media screen and (min-width: 0px) and (max-width: #{540px - 1px}) {
+    padding-top: 10px;
+  }
+  @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+    padding-top: 20px;
+  }
+  @media screen and (min-width: $mediaTabletWidth) {
+  }
+  > * {
+    @media screen and (min-width: 0px) and (max-width: #{630px - 1px}) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media screen and (min-width: 630px) and (max-width: #{835px - 1px}) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media screen and (min-width: 835px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+.profile1 {
+  @include clearfix();
+  > section {
+  }
+  > section:first-child {
+    // border: 1px solid rgba(255, 0, 0, .3);
+    @media screen and (min-width: $mediaMobileWidth) {
+      float: left;
+      width: 280px;
+    }
+    @media screen and (min-width: 540px) {
+      text-align: left;
+      // margin: 20px 30px;
+    }
+    @media screen and (min-width: 540px) and (max-width: #{$mediaMobileWidth - 1px}) {
+      @include split-left(180px, 'figure', 'ul');
+    }
+    figure {
+      position: relative;
+      display: inline-block;
+      width: 180px;
+      height: 180px;
+      
+      margin: 0;
+      padding: 0;
+      @media screen and (min-width: 540px) {
+        margin: 0 auto;
+      }
+      a {
+        cursor: pointer;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        @include border-radius(3px);
+        @include box-shadow(0 0 5px rgba(0, 0, 0, .200));
+        @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+          @include border-radius(50%);
+        }
+      }
+      figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        @include opacity(0);
+      }
+    }
+    ul {
+      text-align: left;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      @media screen and (min-width: 0) and (max-width: #{540px - 1px}) {
+        display: inline-block;
+      }
+      @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+        padding-left: 40px;
+        margin-top: 30px;
+      }
+      li {
+        @include clearfix();
+        
+        span, a {
+          float: left;
+          font-size: 14px;
+          &:nth-child(-n+2) {
+            color: rgba(95, 95, 95, 1.00);
+          }
+        }
+        a {
+          @include a(1px, false);
+        }
+        + li {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  > section:last-child {
+
+    margin-top: 60px;
+    @media screen and (min-width: 540px) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 0) and (max-width: #{540px - 1px}) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 540px) and (max-width: #{$mediaMobileWidth - 1px}) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.profile2 {
+  margin-top: 50px;
+  text-align: left;
+  &, * {
+    color: rgba(85, 85, 85, 1);
+    font-family: Roboto,'Helvetica Neue',Helvetica,Arial,'Hiragino Maru Gothic ProN','メイリオ','ヒラギノ丸ゴ ProN W4','微軟正黑體',Meiryo,'Droid Sans';
+    font-size: 16px;
+  }
+  header {
+    h2 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    p {
+      margin-top: 0;
+      color: rgba(145, 145, 145, 1);
+      font-size: 13px;
+    }
+  }
+}
+
+section.a {
+  text-align: left;
+  word-wrap: break-word; 
+  word-break: break-word;
+  &, * {
+    font-family: Roboto,'Helvetica Neue',Helvetica,Arial,'Hiragino Maru Gothic ProN','メイリオ','ヒラギノ丸ゴ ProN W4','微軟正黑體',Meiryo,'Droid Sans';
+  }
+  > b {
+    display: inline-block;
+    padding: 0 3px;
+    line-height: 1.6em;
+  }
+  .path {
+    display: inline-block;
+    padding: 0 3px;
+    background-color: rgba(253, 234, 179, .30);
+    border: 1px solid rgba(253, 234, 179, 1);
+    @include border-radius(2px);
+  }
+  
+  > p {
+    font-size: 16px;
+    margin: 5px 0;
+    margin: 20px auto;
+    color: rgba(85, 85, 85, 1);
+    @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+      text-indent: 32px;
+      padding: 0 10px;
+    }
+    > * {
+      text-indent: 0;
+    }
+    &, a {
+      line-height: 1.7em;
+    }
+    > a {
+      position: relative;
+      padding: 0;
+      padding-bottom: 0;
+      border-bottom-color: rgba(42, 90, 149, 0.25);
+      display: inline-block;
+      text-decoration: none;
+      font-weight: normal;
+      color: rgba(105, 139, 180, 1.00);
+      padding: 0 1px;
+      @include transition(all .3s);
+      &:not(.n) {
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 3px;
+          left: 0;
+
+          display: inline-block;
+          width: 100%;
+          height: 1px;
+          background-color: rgba(149, 173, 202, 1.00);
+        }
+      }
+
+      &:hover {
+        color: rgba(12, 65, 109, .85);
+        &:before {
+          background-color: rgba(105, 139, 180, 1.00);
+        }
+      }
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      @media screen and (min-width: $mediaTabletWidth) {
+        height: 500px;
+      }
+    }
+    
+    img {
+
+      max-width: 100% !important;
+      @include border-radius(2px);
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  }
+  blockquote {
+    margin: 0;
+    padding: 15px;
+    padding-left: 25px;
+    position: relative;
+    color: rgba(80, 80, 80, 1);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 10px;
+      display: inline-block;
+      width: 5px;
+      height: calc(100% - 7px * 2);
+      background-color: rgba(231, 231, 231, 1.00);
+    }
+  }
+  > ul {
+    margin: 15.5px auto;
+    margin-bottom: 20px;
+    padding-left: 30px;
+
+    li {
+      color: rgba(100, 100, 100, 1);
+      font-size: 15px;
+      line-height: 1.7em;
+      b {
+        display: inline-block;
+      }
+      &, a {
+        line-height: 1.7em;
+      }
+
+      + li {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.profile1, .profile2 {
+  // border: 1px solid rgba(255, 0, 0, .3);
+  // background-color: rgba(0, 0, 255, 0.2);
+}
+.pics, .pictures {
+  // padding: 0 30px;
+  @media screen and (min-width: 0px) and (max-width: #{630px - 1px}) {
+    padding: 0;
+  }
+  @media screen and (min-width: 630px) and (max-width: #{835px - 1px}) {
+    padding: 0 10px;
+  }
+  @media screen and (min-width: 835px) {
+    padding: 0 30px;
+  }
+}
+.pictures {
+  @include clearfix();
+  
+  &.n4 {
+    @media screen and (min-width: 0) and (max-width: #{$mediaMiniMobileWidth - 1px}) { padding: 0 5px; figure { width: calc(100% / 1 - 5px * 2); margin: 5px; height: 200px; figcaption { font-size: 14px; } } }
+    @media screen and (min-width: $mediaMiniMobileWidth) and (max-width: #{460px - 1px}) { padding: 0 5px; figure { width: calc(100% / 1 - 5px * 2); margin: 5px; height: 250px; figcaption { font-size: 16px; } } }
+    @media screen and (min-width: 460px) and (max-width: #{820px - 1px}) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 200px; figcaption { font-size: 18px; } } }
+    @media screen and (min-width: 820px) and (max-width: #{$mediaTabletWidth - 1px}) { padding: 0 10px; figure { width: calc(100% / 4 - 10px * 2); margin: 10px; height: 200px; figcaption { font-size: 15px; } } }
+    @media screen and (min-width: $mediaTabletWidth) and (max-width: #{1100px - 1px}) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 240px; figcaption { font-size: 18px; } } }
+    @media screen and (min-width: 1100px) and (max-width: #{$mainWidth - 1px}) { padding: 0 10px; figure { width: calc(100% / 4 - 10px * 2); margin: 10px; height: 200px; } figcaption { font-size: 18px; } }
+    @media screen and (min-width: $mainWidth) { padding: 0 10px; figure { width: calc(100% / 4 - 10px * 2); margin: 10px; height: 200px; } figcaption { font-size: 18px; } }
+  }
+  &.n3 {
+    @media screen and (min-width: 0) and (max-width: #{$mediaMiniMobileWidth - 1px}) { padding: 0 5px; figure { width: calc(100% / 1 - 5px * 2); margin: 5px; height: 200px; figcaption { font-size: 14px; } } }
+    @media screen and (min-width: $mediaMiniMobileWidth) and (max-width: #{460px - 1px}) { padding: 0 5px; figure { width: calc(100% / 2 - 5px * 2); margin: 5px; height: 250px; &:first-child { height: (250px + 5px) * 2; } figcaption { font-size: 16px; } } }
+    @media screen and (min-width: 460px) and (max-width: #{820px - 1px}) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 200px; &:first-child { height: (200px + 10px) * 2; } figcaption { font-size: 18px; } } }
+    @media screen and (min-width: 820px) and (max-width: #{$mediaTabletWidth - 1px}) { padding: 0 10px; figure { width: calc(100% / 3 - 10px * 2); margin: 10px; height: 200px; figcaption { font-size: 15px; } } }
+    @media screen and (min-width: $mediaTabletWidth) and (max-width: #{1100px - 1px}) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 240px; &:first-child { height: (240px + 10px) * 2; } figcaption { font-size: 18px; } } }
+    @media screen and (min-width: 1100px) { padding: 0 10px; figure { width: calc(100% / 3 - 10px * 2); margin: 10px; height: 230px; } figcaption { font-size: 18px; } }
+  }
+  &.n2 {
+    @media screen and (min-width: 0) and (max-width: #{$mediaMiniMobileWidth - 1px}) { padding: 0 5px; figure { width: calc(100% / 1 - 5px * 2); margin: 5px; height: 200px; figcaption { font-size: 14px; } } }
+    @media screen and (min-width: $mediaMiniMobileWidth) and (max-width: #{460px - 1px}) { padding: 0 5px; figure { width: calc(100% / 2 - 5px * 2); margin: 5px; height: 180px; figcaption { font-size: 15px; } } }
+    @media screen and (min-width: 460px) and (max-width: #{630px - 1px}) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 180px; figcaption { font-size: 15px; } } }
+    @media screen and (min-width: 630px) and (max-width: #{820px - 1px}) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 250px; figcaption { font-size: 15px; } } }
+    @media screen and (min-width: 820px) and (max-width: #{$mediaTabletWidth - 1px}) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 300px; figcaption { font-size: 15px; } } }
+    @media screen and (min-width: $mediaTabletWidth) and (max-width: #{1100px - 1px}) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 250px; } figcaption { font-size: 18px; } }
+    @media screen and (min-width: 1100px) { padding: 0 10px; figure { width: calc(100% / 2 - 10px * 2); margin: 10px; height: 300px; } figcaption { font-size: 18px; } }
+  }
+  figure {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    @include box-shadow(0 0 12px 1px rgba(0, 0, 0, .1), 0 0 1px rgba(0, 0, 0, .2));
+    @include border-radius(2px);
+    overflow: hidden;
+    cursor: pointer;
+
+
+    img {
+      width: 100%;
+    }
+    figcaption {
+      font-size: 18px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      color: rgba(255, 255, 255, 1);
+      padding: 10px;
+      @include text-shadow(0 0 5px rgba(0, 0, 0, .200));
+      background-color: rgba(0, 0, 0, 0.5);
+      @include overflow-docx3();
+    }
+  }
+}

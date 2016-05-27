@@ -43,7 +43,7 @@ if (!function_exists ('write_file')) {
 }
 if (!function_exists ('write_asset')) {
   function write_asset ($temp, $type) {
-    write_file ($path = (ASSET . $type . DIRECTORY_SEPARATOR . ($name = md5 ($temp) . '.' . $type)), $temp);
+    write_file ($path = (ASSET . $type . DIRECTORY_SEPARATOR . ($name = md5 ($temp) . '.' . $type)), "\xEF\xBB\xBF". $temp);
 
     $oldmask = umask (0);
     @mkdir (dirname ($path), 0777, true);
