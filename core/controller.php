@@ -114,6 +114,14 @@ Class Controller {
                 ->_view ('more');
   }
   public function article ($setting) {
+    $return = $setting ($this);
+
+    $this->add ('title', $this->current['text']);
+
+    return $this->add ('h1', $this->current['text'])
+                ->_view ('article');
+  }
+  public function demo ($setting) {
 
     $return = $setting ($this);
 
@@ -152,7 +160,6 @@ Class Controller {
 
     return $this->add ('h1', $this->current['text'])
 
-
                 ->add_meta (array ('name' => 'keywords', 'content' => implode (',', $this->current['keywords']) . ',' . KEYWORDS))
                 ->add_meta (array ('name' => 'description', 'content' => remove_ckedit_tag ($this->current['description'])))
                 ->add_meta (array ('property' => 'og:title', 'content' => $this->current['text'] . ' - ' . $this->site_title))
@@ -163,7 +170,7 @@ Class Controller {
                 ->add_meta (array ('property' => 'og:image:height', 'tag' => 'larger', 'content' => '630'))
                 ->add_meta (array ('property' => 'article:modified_time', 'content' => date ('c', strtotime ($this->current['created_at']))))
                 ->add_meta (array ('property' => 'article:published_time', 'content' => date ('c', strtotime ($this->current['updated_at']))))
-                ->_view ('article');
+                ->_view ('demo');
   }
   private function _view ($type = '') {
     if (!file_exists ($view_path = VIEW . $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . EXT))
@@ -182,7 +189,7 @@ Class Controller {
                           'current' => $this->current,
                           '_np' => $this->np,
                           '_site_title' => $this->site_title,
-                          '_article' => $content
+                          '_view' => $content
                         )));
 
     if (file_exists (VIEW . ($tmp = $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js')))

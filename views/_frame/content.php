@@ -58,7 +58,7 @@
             <h4<?php echo isset ($menus['title']) && $menus['title'] ? ' title="' . $menus['title'] . '"': '';?>><?php echo $menus['group'];?></h4>
             <div>
         <?php foreach ($menus['items'] as $item) {
-                if (in_array ($item['type'], array ('article', 'more', 'free'))) { ?>
+                if (in_array ($item['type'], array ('demo', 'more', 'article'))) { ?>
                   <a<?php echo $item['active'] ? ' class="a"': '';?> href="<?php echo $item['url'];?>"><img src='<?php echo $item['img'];?>'><span><?php echo $item['text'];?></span></a>
           <?php }
               } ?>

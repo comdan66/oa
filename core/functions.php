@@ -113,7 +113,7 @@ if (!function_exists ('np')) {
         $item['url'] = base_url ($item['file'] . EXTENSION);
         $item['active'] = $item['file'] == $file;
 
-        if (in_array ($item['type'], array ('free', 'article'))) {
+        if (in_array ($item['type'], array ('article', 'demo'))) {
           array_push ($items, $item);
         } else if ($item['type'] == 'more') {
           foreach ($item['sub'] as &$sub) {
@@ -124,7 +124,7 @@ if (!function_exists ('np')) {
 
             $sub['url'] = base_url ($sub['file'] . EXTENSION);
         
-            if (in_array ($sub['type'], array ('free', 'article'))) {
+            if (in_array ($sub['type'], array ('article', 'demo'))) {
               if ($sub['active'] = $sub['file'] == $file)
                 $item['active'] = true;
 

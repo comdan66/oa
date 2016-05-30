@@ -513,11 +513,12 @@ $arrowWidth: 30px;
   }
 
   @media screen and (min-width: $mainWidth) {
-    left: calc(((100% - #{$mainWidth}) / 2) + #{$wrapperLeftWidth});
+    left: calc(((100% - #{$mainWidth}) / 2) + #{$wrapperLeftWidth + 1px});
     width: $mainWidth - $wrapperLeftWidth - 1px * 2;
   }
 
   @include box-shadow(0 0 1px rgba(100, 100, 100, .75));
+  // border-bottom: 1px solid rgba(100, 100, 100, .25);
   @include clearfix();
   @include transition(all .3s);
 

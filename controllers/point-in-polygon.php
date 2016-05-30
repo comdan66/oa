@@ -7,7 +7,7 @@
 
 include_once '../core/controller.php';
 
-$html = Controller::load ()->article (function ($view) {
+$html = Controller::load ()->demo (function ($view) {
   return array ();
 });
 

@@ -11,7 +11,7 @@ include_once 'functions.php';
 return array (
     array ('group' => '基本資料', 'title' => '', 'items' => array (
         array (
-            'type' => 'free',
+            'type' => 'article',
             'text' => '關於 OA',
             'file' => 'index',
             'tabs' => array ('university')
@@ -19,7 +19,7 @@ return array (
       )),
     array ('group' => '網頁<span>全端</span>作品', 'title' => '(php、JavaScript、MySQL、CSS)', 'items' => array (
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'mazu',
             'text' => '北港迎媽祖',
             'keywords' => array ('北港迎媽祖'),
@@ -40,7 +40,7 @@ return array (
                )
           ),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'theta-s-360',
             'text' => '全景相簿 Theta S 360',
             'keywords' => array ('Theta S 360', '全景', 'Stereographics Projection', 'Ricoh Theta s', 'Ricoh'),
@@ -63,7 +63,7 @@ return array (
               )
           ),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'weather-maps',
             'text' => 'Weather Maps 天氣地圖',
             'keywords' => array ('Weather Maps', '中央氣象局', 'Taiwan Weather', 'Weather', 'Google Maps'),
@@ -85,7 +85,7 @@ return array (
               )
           ),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'point-in-polygon',
             'text' => 'Point in Polygon 範圍內取點',
             'keywords' => array ('point-in-polygon', '範圍內取點'),
@@ -105,7 +105,7 @@ return array (
               )
           ),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'google-maps-richman',
             'text' => 'Google Maps 大富翁',
             'title' => 'Google Maps 大富翁',
@@ -126,7 +126,7 @@ return array (
               )
           ),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'javascript-maze-game',
             'text' => 'JavaScript 迷宮遊戲',
             'title' => 'JavaScript 迷宮遊戲',
@@ -147,7 +147,7 @@ return array (
 
         array ('type' => 'more', 'text' => '更多全端作品..', 'file' => 'more-full-stack', 'sub' => array (
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'github-blog',
                 'text' => 'GitHub Blog',
                 'keywords' => array ('GitHub.io', 'php', 'Markdown'),
@@ -167,7 +167,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'instagram-maps',
                 'text' => 'Instagram Maps',
                 'keywords' => array ('instagram', 'Google Maps', 'MarkerClusterer', 'MarkerWithLabel', 'LatLngBounds', 'AJAX'),
@@ -187,7 +187,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'baishatun-gps',
                 'text' => '白沙屯媽祖 GPS',
                 'keywords' => array ('Google Maps', '白沙屯 GPS', '白沙屯媽祖 GPS', 'Heatmaps', 'AWS' , 'AWS EC2', 'AWS S3', 'GitHub.io'),
@@ -203,7 +203,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'haotien-gps',
                 'text' => '大庄媽 GPS',
                 'keywords' => array ('Google Maps', '大庄媽 GPS', '大庄媽', '台中浩天宮大庄媽', '浩天宮'),
@@ -221,7 +221,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'liu-fang-mazu-gps',
                 'text' => '六房媽祖 GPS',
                 'keywords' => array ('Google Maps', '六房媽 GPS', '六房媽'),
@@ -239,7 +239,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'senior-php-album',
                 'text' => '大四 php 相簿',
                 'keywords' => array ('php album', 'php', 'album'),
@@ -255,7 +255,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'senior-box-blog',
                 'text' => '大四 php 空間、部落格',
                 'keywords' => array ('CKEditor', '部落格', 'blog', 'Facebook', 'wretch', '無名小站', '社群'),
@@ -271,7 +271,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'flickr-api-search',
                 'text' => 'Flickr API 搜尋器',
                 'keywords' => array ('Masonry', 'Flickr API'),
@@ -289,7 +289,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'youtube-api-player',
                 'text' => 'Youtube 播放器',
                 'keywords' => array ('Youtube API', 'Local Storage'),
@@ -309,7 +309,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'senior-jquery-pokemon-game',
                 'text' => '大四 jQuery Game',
                 'keywords' => array ('jQuery', 'Nintendo', 'Pokémon'),
@@ -329,7 +329,7 @@ return array (
       )),
     array ('group' => 'JavaScript 套件、工具開發', 'title' => '', 'items' => array (
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'mobile-scroll-view',
             'text' => 'Mobile Scroll View',
             'keywords' => array ('scroll-view', 'scroll view', 'imgLiquid', 'jQuery', 'jQuery-UI', 'jQuery.UI.Touch-Punch', 'jQuery Extend'),
@@ -348,7 +348,7 @@ return array (
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/960507037319995/',
               )),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'img-liquid',
             'text' => "OA's imgLiquid",
             'keywords' => array ('imgLiquid', 'position', 'absolute', 'jQuery', 'jQuery Extend'),
@@ -365,7 +365,7 @@ return array (
                 'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
               )),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'jquery-scroll-slider-view',
             'text' => "jQuery scrollSliderView",
             'keywords' => array ('scrollSliderView', 'Scroll', 'SliderView', 'View', 'jQuery', 'jQuery Extend'),
@@ -382,7 +382,7 @@ return array (
                 'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
               )),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'jquery-navbar',
             'text' => "jQuery navbar",
             'keywords' => array ('navbar', 'jQuery', 'jQuery Extend'),
@@ -401,7 +401,7 @@ return array (
         
         array ('type' => 'more', 'text' => '更多 JavaScript 作品..', 'file' => 'more-javascript', 'sub' => array (
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'google-maps-menu',
                 'text' => 'Google Maps Menu',
                 'keywords' => array ('Google Maps', 'Google Maps Marker', 'Google Maps Polyline', 'Excel', '路徑'),
@@ -419,7 +419,7 @@ return array (
                   )
               ),
             array (
-                'type' => 'article',
+                'type' => 'demo',
                 'file' => 'taipei-towns',
                 'text' => '雙北市行政區域範圍座標',
                 'keywords' => array ('Google Maps', '雙北市行政區域範圍座標', '雙北市範圍座標', '範圍座標'),
@@ -446,7 +446,7 @@ return array (
       )),
     array ('group' => 'php 工具、框架開發', 'title' => '', 'items' => array (
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'oaci',
             'text' => "OACI (OA's CodeIgniter)",
             'keywords' => array ('CodeIgniter', 'Ruby on Rails', 'RubyGems', 'Redis', 'ElasticaSearch', 'carrierwave', 'PHP ActiveRecord', 'OrmUploader', 'ImageImagickUtility', 'ImageGdUtility', 'ImageUplader', 'FileUploader'),
@@ -464,7 +464,7 @@ return array (
               )
           ),
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'php-elastica-search',
             'text' => 'ElasticaSearch',
             'keywords' => array ('php', 'ElasticaSearch'),
@@ -489,7 +489,7 @@ return array (
       )),
     array ('group' => 'css 框架開發', 'title' => '', 'items' => array (
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'material-web-design',
             'text' => 'Material Web Design',
             'keywords' => array ('Material', 'Gulp', 'Compass'),
@@ -514,7 +514,7 @@ return array (
       )),
     array ('group' => 'iOS 工具、app 開發', 'title' => '', 'items' => array (
         array (
-            'type' => 'article',
+            'type' => 'demo',
             'file' => 'catmap',
             'text' => 'CatMap',
             'keywords' => array ('Instagram', 'Facebook'),
@@ -538,7 +538,7 @@ return array (
               )
           ),
         // array (
-        //     'type' => 'article',
+        //     'type' => 'demo',
         //     'file' => 'oa-hud',
         //     'text' => 'OAHUD',
         //     'keywords' => array (),
@@ -560,7 +560,7 @@ return array (
       )),
     // array ('group' => '接案作品', 'title' => '', 'items' => array (
     //     array (
-    //         'type' => 'article',
+    //         'type' => 'demo',
     //         'file' => 'zeusdesign',
     //         'text' => '宙思設計',
     //         'keywords' => array (),
@@ -581,7 +581,7 @@ return array (
     //       ),
     //     array ('type' => 'more', 'text' => '更多接案作品..', 'file' => 'more-works', 'sub' => array (
     //       array (
-    //           'type' => 'article',
+    //           'type' => 'demo',
     //           'file' => 'hoga',
     //           'text' => '嘉豪光學',
     //           'keywords' => array (),
@@ -601,7 +601,7 @@ return array (
     //             )
     //         ),
     //         array (
-    //             'type' => 'article',
+    //             'type' => 'demo',
     //             'file' => 'chitorch',
     //             'text' => '奇拓',
     //             'keywords' => array (),
@@ -621,7 +621,7 @@ return array (
     //               )
     //           ),
     //         array (
-    //             'type' => 'article',
+    //             'type' => 'demo',
     //             'file' => 'bto',
     //             'text' => '億進建築 BTO',
     //             'keywords' => array (),
@@ -641,7 +641,7 @@ return array (
     //               )
     //           ),
     //         array (
-    //             'type' => 'article',
+    //             'type' => 'demo',
     //             'file' => 'harmonizedesign',
     //             'text' => '寬堂空間設計',
     //             'keywords' => array (),
@@ -661,7 +661,7 @@ return array (
     //               )
     //           ),
     //         array (
-    //             'type' => 'article',
+    //             'type' => 'demo',
     //             'file' => 'ofna',
     //             'text' => 'OFNA',
     //             'keywords' => array (),
@@ -681,7 +681,7 @@ return array (
     //               )
     //           ),
     //         array (
-    //             'type' => 'article',
+    //             'type' => 'demo',
     //             'file' => 'vg',
     //             'text' => '鉅臣 VG',
     //             'keywords' => array (),
@@ -704,7 +704,7 @@ return array (
     //   )),
     // array ('group' => 'Java 作品開發', 'title' => '', 'items' => array (
     //     array (
-    //         'type' => 'article',
+    //         'type' => 'demo',
     //         'file' => 'freshman-java-painter',
     //         'text' => '大一 Java 小畫家',
     //         'keywords' => array (),
@@ -724,7 +724,7 @@ return array (
     //           )
     //       ),
     //     array (
-    //         'type' => 'article',
+    //         'type' => 'demo',
     //         'file' => 'sophomore-java-msn',
     //         'text' => '大二 Java MSN',
     //         'keywords' => array (),
@@ -744,7 +744,7 @@ return array (
     //           )
     //       ),
     //     array (
-    //         'type' => 'article',
+    //         'type' => 'demo',
     //         'file' => 'sophomore-java-assembler',
     //         'text' => '大二 Java Assembler',
     //         'keywords' => array (),
@@ -764,7 +764,7 @@ return array (
     //           )
     //       ),
     //     array (
-    //         'type' => 'article',
+    //         'type' => 'demo',
     //         'file' => 'junior-java-plurker',
     //         'text' => '大三 Java Plurker',
     //         'keywords' => array (),
@@ -786,7 +786,7 @@ return array (
     //   )),
     // array ('group' => '其他', 'title' => '', 'items' => array (
     //     array (
-    //         'type' => 'article',
+    //         'type' => 'demo',
     //         'file' => 'senior-arduino-micro-lit',
     //         'text' => '大四 Arduino 新銳展翅創意競賽',
     //         'keywords' => array (),
@@ -806,7 +806,7 @@ return array (
     //           )
     //       ),
     //     array (
-    //         'type' => 'article',
+    //         'type' => 'demo',
     //         'file' => 'stylewall',
     //         'text' => '風尚專案 STYLEWALL 多語系',
     //         'keywords' => array (),
@@ -826,7 +826,7 @@ return array (
     //           )
     //       ),
     //     array (
-    //         'type' => 'article',
+    //         'type' => 'demo',
     //         'file' => 'c-comic-book',
     //         'text' => 'C語言 漫畫下載器',
     //         'keywords' => array (),

@@ -2,7 +2,7 @@
 
 include_once '../core/controller.php';
 
-$html = Controller::load ('index')->view (function ($view) {
+$html = Controller::load ('index')->article (function ($view) {
   
   $view->add ('xxx', 'x')
        ->add ('title', 'xxx')
