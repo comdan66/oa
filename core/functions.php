@@ -98,6 +98,19 @@ if (!function_exists ('merge_asset')) {
 //       else array_push ($a, ($k ? $k . DIRECTORY_SEPARATOR : '') . $file);
 //   }
 // }
+if (!function_exists ('oasort')) {
+  function oasort ($n, $b = true) {
+    if ($n == 0) return array ();
+    if ($n == 1) return array (1);
+    if ($n == 2) return array (2);
+    if ($n == 3) return array (3);
+    if (!($n % 3) && ($n / 3) < 4) return array_merge (array (3), oasort ($n - 3));
+    $s = $b ? 2 : 3;
+    $v = $n - $s;
+    return array_merge (array ($s), oasort ($v, !$b));
+  }
+}
+
 
 if (!function_exists ('np')) {
   function np (&$menus, $file) {
@@ -112,6 +125,11 @@ if (!function_exists ('np')) {
         $item['og_img'] = img_url ('og', $item['file'] . '.jpg');
         $item['url'] = base_url ($item['file'] . EXTENSION);
         $item['active'] = $item['file'] == $file;
+        if (!isset ($item['pictures'])) $item['pictures'] = array ();
+
+        $oasort = array_filter (oasort (count ($item['pictures'])));
+        $b = array (); foreach ($oasort as $c) { $d = array (); for ($i = 0; $i < $c; $i++) array_push ($d, $item['pictures'][$i]); array_push ($b, $d); }
+        $item['pictures'] = $b;
 
         if (in_array ($item['type'], array ('article', 'demo'))) {
           array_push ($items, $item);
@@ -121,9 +139,13 @@ if (!function_exists ('np')) {
             $sub['img'] = img_url ('left', $sub['file'] . '.jpg');
             $sub['cover'] = img_url ('cover', $sub['file'] . '.jpg');
             $sub['og_img'] = img_url ('og', $sub['file'] . '.jpg');
-
             $sub['url'] = base_url ($sub['file'] . EXTENSION);
-        
+            if (!isset ($sub['pictures'])) $sub['pictures'] = array ();
+    
+            $oasort = array_filter (oasort (count ($sub['pictures'])));
+            $b = array (); foreach ($oasort as $c) { $d = array (); for ($i = 0; $i < $c; $i++) array_push ($d, $sub['pictures'][$i]); array_push ($b, $d); }
+            $sub['pictures'] = $b;
+
             if (in_array ($sub['type'], array ('article', 'demo'))) {
               if ($sub['active'] = $sub['file'] == $file)
                 $item['active'] = true;

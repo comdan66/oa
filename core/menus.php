@@ -28,16 +28,23 @@ return array (
             'created_at' => '2016-04-25 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                 'Live Demo' => 'http://mazu.ioa.tw/',
-                 'GitHub' => 'https://github.com/comdan66/mazu'
-               ),
+                'Live Demo' => 'http://mazu.ioa.tw/',
+                'GitHub' => 'https://github.com/comdan66/mazu'
+              ),
             'resources' => array (
-                 'Live Demo' => 'http://mazu.ioa.tw/',
-                 'GitHub' => 'https://github.com/comdan66/mazu',
-                 'PTT Yunlin' => 'https://www.ptt.cc/bbs/Yunlin/M.1460567509.A.8BE.html',
-                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1460607450.A.36A.html',
-                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/980856278618404/'
-               )
+                'Live Demo' => 'http://mazu.ioa.tw/',
+                'GitHub' => 'https://github.com/comdan66/mazu',
+                'PTT Yunlin' => 'https://www.ptt.cc/bbs/Yunlin/M.1460567509.A.8BE.html',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1460607450.A.36A.html',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/980856278618404/'
+              ),
+            'pictures' => array (
+                array ('name' => '01.jpg', 'text' => 'xxxx', 'desc' => 'xxxxxxxxxxxxxxxxxsssssssssssssssssddddddddddd'),
+                array ('name' => '02.png', 'text' => 'xxxx', 'desc' => 'xxxxxxxxxxxxxxxxxsssssssssssssssssddddddddddd'),
+                array ('name' => '03.jpg', 'text' => 'xxxx', 'desc' => 'xxxxxxxxxxxxxxxxxsssssssssssssssssddddddddddd'),
+                array ('name' => '04.png', 'text' => 'xxxx', 'desc' => 'xxxxxxxxxxxxxxxxxsssssssssssssssssddddddddddd'),
+                array ('name' => '05.jpg', 'text' => 'xxxx', 'desc' => 'xxxxxxxxxxxxxxxxxsssssssssssssssssddddddddddd'),
+              )
           ),
         array (
             'type' => 'demo',

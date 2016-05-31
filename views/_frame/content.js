@@ -110,28 +110,17 @@ $(function () {
 
   $('time').timeago ();
 
-  if ($(window).width () > 640) {
+  if ($(window).width () > 640)
     $(window).scroll (function () {
       var t = $(this).scrollTop ();
       var l = $(this).get (0).l ? $(this).get (0).l : 0;
       if (t < 60 || t < l) {
-        if ($tab.hasClass ('h'))
-          $tab.removeClass ('h');
-        if ($header.hasClass ('h'))
-          $header.removeClass ('h');
+        if ($tab.hasClass ('h')) $tab.removeClass ('h');
+        if ($header.hasClass ('h')) $header.removeClass ('h');
       } else {
-        if (!$tab.hasClass ('h'))
-          $tab.addClass('h');
-        if (!$header.hasClass ('h'))
-          $header.addClass('h');
+        if (!$tab.hasClass ('h')) $tab.addClass('h');
+        if (!$header.hasClass ('h')) $header.addClass('h');
       }
       $(this).get (0).l = t;
     });
-  }
-
-
-
-
-
-
 });
