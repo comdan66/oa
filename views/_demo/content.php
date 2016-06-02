@@ -6,7 +6,7 @@
 </figure>
 
 <h2>
-  <a href='<?php echo $current['url'];?>'><?php echo $current['text'];?> 實作心得</a>
+  <a href='<?php echo $current['url'];?>'><?php echo $current['text'];?><?php echo isset ($no_tip) && $no_tip ? '' : ' 實作心得';?></a>
   <div class="fb-like" data-href="<?php echo $current['url'];?>" data-send="false" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 </h2>
 
@@ -25,28 +25,31 @@
 
   <p><?php echo $current['description'];?></p>
 
-  <br/>
-    <ul>
+<?php if (isset ($current['main_links'])) { ?>
+        <br/>
+        <ul>
     <?php foreach ($current['main_links'] as $text => $main_link) { ?>
             <li><b><?php echo $text;?></b>：<a href='<?php echo $main_link;?>' target='_blank'><b><?php echo $main_link;?></b></a></li>
-    <?php }?>
-    </ul>
+    <?php } ?>
+        </ul>
+<?php }?>
   <br/>
 
-<?php echo $_view; ?>
-
-  <p>以上就是這次 <?php echo $current['text'];?> 的開發心得如有任何問題<a href="mailto:<?php echo MY_MAIL;?>?subject=關於 iOA 的問題&body=Hi OA,%0D%0A%0D%0A    我在您的網站上看到有關於 <?php echo $current['text'];?> 的心得，以下是我的一些相關問題..">歡迎來信</a>討論。</p>
+<?php echo $_view;
+      if (!(isset ($no_show_mail) && $no_show_mail)) { ?>
+        <p>以上就是這次 <?php echo $current['text'];?> 的開發心得如有任何問題<a href="mailto:<?php echo MY_MAIL;?>?subject=關於 iOA 的問題&body=Hi OA,%0D%0A%0D%0A    我在您的網站上看到有關於 <?php echo $current['text'];?> 的心得，以下是我的一些相關問題..">歡迎來信</a>討論。</p>
+<?php }?>
 </article>
 
 <?php
 if ($current['pictures']) { ?>
   <div class='pics'>
 <?php
-    foreach ($current['pictures'] as $pictures) {
+    foreach ($current['pictures'] as $i => $pictures) {
       if ($pictures) { ?>
         <div class='pictures n<?php echo count ($pictures);?>'>
-    <?php foreach ($pictures as $picture) { ?>
-            <figure href='<?php echo base_url ('junior-java-plurker' . EXTENSION);?>'>
+    <?php foreach ($pictures as $j => $picture) { ?>
+            <figure href='<?php echo base_url ($current['file'] . EXTENSION . '#&gid=1&pid=' . ($i + 1 + $j + 1) . '&id=0');?>'>
               <img alt="<?php echo $picture['text'];?> - <?php echo $_site_title;?>" src="<?php echo img_url ('views', $current['file'], $picture['name']);?>" />
               <figcaption data-description='<?php echo $picture['desc'];?>'><?php echo $picture['text'];?></figcaption>
             </figure>
@@ -59,7 +62,7 @@ if ($current['pictures']) { ?>
 }?>
 
 <?php
-  if ($current['resources']) { ?>
+  if (isset ($current['resources']) && $current['resources']) { ?>
     <ul>
 <?php foreach ($current['resources'] as $text => $resource) { ?>
         <li><a href='<?php echo $resource;?>' target='_blank'><?php echo $text;?></a><span><a href='<?php echo $resource;?>' target='_blank'><?php echo $resource;?></a></span></li>

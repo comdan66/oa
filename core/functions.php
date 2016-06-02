@@ -126,14 +126,17 @@ if (!function_exists ('np')) {
         $item['url'] = base_url ($item['file'] . EXTENSION);
         $item['active'] = $item['file'] == $file;
         if (!isset ($item['pictures'])) $item['pictures'] = array ();
+        $item['pics'] = $item['pictures'];
 
         $oasort = array_filter (oasort (count ($item['pictures'])));
-        $b = array (); foreach ($oasort as $c) { $d = array (); for ($i = 0; $i < $c; $i++) array_push ($d, $item['pictures'][$i]); array_push ($b, $d); }
+        $b = array ();
+        $j = 0;
+        foreach ($oasort as $c) { $d = array (); for ($i = 0; $i < $c; $i++) array_push ($d, $item['pictures'][$j++]); array_push ($b, $d); }
         $item['pictures'] = $b;
 
-        if (in_array ($item['type'], array ('article', 'demo'))) {
+        if (in_array ($item['type'], array ('article', 'demo', 'album'))) {
           array_push ($items, $item);
-        } else if ($item['type'] == 'more') {
+        } else if (in_array ($item['type'], array ('more', 'albums'))) {
           foreach ($item['sub'] as &$sub) {
 
             $sub['img'] = img_url ('left', $sub['file'] . '.jpg');
@@ -141,12 +144,14 @@ if (!function_exists ('np')) {
             $sub['og_img'] = img_url ('og', $sub['file'] . '.jpg');
             $sub['url'] = base_url ($sub['file'] . EXTENSION);
             if (!isset ($sub['pictures'])) $sub['pictures'] = array ();
-    
+            $sub['pics'] = $sub['pictures'];
+            
             $oasort = array_filter (oasort (count ($sub['pictures'])));
-            $b = array (); foreach ($oasort as $c) { $d = array (); for ($i = 0; $i < $c; $i++) array_push ($d, $sub['pictures'][$i]); array_push ($b, $d); }
+            
+            $b = array (); $j = 0; foreach ($oasort as $c) { $d = array (); for ($i = 0; $i < $c; $i++) array_push ($d, $sub['pictures'][$j++]); array_push ($b, $d); }
             $sub['pictures'] = $b;
 
-            if (in_array ($sub['type'], array ('article', 'demo'))) {
+            if (in_array ($sub['type'], array ('article', 'demo', 'album'))) {
               if ($sub['active'] = $sub['file'] == $file)
                 $item['active'] = true;
 
@@ -155,7 +160,7 @@ if (!function_exists ('np')) {
           }
         }
 
-        if ($item['active'] && ($item['type'] == 'more')) {
+        if ($item['active'] && in_array ($item['type'], array ('more', 'albums'))) {
           $c = $item;
           $n = $c['sub'][0];
         }

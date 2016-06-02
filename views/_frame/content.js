@@ -66,13 +66,13 @@ $(function () {
             src: $img.attr ('src'),
             href: $(this).attr ('href'),
             title: $figcaption.html (),
-            content: $figcaption.data ('description') + '<a href="' + $(this).attr ('href') + '">閱讀更多 »</a>',
+            content: $figcaption.data ('description'),
             el: $(this).get (0),
           };
         }).toArray (), options = {
           showHideOpacity: true,
           galleryUID: $obj.data ('pswp-uid'),
-          showAnimationDuration: disableAnimation ? false : true,
+          showAnimationDuration: disableAnimation ? 0 : 500,
           index: parseInt (index, 10) - (fromURL ? 1 : 0),
           getThumbBoundsFn: function (index) {
             var pageYScroll = window.pageYOffset || document.documentElement.scrollTop,

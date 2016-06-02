@@ -6,6 +6,6 @@
 $(function () {
   window.$body.find ('.profile1 > section:first-child figure a').imgLiquid ({verticalAlign: 'top'});
   
-  $('.pictures figure').imgLiquid ({verticalAlign: 'center'});
+  $('.pics figure').imgLiquid ({verticalAlign: 'center'});
   window.fns.initPhotoSwipeFromDOM ('.pics', 'figure');
 });

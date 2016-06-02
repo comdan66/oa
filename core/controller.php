@@ -113,6 +113,14 @@ Class Controller {
     return $this->add ('h1', $this->current['text'])
                 ->_view ('more');
   }
+  public function albums ($setting) {
+    $return = $setting ($this);
+
+    $this->add ('title', $this->current['text']);
+
+    return $this->add ('h1', $this->current['text'])
+                ->_view ('albums');
+  }
   public function article ($setting) {
     $return = $setting ($this);
 
@@ -152,9 +160,9 @@ Class Controller {
           ),
         'description' => remove_ckedit_tag ($this->current['description'])
       ));
-
-    foreach ($return as $key => $value)
-      $this->add ($key, $value);
+    if ($return)
+      foreach ($return as $key => $value)
+        $this->add ($key, $value);
 
     $this->add ('title', $this->current['text']);
 

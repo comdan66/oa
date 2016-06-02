@@ -1,0 +1,236 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+@import "_oa";
+
+._c {
+  padding-top: 0;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 0) and (max-width: #{$mediaMobileWidth - 1px}) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (min-width: $mediaMobileWidth) and (max-width: #{$mediaTabletWidth - 1px}) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.n3p {
+  @include clearfix();
+  > a {
+    position: relative;
+    float: left;
+    display: inline-block;
+
+    margin-top: 40px;
+    width: calc((100% - 40px * (3 - 1)) / 3);
+    height: 230px;
+
+    &:before {
+      @include icomoon-font('frame') { content: "\e90e" ' ' attr(data-count); };
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      display: inline-block;
+      padding: 3px 5px;
+      color: white;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include opacity(.75);
+      @include border-radius(3px);
+      @include text-shadow(0 0 1px rgba(39, 40, 34, .300));
+    }
+    &:after {
+      content: attr(title);
+      font-size: 18px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      color: rgba(255, 255, 255, 1);
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include text-shadow(0 0 5px rgba(0, 0, 0, .200));
+      @include overflow-docx3();
+      @include transition(opacity .3s);
+      @include border-bottom-radius(2px);
+    }
+    @media screen and (min-width: 0) and (max-width: #{$mediaMobileWidth - 1px}) {
+      &:after {
+        font-size: 16px;
+        padding: 10px 5px;
+      }
+    }
+    @media screen and (min-width: 0) and (max-width: #{$mediaMiniMobileWidth - 1px}) {
+      margin-top: 10px;
+      width: calc((100% - 10px * (2 - 1)) / 2);
+      &:nth-child(-n + 2) {
+        margin-top: 0;
+      }
+      &:not(:nth-child(2n + 1)) {
+        margin-left: 10px;
+      }
+    }
+    @media screen and (min-width: $mediaMiniMobileWidth) and (max-width: #{$mediaMobileWidth - 1px}) {
+      margin-top: 10px;
+      width: calc((100% - 10px * (3 - 1)) / 3);
+      &:nth-child(-n + 3) {
+        margin-top: 0;
+      }
+      &:not(:nth-child(3n + 1)) {
+        margin-left: 10px;
+      }
+    }
+    @media screen and (min-width: $mediaMobileWidth) and (max-width: #{$mediaTabletWidth - 1px}) {
+      margin-top: 20px;
+      width: calc((100% - 20px * (3 - 1)) / 3);
+      &:nth-child(-n + 3) {
+        margin-top: 10px;
+      }
+      &:not(:nth-child(3n + 1)) {
+        margin-left: 20px;
+      }
+    }
+    @media screen and (min-width: $mediaTabletWidth) {
+      &:nth-child(-n + 3) {
+        margin-top: 20px;
+      }
+      &:not(:nth-child(3n + 1)) {
+        margin-left: 40px;
+      }
+    }
+    @media screen and (min-width: 0) and (max-width: #{500px - 1px}) {
+      height: 120px;
+    }
+    @media screen and (min-width: 500px) and (max-width: #{800px - 1px}) {
+      height: 150px;
+    }
+    @media screen and (min-width: 800px) and (max-width: #{$mediaTabletWidth - 1px}) {
+      height: 200px;
+    }
+    @media screen and (min-width: $mediaTabletWidth) and (max-width: #{1200px - 1px}) {
+      height: 150px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: #{$mainWidth - 1px}) {
+      height: 200px;
+    }
+    @media screen and (min-width: $mainWidth) {
+      height: 230px;
+    }
+
+
+    figure {
+      margin: 0;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      @include border-radius(2px);
+
+      &:not(:first-child) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        @include opacity(0);
+        @include rotate(0);
+      }
+
+      img {
+        width: 100%;
+      }
+      figcaption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: inline-block;
+        padding: 5px;
+        @include opacity(0);
+      }
+    }
+  }
+
+  // @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
+    > a {
+      figure {
+        display: block;
+
+        &:first-child {
+          @include box-shadow(0 0 1px rgba(0, 0, 0, .5));
+        }
+        &:nth-child(2) {
+          top: 7px;
+          left: 7px;
+          @include opacity(.5);
+          @include border-radius(2px);
+          overflow: hidden;
+        }
+      }
+    }
+  // }
+  @media screen and (min-width: $mediaTabletWidth) {
+
+    > a {
+      @include transition(opacity .3s, transform .3s ease-in-out);
+      @include opacity(.9);
+      figure {
+        @include box-shadow(0 0 12px 1px rgba(0, 0, 0, .1), 0 0 1px rgba(0, 0, 0, .2));
+        @include transition(transform .3s, opacity .3s, left .3s);
+        // @include transition-delay(.1s);
+      }
+
+      &:hover {
+        @include scale(1.1);
+        z-index: 999;
+        @include opacity(1);
+
+        &:before, &:after {
+          @include opacity(0);
+        }
+        figure {
+          border: 3px solid white;
+          @include opacity(1);
+          @include border-radius(0);
+          @include border-radius(2px);
+          
+          &:first-child {
+            @include box-shadow(0 0 20px 1px rgba(0, 0, 0, 1), 0 0 1px rgba(0, 0, 0, .2));
+          }
+          @for $i from 1 through 10 {
+            &:nth-child(#{$i + 1}) {
+              z-index: -$i;
+              top: 10px;
+              @if ($i % 2) == 1 {
+                left: -45%;
+                @include rotate(#{-($i + 1) / 2 * 10}deg);
+              } @else {
+                left: 45%;
+                @include rotate(#{($i + 1) / 2 * 10}deg);
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $mediaMobileWidth) {
+  #_c {
+    >div>div {
+      overflow: visible;
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: #{1760px - 1px}) {
+  body {
+    overflow: hidden !important;
+  }
+}

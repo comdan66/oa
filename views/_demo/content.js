@@ -7,6 +7,6 @@ $(function () {
   window.$body.find ('#_c ._c figure a').imgLiquid ({verticalAlign: 'center'});
   window.$body.find ('#_c ._c article a:not([href^=mailto])').each (function () { $(this).attr ('target', '_blank'); });
 
-  $('.pictures figure').imgLiquid ({verticalAlign: 'center'});
+  $('.pics figure').imgLiquid ({verticalAlign: 'center'});
   window.fns.initPhotoSwipeFromDOM ('.pics', 'figure');
 });

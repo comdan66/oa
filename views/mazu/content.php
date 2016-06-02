@@ -1,7 +1,8 @@
 <p>以下主要分享一下設計、前端、後端以及系統部分，有興趣的可以繼續往下看！</p>
 
 <ul>
-  <li><b>設計</b> 我參考了 <a href='https://www.google.com/design/spec/material-design/introduction.html' target='_blank'>Material Design</a>，所以設計就用 Material 的角度去設計版面以及流程！不過當然的，手機與網頁的表現還是會有些許的差異，但是整體我仍然盡量參考規範ＸＤ</li>
+  <li><b>設計</b> 我參考了 <a href='https://www.google.com/design/spec/material-design/introduction.html' target='_blank'>Material Design</a>，所以設計就用 Material 的角度去設計版面以及流程！不過當然的，手機與網頁的表現還是會有些許的差異，但是整體我仍然盡量參考規範！</li>
+  <li><b>RWD</b> 響應式設計也是一項必須完成的步驟，基於考量到現在多數使用者都是手機用戶，所以在每頁面上都加入響應式設計的考量，尤其在地圖頁面上，更是斟酌使用者需求，所以特別設計成地圖導向的內頁！</li>
 
   <li><b>後端</b> php 這次我就使用了很潮的 <a href='http://php.net/manual/en/migration70.new-features.php' target='_blank'>php7</a>，跑起來貌似有變快，因為我的爬蟲變快了，所以整體來說算是很滿意，不過 framework 在有些 function 的部分需要稍做調整，但大致上都很健康，當然頁順便將我的 <a href='http://www.ioa.tw/oaci.html' target='_blank'>OACI</a> 給更新到 php7 相容！</li>
   <li><b>前端</b> JavaScript 這次主力都在 Google Maps API 的運用，三年前我就是將此 Google Mapd 與廟會遶境路線做了<a href='http://mazu.ioa.tw/maps/dintao' target='_blank'>結合</a>，所以開啟了我對 Google Maps 運用的熱愛，所以今年也是把他當主力，活動當天沒意外的話，我會結合 GPS 線上定位！</li>

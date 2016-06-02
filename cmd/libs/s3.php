@@ -137,6 +137,9 @@ class S3 {
     return true;
   }
 
+  public static function fileMD5 ($filePath) {
+    return base64_encode (md5_file ($filePath, true));
+  }
   public static function putFile ($filePath, $bucket, $s3Path, $acl = self::ACL_PUBLIC_READ, $metaHeaders = array (), $requestHeaders = array ()) {
     if (!(file_exists ($filePath) && is_file ($filePath) && is_readable ($filePath)))
       return trigger_error ('S3::putFile(): Unable to open input file: ' . $filePath, E_USER_WARNING);
@@ -148,7 +151,7 @@ class S3 {
     $rest->size = filesize ($filePath);
 
     $rest->setHeader ('Content-Type', self::__getMimeType ($filePath))
-         ->setHeader ('Content-MD5', base64_encode (md5_file ($filePath, true)));
+         ->setHeader ('Content-MD5', self::fileMD5 ($filePath));
     foreach ($requestHeaders as $h => $v) $rest->setHeader ($h, $v);
     
     $rest->setAmzHeader ('x-amz-acl', $acl);
