@@ -21,6 +21,12 @@
 
   </head>
   <body lang="zh-tw">
+    <div class='_scope' itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a itemprop="url" href='<?php echo base_url ();?>'><span itemprop="title"><?php echo MY_NAME;?></span></a>
+    </div>
+    <div class='_scope' itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a itemprop="url" href='<?php echo base_url ($_current['file'] . EXTENSION);?>'><span itemprop="title"><?php echo $_current['text'];?></span></a>
+    </div>
 
     <header>
       <nav>

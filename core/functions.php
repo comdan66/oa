@@ -131,7 +131,7 @@ if (!function_exists ('np')) {
         $oasort = array_filter (oasort (count ($item['pictures'])));
         $b = array ();
         $j = 0;
-        foreach ($oasort as $c) { $d = array (); for ($i = 0; $i < $c; $i++) array_push ($d, $item['pictures'][$j++]); array_push ($b, $d); }
+        foreach ($oasort as $cc) { $d = array (); for ($i = 0; $i < $cc; $i++) array_push ($d, $item['pictures'][$j++]); array_push ($b, $d); }
         $item['pictures'] = $b;
 
         if (in_array ($item['type'], array ('article', 'demo', 'album'))) {
@@ -148,7 +148,7 @@ if (!function_exists ('np')) {
             
             $oasort = array_filter (oasort (count ($sub['pictures'])));
             
-            $b = array (); $j = 0; foreach ($oasort as $c) { $d = array (); for ($i = 0; $i < $c; $i++) array_push ($d, $sub['pictures'][$j++]); array_push ($b, $d); }
+            $b = array (); $j = 0; foreach ($oasort as $cc) { $d = array (); for ($i = 0; $i < $cc; $i++) array_push ($d, $sub['pictures'][$j++]); array_push ($b, $d); }
             $sub['pictures'] = $b;
 
             if (in_array ($sub['type'], array ('article', 'demo', 'album'))) {
@@ -166,6 +166,7 @@ if (!function_exists ('np')) {
         }
         if (!$c) $p = $item;
       }
+
     if ($c['file'] != $file) $c = null;
       
     if (!$c && !($p = $c = $n = null))
@@ -175,9 +176,7 @@ if (!function_exists ('np')) {
         if ($items[$i]['active'] && ($c = $items[$i]))
           break;        
       }
-// echo '<meta http-equiv="Content-type" content="text/html; charset=utf-8" /><pre>';
-// var_dump ($p, $c, $n);
-// exit ();
+
     return $c && ($p || $n) ? array (
         'p' => $p,
         'n' => $n,

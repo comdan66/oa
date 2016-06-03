@@ -70,6 +70,10 @@ html {
     color: rgba(55, 55, 55, 1);
 
     @include font-smoothing(antialiased);
+
+    > ._scope {
+      display: none;
+    }
   }
 }
 .fb-like {

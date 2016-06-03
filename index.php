@@ -1,10 +1,28 @@
 <?php 
-$a = array (1, 2, 3, 4);
-$c = array ();
-$c = array_map (function ($x) {
-  return $x + 5;
-}, $a);
+class Book {
+  private $name = '';
+  private static $no = '';
 
-var_dump ($c);
-exit ();
+  public function setName ($name) {
+    $this->name = $name;
+    // return "Book name";
+  }
+  public function getName () {
+    return $this->name;
+  }
+  public static function xx () {
+    self::$no;
+  }
+}
+// Book::$no = 'xxx';
+Book::xx ();
+// $book = Book::create ();
+// $book = Book::find ('one');
 
+// $bookA->setName ('Book name = A');
+// echo $bookA->getName ();
+// echo "<br/>";
+
+// $bookB = new Book ();
+// $bookB->setName ('Book name = B');
+// echo $bookB->getName ();

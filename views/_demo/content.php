@@ -6,7 +6,7 @@
 </figure>
 
 <h2>
-  <a href='<?php echo $current['url'];?>'><?php echo $current['text'];?><?php echo isset ($no_tip) && $no_tip ? '' : ' 實作心得';?></a>
+  <a href='<?php echo $current['url'];?>'><?php echo $current['text'];?><?php echo isset ($is_album) && $is_album ? '' : ' 實作心得';?></a>
   <div class="fb-like" data-href="<?php echo $current['url'];?>" data-send="false" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 </h2>
 
@@ -36,7 +36,7 @@
   <br/>
 
 <?php echo $_view;
-      if (!(isset ($no_show_mail) && $no_show_mail)) { ?>
+      if (!(isset ($is_album) && $is_album)) { ?>
         <p>以上就是這次 <?php echo $current['text'];?> 的開發心得如有任何問題<a href="mailto:<?php echo MY_MAIL;?>?subject=關於 iOA 的問題&body=Hi OA,%0D%0A%0D%0A    我在您的網站上看到有關於 <?php echo $current['text'];?> 的心得，以下是我的一些相關問題..">歡迎來信</a>討論。</p>
 <?php }?>
 </article>
@@ -49,7 +49,7 @@ if ($current['pictures']) { ?>
       if ($pictures) { ?>
         <div class='pictures n<?php echo count ($pictures);?>'>
     <?php foreach ($pictures as $j => $picture) { ?>
-            <figure href='<?php echo base_url ($current['file'] . EXTENSION . '#&gid=1&pid=' . ($i + 1 + $j + 1) . '&id=0');?>'>
+            <figure href='<?php echo base_url ($current['file'] . EXTENSION . '#&gid=' . ($i + 1) . '&pid=' . ($j + 1) . '&id=0');?>'>
               <img alt="<?php echo $picture['text'];?> - <?php echo $_site_title;?>" src="<?php echo img_url ('views', $current['file'], $picture['name']);?>" />
               <figcaption data-description='<?php echo $picture['desc'];?>'><?php echo $picture['text'];?></figcaption>
             </figure>

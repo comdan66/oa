@@ -10,9 +10,9 @@
   $figureMinHeight: 170px;
 
   text-align: left;
-  padding: 0 25px;
+  // padding: 0 25px;
   @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
-    padding: 0 10px;
+    // padding: 0 10px;
   }
   > figure {
     position: absolute;
@@ -71,6 +71,10 @@
       @include split-right(150px, 'a', 'div');
     }
 
+    padding: 0 25px;
+    @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+      padding: 0 10px;
+    }
     a {
       @include a(0, false, rgba(75, 75, 75, 1), rgba(55, 55, 55, 1));
       font-weight: bold;
@@ -103,8 +107,10 @@
     @include clearfix();
     line-height: 20px;
 
+    padding: 0 25px;
     @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
       margin-top: 25px;
+      padding: 0 10px;
     }
     > * {
       float: left;
@@ -149,8 +155,10 @@
     word-wrap: break-word; 
     word-break: break-word;
 
+    padding: 0 25px;
     margin-top: 60px;
     @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+      padding: 0 10px;
       margin-top: 50px;
     }
     &, * {
@@ -368,3 +376,4 @@
     }
   }
 }
+

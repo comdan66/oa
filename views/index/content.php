@@ -29,7 +29,7 @@
 
 <article>
   <section class='a'>
-    <p>家鄉雲林北港，或許是因為在這個文化古鎮長大，所以除了程式的興趣以外，我也很喜愛參與各個台灣本土的文化活動，例如：北港迎媽祖、淡水清水祖師.. 等，每次對於參與的文化活動我也喜歡背著相機逐步的跟隨，記錄著我認為美的影像。</p>
+    <p>家鄉<b>雲林北港</b>，或許是因為在這個文化古鎮長大，所以除了程式的興趣以外，我也很喜愛參與各個台灣本土的文化活動，例如：北港迎媽祖、淡水清水祖師.. 等，每次對於參與的文化活動我也喜歡背著相機逐步的跟隨，記錄著我認為美的影像。</p>
     <p>近年來我嘗試將我的專長與興趣做了結合，創造出幾個有趣的網站，例如：<a href='<?php echo base_url ('mazu'. EXTENSION);?>' target='_blank'>北港迎媽組</a>、<a href='<?php echo base_url ('liu-fang-mazu-gps'. EXTENSION);?>' target='_blank'>六房媽組過爐GPS</a>、<a href='<?php echo base_url ('haotien-gps' . EXTENSION);?>' target='_blank'>大庄媽祖 GPS</a>.. 等，而且在實作的同時也加入了不同的設計思維、架構方式，從前端 <a href='https://zh.wikipedia.org/zh-tw/JavaScript' target='_blank'>JavaScript</a>、<a href='https://developers.google.com/maps/documentation/javascript/?hl=zh-tw' target='_blank'>Google Maps</a> 到後端的 <a href='http://php.net/manual/en/migration70.new-features.php' target='_blank'>php7</a>、大流量.. 等，每次的實作不僅與傳統文化做結合，更會有豐富的技術當基石，而使用者操作的順暢度更是設計的重點考量。</p>
   </section>
 </article>
