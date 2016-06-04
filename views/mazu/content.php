@@ -1,4 +1,4 @@
-<p>以下主要分享一下設計、前端、後端以及系統部分，有興趣的可以繼續往下看！</p>
+<p>以下主要分享一下<b>設計</b>、<b>前端</b>、<b>後端</b>以及<b>系統</b>部分，有興趣的可以繼續往下看！</p>
 
 <ul>
   <li><b>設計</b> 我參考了 <a href='https://www.google.com/design/spec/material-design/introduction.html' target='_blank'>Material Design</a>，所以設計就用 Material 的角度去設計版面以及流程！不過當然的，手機與網頁的表現還是會有些許的差異，但是整體我仍然盡量參考規範！</li>

@@ -10,6 +10,7 @@ include_once 'libs/functions.php';
 $file = array_shift ($argv);
 $argv = params ($argv, array (array ('-d', '-domain')));
 
+define ('PROTOCOL', "http://");
 define ('DOMAIN', isset ($argv['-d']) ? $argv['-d'][0] : 'oa.ioa.tw');
 define ('ENV', 'build');
 
@@ -18,7 +19,7 @@ define ('ENV', 'build');
 // ========================================================================
 
 echo "\n" . str_repeat ('=', 80) . "\n";
-echo ' ' . color ('執行開始', 'P') . "\n";
+echo ' ' . color ('◎ 執行開始 ◎', 'P') . "\n";
 echo str_repeat ('-', 80) . "\n";
 
 // ========================================================================
@@ -137,9 +138,9 @@ echo str_repeat ('-', 80) . "\n";
 // ========================================================================
 
 $i = 0;
-if ($files = array_filter (array_map (function ($file) use (&$i, $c) {
+if (!$files = array_filter (array_map (function ($file) use (&$i, $c) {
   echo sprintf ("\r" . ' ➜ ' . color ('寫入 HTML 檔案', 'g') . " - % 3d%% ", ceil ((++$i * 100) / $c));
-  return !write_file ('root' . DIRECTORY_SEPARATOR . $file['name'] . '.html', $file['content']);
+  return write_file ('root' . DIRECTORY_SEPARATOR . $file['name'] . '.html', $file['content']) ? $file['name'] . '.html' : false;
 }, $files))) {
   echo '- ' . color ('寫入 HTML 檔案失敗！', 'r') . "\n";
   echo str_repeat ('=', 80) . "\n";
@@ -152,7 +153,40 @@ echo str_repeat ('-', 80) . "\n";
 // ========================================================================
 // ========================================================================
 
-echo ' ' . color ('執行結束', 'P') . "\n";
+echo ' ➜ ' . color ('準備建立 Sitemap(' . ($c = count ($files)) . ')', 'g');
+$i = 0;
+include_once 'libs/sitemap.php';
+
+$sit_map = new Sitemap ($domain = PROTOCOL . rtrim (DOMAIN, '/'));
+$sit_map->setPath ('root' . DIRECTORY_SEPARATOR . 'sitemap' . DIRECTORY_SEPARATOR);
+$sit_map->setDomain ($domain);
+$sit_map->addItem ('/', '0.5', 'weekly', date ('c'));
+foreach ($files as $file) {
+  $sit_map->addItem ('/' . $file, '0.5', 'weekly', date ('c'));
+  echo "\r ➜ " . color ('準備建立 Sitemap', 'g') . sprintf (" - % 3d%% ", ceil ((++$i * 100) / $c));
+}
+echo '- ' . color ('準備建立 Sitemap！', 'C') . "\n";
+echo str_repeat ('-', 80) . "\n";
+
+$sit_map->createSitemapIndex ($domain . '/sitemap/', date ('c'));
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+
+echo ' ➜ ' . color ('準備建立 robots.txt', 'g');
+if (!write_file ('root' . DIRECTORY_SEPARATOR . 'robots.txt', "Sitemap: http://" . DOMAIN . "/sitemap/sitemap_index.xml\n\nUser-agent: *")) {
+  echo ' -   0% - ' . color ('建立 robots.txt 檔案失敗！', 'r') . "\n";
+  echo str_repeat ('=', 80) . "\n";
+}
+echo ' - 100% - ' . color ('建立 robots.txt 檔案成功！', 'C') . "\n";
+echo str_repeat ('-', 80) . "\n";
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+
+echo ' ' . color ('◎ 執行結束 ◎', 'P') . "\n";
 echo str_repeat ('=', 80) . "\n";
 echo "\n";
 exit();

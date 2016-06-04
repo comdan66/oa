@@ -8,6 +8,8 @@ cmd/.sass-cache/*
 cmd/npm-debug.log
 
 /*.html
+/robots.txt
 /assets/css/*
+/sitemap/*
 /assets/js/*
 /cmd/s3_key.php

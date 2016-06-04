@@ -4,6 +4,7 @@
 <?php foreach ($_metas as $meta) { ?>
       <meta <?php echo implode (' ', array_map (function ($attribute, $value) { return $attribute . '="' . $value . '"'; }, array_keys ($meta), $meta));?> />
 <?php } ?>
+    <link rel="canonical" href="<?php echo base_url ($_current['file'] . EXTENSION);?>" />
 
     <title><?php echo $_title;?></title>
 
