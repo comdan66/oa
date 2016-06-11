@@ -12,4 +12,4 @@ cmd/npm-debug.log
 /assets/css/*
 /sitemap/*
 /assets/js/*
-/cmd/s3_key.php
+/cmd/configs/s3_key.php

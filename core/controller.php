@@ -12,13 +12,13 @@ Class Controller {
   public $site_title = 'iOA';
   public $np = array ();
   public $current = null;
+  public $menus = array ();
   private $file = null;
   private $logo_string = "個人簡歷";
   private $vars = array ();
   private $js_list = array ();
   private $css_list = array ();
   private $mobile_logo_strings = array ('OA Wu', '個人簡歷');
-  private $menus = array ();
   private $tabs = array ();
   private $metas = array ();
   private $tab_index = '';
@@ -37,6 +37,7 @@ Class Controller {
 
     $this->add_meta (array ('http-equiv' => 'Content-Language', 'content' => 'zh-tw'))
          ->add_meta (array ('http-equiv' => 'Content-type', 'content' => 'text/html; charset=utf-8'))
+         ->add_meta (array ('name' => 'google-site-verification', 'content' => 'oP5AjoCz_SS0W6OeLiynUxpE7hnFdhWVZ6zDxRiJQqY'))
          ->add_meta (array ('name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui'))
          ->add_js ('_frame' . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js')
          ->add_css ('_frame' . DIRECTORY_SEPARATOR . CONTENT_NAME . '.css')
@@ -107,24 +108,18 @@ Class Controller {
 
   public function more ($setting) {
     $return = $setting ($this);
+    $og_path = FCPATH . 'assets' . DIRECTORY_SEPARATOR . (defined ('ENV') ? 'img' : 'img_ori') . DIRECTORY_SEPARATOR . 'og' . DIRECTORY_SEPARATOR;
 
-    $this->add ('title', $this->current['text']);
+    $ogimage_path = $og_path . $this->current['file'] . '.jpg';
+    $imgs = array_slice (array_filter (array_map (function ($file) use ($og_path) { return $og_path . $file . '.jpg'; }, array_2d_to_1d (column_array ($this->current['sub'], 'file'))), 'file_exists'), 0, 5);
 
-    return $this->add ('h1', $this->current['text'])
-                ->_view ('more');
-  }
-  public function albums ($setting) {
-    $return = $setting ($this);
+    include_once FCPATH . 'cmd' . DIRECTORY_SEPARATOR . 'libs' . DIRECTORY_SEPARATOR . 'image' . DIRECTORY_SEPARATOR . 'ImageUtility.php';
 
-    $this->add ('title', $this->current['text']);
+    ImageUtility::photos ($imgs, $ogimage_path);
 
-    return $this->add ('h1', $this->current['text'])
-                ->_view ('albums');
-  }
-  public function article ($setting) {
-    $return = $setting ($this);
+    $description = '這些是我的' . $this->current['text'] . '這裡面包含了' . mb_strimwidth (implode ('、', array_map ('remove_ckedit_tag', array_2d_to_1d (column_array ($this->current['sub'], 'text')))), 0, 200, '…','UTF-8') . '有興趣的各位歡迎點閱吧！';
 
-    if ($tags = array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), $this->current['tags'], $this->current['keywords'])))
+    if ($tags = array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), array_2d_to_1d (column_array ($this->current['sub'], 'tags')), array_2d_to_1d (column_array ($this->current['sub'], 'keywords')))))
       foreach ($tags as $i => $tag)
         if (!$i) $this->add_meta (array ('property' => 'article:section', 'content' => $tag))->add_meta (array ('property' => 'article:tag', 'content' => $tag));
         else $this->add_meta (array ('property' => 'article:tag', 'content' => $tag));
@@ -132,39 +127,99 @@ Class Controller {
       foreach ($also_list as $also)
         $this->add_meta (array ('property' => 'og:see_also', 'content' => $also['url']));
 
+    $i = 0;
     $this->set_json_ld (array (
-        "@context" => "http://schema.org",
-        "@type" => "Organization",
-        "name" => $this->site_title,
-        "url" => base_url (),
-        "logo" => array ("@type" => "ImageObject", "url" => img_url ('amp_title.png'), "width" => 600, "height" => 60),
-        "description" => remove_ckedit_tag ($this->current['description']),
-        "sameAs" => array (
-            "https://www.facebook.com/comdan66",
-            "http://www.ioa.tw/",
-            "http://comdan66.github.io/",
-            "https://www.youtube.com/user/comdan66",
-            "https://plus.google.com/u/0/+吳政賢",
-            "https://picasaweb.google.com/108708350604082729522",
-            "https://www.flickr.com/comdan66",
-            "https://www.linkedin.com/in/政賢-吳-116136a1",
-          )
+        '@context' => 'http://schema.org', '@type' => 'BreadcrumbList',
+        "itemListElement" => array_map (function ($item) use (&$i) {
+            return array (
+                "@type" => "ListItem",
+                "position" => ++$i,
+                "item" => array (
+                    "@id" => base_url ($item['file'] . EXTENSION),
+                    "name" => $item['text'],
+                    "description" => mb_strimwidth (remove_ckedit_tag ($item['description']), 0, 150, '…','UTF-8'),
+                    "image" => array ('@type' => 'ImageObject', 'url' => $item['og_img'], 'height' => 630, 'width' => 1200),
+                    "url" => base_url ($item['file'] . EXTENSION),
+                  )
+              );
+          }, $this->current['sub']),
+      ));
+
+    $this->add ('title', $this->current['text']);
+    return $this->add ('h1', $this->current['text'])
+
+                ->add_meta (array ('name' => 'keywords', 'content' => implode (',', $tags)))
+                ->add_meta (array ('name' => 'description', 'content' => remove_ckedit_tag ($description)))
+                ->add_meta (array ('property' => 'og:title', 'content' => $this->current['text'] . ' - ' . $this->site_title))
+                ->add_meta (array ('property' => 'og:description', 'content' => preg_replace ("/ +/", "", remove_ckedit_tag ($description))))
+                ->add_meta (array ('property' => 'og:image', 'tag' => 'larger', 'content' => $img = $this->np['c']['og_img'], 'alt' => $this->current['text'] . ' - ' . $this->site_title))
+                ->add_meta (array ('property' => 'og:image:type', 'tag' => 'larger', 'content' => 'image/' . pathinfo ($img, PATHINFO_EXTENSION)))
+                ->add_meta (array ('property' => 'og:image:width', 'tag' => 'larger', 'content' => '1200'))
+                ->add_meta (array ('property' => 'og:image:height', 'tag' => 'larger', 'content' => '630'))
+                ->add_meta (array ('property' => 'article:modified_time', 'content' => date ('c')))
+                ->add_meta (array ('property' => 'article:published_time', 'content' => date ('c')))
+
+                ->_view ('more');
+  }
+  public function albums ($setting) {
+    $return = $setting ($this);
+    $og_path = FCPATH . 'assets' . DIRECTORY_SEPARATOR . (defined ('ENV') ? 'img' : 'img_ori') . DIRECTORY_SEPARATOR . 'og' . DIRECTORY_SEPARATOR;
+
+    $ogimage_path = $og_path . $this->current['file'] . '.jpg';
+    $imgs = array_slice (array_filter (array_map (function ($file) use ($og_path) { return $og_path . $file . '.jpg'; }, array_2d_to_1d (column_array ($this->current['sub'], 'file'))), 'file_exists'), 0, 5);
+
+    include_once FCPATH . 'cmd' . DIRECTORY_SEPARATOR . 'libs' . DIRECTORY_SEPARATOR . 'image' . DIRECTORY_SEPARATOR . 'ImageUtility.php';
+
+    ImageUtility::photos ($imgs, $ogimage_path);
+
+    $description = '這些是我的' . $this->current['text'] . '這裡面包含了' . mb_strimwidth (implode ('、', array_map ('remove_ckedit_tag', array_2d_to_1d (column_array ($this->current['sub'], 'text')))), 0, 200, '…','UTF-8') . '有興趣的各位歡迎點閱吧！';
+
+    if ($tags = array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), array_2d_to_1d (column_array ($this->current['sub'], 'tags')), array_2d_to_1d (column_array ($this->current['sub'], 'keywords')))))
+      foreach ($tags as $i => $tag)
+        if (!$i) $this->add_meta (array ('property' => 'article:section', 'content' => $tag))->add_meta (array ('property' => 'article:tag', 'content' => $tag));
+        else $this->add_meta (array ('property' => 'article:tag', 'content' => $tag));
+    if ($also_list = array_filter (array ($this->np['p'], $this->np['n'])))
+      foreach ($also_list as $also)
+        $this->add_meta (array ('property' => 'og:see_also', 'content' => $also['url']));
+
+    $i = 0;
+    $this->set_json_ld (array (
+        '@context' => 'http://schema.org', '@type' => 'BreadcrumbList',
+        "itemListElement" => array_map (function ($item) use (&$i) {
+            return array (
+                "@type" => "ListItem",
+                "position" => ++$i,
+                "item" => array (
+                    "@id" => base_url ($item['file'] . EXTENSION),
+                    "name" => $item['text'],
+                    "description" => mb_strimwidth (remove_ckedit_tag ($item['description']), 0, 150, '…','UTF-8'),
+                    "image" => array ('@type' => 'ImageObject', 'url' => $item['og_img'], 'height' => 630, 'width' => 1200),
+                    "url" => base_url ($item['file'] . EXTENSION),
+                  )
+              );
+          }, $this->current['sub']),
       ));
 
     $this->add ('title', $this->current['text']);
 
     return $this->add ('h1', $this->current['text'])
+
                 ->add_meta (array ('name' => 'keywords', 'content' => implode (',', $tags)))
-                ->add_meta (array ('name' => 'description', 'content' => remove_ckedit_tag ($this->current['description'])))
+                ->add_meta (array ('name' => 'description', 'content' => remove_ckedit_tag ($description)))
                 ->add_meta (array ('property' => 'og:title', 'content' => $this->current['text'] . ' - ' . $this->site_title))
-                ->add_meta (array ('property' => 'og:description', 'content' => preg_replace ("/ +/", "", remove_ckedit_tag ($this->current['description']))))
+                ->add_meta (array ('property' => 'og:description', 'content' => preg_replace ("/ +/", "", remove_ckedit_tag ($description))))
                 ->add_meta (array ('property' => 'og:image', 'tag' => 'larger', 'content' => $img = $this->np['c']['og_img'], 'alt' => $this->current['text'] . ' - ' . $this->site_title))
                 ->add_meta (array ('property' => 'og:image:type', 'tag' => 'larger', 'content' => 'image/' . pathinfo ($img, PATHINFO_EXTENSION)))
                 ->add_meta (array ('property' => 'og:image:width', 'tag' => 'larger', 'content' => '1200'))
                 ->add_meta (array ('property' => 'og:image:height', 'tag' => 'larger', 'content' => '630'))
-                ->add_meta (array ('property' => 'article:modified_time', 'content' => date ('c', strtotime ($this->current['updated_at']))))
-                ->add_meta (array ('property' => 'article:published_time', 'content' => date ('c', strtotime ($this->current['created_at']))))
-                ->_view ('article');
+                ->add_meta (array ('property' => 'article:modified_time', 'content' => date ('c')))
+                ->add_meta (array ('property' => 'article:published_time', 'content' => date ('c')))
+
+                ->_view ('albums');
+  }
+  public function article ($setting) {
+    $return = $setting ($this);
+    return $this->_view ('article');
   }
   public function demo ($setting) {
 
@@ -195,7 +250,7 @@ Class Controller {
             '@type' => 'Organization', 'name' => $this->site_title,
             'logo' => array ('@type' => 'ImageObject', 'url' => img_url ('amp_title.png'), 'width' => 600, 'height' => 60)
           ),
-        'description' => remove_ckedit_tag ($this->current['description'])
+        'description' => mb_strimwidth (remove_ckedit_tag ($this->current['description']), 0, 150, '…','UTF-8')
       ));
     if ($return)
       foreach ($return as $key => $value)
@@ -206,15 +261,16 @@ Class Controller {
     return $this->add ('h1', $this->current['text'])
 
                 ->add_meta (array ('name' => 'keywords', 'content' => implode (',', $tags)))
-                ->add_meta (array ('name' => 'description', 'content' => remove_ckedit_tag ($this->current['description'])))
+                ->add_meta (array ('name' => 'description', 'content' => mb_strimwidth (remove_ckedit_tag ($this->current['description']), 0, 150, '…','UTF-8')))
                 ->add_meta (array ('property' => 'og:title', 'content' => $this->current['text'] . ' - ' . $this->site_title))
-                ->add_meta (array ('property' => 'og:description', 'content' => preg_replace ("/ +/", "", remove_ckedit_tag ($this->current['description']))))
+                ->add_meta (array ('property' => 'og:description', 'content' => mb_strimwidth (preg_replace ("/ +/", "", remove_ckedit_tag ($this->current['description'])), 0, 300, '…','UTF-8')))
                 ->add_meta (array ('property' => 'og:image', 'tag' => 'larger', 'content' => $img = $this->np['c']['og_img'], 'alt' => $this->current['text'] . ' - ' . $this->site_title))
                 ->add_meta (array ('property' => 'og:image:type', 'tag' => 'larger', 'content' => 'image/' . pathinfo ($img, PATHINFO_EXTENSION)))
                 ->add_meta (array ('property' => 'og:image:width', 'tag' => 'larger', 'content' => '1200'))
                 ->add_meta (array ('property' => 'og:image:height', 'tag' => 'larger', 'content' => '630'))
                 ->add_meta (array ('property' => 'article:modified_time', 'content' => date ('c', strtotime ($this->current['updated_at']))))
                 ->add_meta (array ('property' => 'article:published_time', 'content' => date ('c', strtotime ($this->current['created_at']))))
+                
                 ->_view ('demo');
   }
   private function _view ($type = '') {

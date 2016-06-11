@@ -5,6 +5,7 @@
       <meta <?php echo implode (' ', array_map (function ($attribute, $value) { return $attribute . '="' . $value . '"'; }, array_keys ($meta), $meta));?> />
 <?php } ?>
     <link rel="canonical" href="<?php echo base_url ($_current['file'] . EXTENSION);?>" />
+    <link rel="alternate" href="<?php echo base_url ($_current['file'] . EXTENSION);?>" hreflang="zh-Hant" />
 
     <title><?php echo $_title;?></title>
 
@@ -26,7 +27,7 @@
       <a itemprop="url" href='<?php echo base_url ();?>'><span itemprop="title"><?php echo MY_NAME;?></span></a>
     </div>
     <div class='_scope' itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-      <a itemprop="url" href='<?php echo base_url ($_current['file'] . EXTENSION);?>'><span itemprop="title"><?php echo $_current['text'];?></span></a>
+      <a itemprop="url" href='<?php echo base_url ($_current['file'] . EXTENSION);?>'><span itemprop="title"><?php echo preg_replace ("/\.+/", "", $_current['text']);?></span></a>
     </div>
 
     <header>

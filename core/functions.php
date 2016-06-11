@@ -5,6 +5,23 @@
  * @copyright   Copyright (c) 2016 OA Wu Design
  */
 
+if (!function_exists ('array_2d_to_1d')) {
+  function array_2d_to_1d ($array) {
+    $messages = array ();
+    foreach ($array as $key => $value)
+      if (is_array ($value)) $messages = array_merge ($messages, $value);
+      else array_push ($messages, $value);
+    return $messages;
+  }
+}
+
+if (!function_exists ('column_array')) {
+  function column_array ($objects, $key) {
+    return array_map (function ($object) use ($key) {
+      return !is_array ($object) ? is_object ($object) ? $object->$key : $object : $object[$key];
+    }, $objects);
+  }
+}
 if (!function_exists ('avatar_url')) {
   function avatar_url ($fb_id, $w = 100, $h = 100) {
     $size = array ();
