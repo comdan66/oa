@@ -176,6 +176,7 @@ if (!function_exists ('np')) {
         if ($items[$i]['active'] && ($c = $items[$i]))
           break;        
       }
+    if ($n['file'] == $c['file']) $n = null;
 
     return $c && ($p || $n) ? array (
         'p' => $p,

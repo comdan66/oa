@@ -716,10 +716,14 @@ $arrowWidth: 30px;
   background-color: rgba(234, 67, 53, 1.00);
   z-index: 108;
 
-  @include opacity(0);
+  @include opacity(.85);
   @include border-radius(0);
-  @include text-shadow(0 0 1px rgba(68, 76, 148, .4));
+  @include text-shadow(0 0 1px rgba(68, 76, 148, .2));
   
+  @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+    font-size: 14px;
+    @include overflow-docx3();
+  }
   @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
     top: -$msgMobileHeight;
     height: $msgMobileHeight;
@@ -803,6 +807,10 @@ body > footer {
   margin-bottom: 20px;
   border-top: 1px solid rgba(39, 40, 34, .1);
   padding-top: 30px;
+  @media screen and (min-width: #{$mediaMobileWidth}) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   @include clearfix();
 
   figure {

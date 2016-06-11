@@ -33,7 +33,7 @@ return array (
                 'updated_at' => '2016-04-27 00:00:00',
                 'pictures' => array (array ('name' => 'IMG_1504.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_1525.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_1526.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_1536.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_1537.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3144.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3154.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3301.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3307.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3312.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3320.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3323.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3335.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3336.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3340.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3408.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3433.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3437.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3441.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3462.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3463.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3505.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3510.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3526.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3534.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3563.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3569.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3584.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3604.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3622.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3652.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3653.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3665.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3790.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3791.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3796.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3812.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3817.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3818.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3857.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3858.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3859.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3863.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3960.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3991.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3992.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3993.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_3994.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4005.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4036.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4042.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4064.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4067.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4068.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4071.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4072.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4076.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4077.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4080.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4083.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4097.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4098.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4099.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4101.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4106.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4109.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4123.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4126.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4128.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4131.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4132.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4177.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4238.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4245.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4246.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4268.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4273.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4276.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4293.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4295.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4299.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4300.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4408.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4412.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4413.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4415.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4418.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4427.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4428.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4429.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4441.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4460.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4461.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4482.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4494.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4500.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4507.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4508.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'),array ('name' => 'IMG_4509.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2015-0507-beigang-mazu',
                 'text' => '2015年 北港迎媽祖',
@@ -44,7 +44,7 @@ return array (
                 'updated_at' => '2015-05-09 00:00:00',
                 'pictures' => array (array ('name' => 'IMG_0012.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0013.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0014.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0015.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0016.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0017.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0018.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0029.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0030.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0036.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0039.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0041.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0042.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0044.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0045.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0046.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0050.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0051.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0054.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0055.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0056.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0057.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0058.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0073.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0082.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0083.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0086.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0087.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0089.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0090.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0092.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0093.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0094.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0099.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0100.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0102.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0103.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0104.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0105.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0106.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0110.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0111.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0114.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0115.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0121.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0123.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0125.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0126.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0127.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0129.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0132.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0133.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0137.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0138.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'), array ('name' => 'IMG_0139.jpg', 'text' => '2015年 北港迎媽祖', 'desc' => '2015年 北港迎媽祖'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2015-1216-tamsui-shimizu-patriarch',
                 'text' => '2015年 淡水清水祖師',
@@ -55,7 +55,7 @@ return array (
                 'updated_at' => '2014-12-17 00:00:00',
                 'pictures' => array (array ('name' => 'IMG_1900.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_1901.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_1981.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2014.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2049.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2057.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2069.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2074.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2087.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2092.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2144.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2207.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2208.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2211.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2228.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2236.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2238.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2242.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2256.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2260.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2267.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2271.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2278.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2343.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2407.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2412.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2444.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2475.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2481.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2485.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2498.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2504.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2519.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2525.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2532.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2539.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2555.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2593.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2603.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2612.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2623.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'), array ('name' => 'IMG_2642.jpg', 'text' => '2015年 淡水清水祖師', 'desc' => '2015年 淡水清水祖師'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2014-0408-beigang-mazu',
                 'text' => '2014年 北港迎媽祖',
@@ -66,7 +66,7 @@ return array (
                 'updated_at' => '2014-04-10 00:00:00',
                 'pictures' => array (array ('name' => 'IMG_0342.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_0450.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_0524.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_0535.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_0619.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_0741.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_0753.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1162.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1378.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1502.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1678.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1691.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1727.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1754.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1850.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_1990.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_2773.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_2783.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3089.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3097.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3111.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3114.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3123.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3143.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3200.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3355.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3384.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3427.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3505.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3562.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3681.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3807.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3861.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_3883.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4029.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4038.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4257.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4440.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4466.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4498.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4971.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4982.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_4986.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5083.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5151.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5157.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5164.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5188.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5271.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5389.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5677.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5687.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_5770.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_6098.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_6224.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_6301.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_6350.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_6410.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_6437.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'), array ('name' => 'IMG_6612.jpg', 'text' => '2014年 北港迎媽祖', 'desc' => '2014年 北港迎媽祖'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2014-0602-tamsui-shimizu-patriarch',
                 'text' => '2014年 淡水清水祖師',
@@ -77,7 +77,7 @@ return array (
                 'updated_at' => '2014-06-03 00:00:00',
                 'pictures' => array (array ('name' => 'IMG_7046.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7048.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7055.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7061.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7070.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7077.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7092.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7103.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7108.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7132.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7143.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7153.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7177.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7201.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7206.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7260.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7265.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7274.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'), array ('name' => 'IMG_7299.jpg', 'text' => '2014年 淡水清水祖師', 'desc' => '2014年 淡水清水祖師'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2013-0428-beigang-mazu',
                 'text' => '2013年 北港迎媽祖',
@@ -88,7 +88,7 @@ return array (
                 'updated_at' => '2013-04-30 00:00:00',
                 'pictures' => array (array ('name' => 'IMG_0001.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0002.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0003.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0004.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0005.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0006.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0008.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0009.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0011.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0012.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0013.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0014.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0016.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0017.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0018.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0020.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0022.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0024.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0025.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0026.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0027.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0028.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0029.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0030.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0031.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0032.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0033.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0034.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0035.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0036.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0037.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0038.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0039.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'), array ('name' => 'IMG_0040.jpg', 'text' => '2013年 北港迎媽祖', 'desc' => '2013年 北港迎媽祖'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2013-0612-tamsui-shimizu-patriarch',
                 'text' => '2013年 淡水清水祖師',
@@ -99,7 +99,7 @@ return array (
                 'updated_at' => '2013-06-13 00:00:00',
                 'pictures' => array (array ('name' => 'IMG_8606.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8609.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8614.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8621.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8624.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8625.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8628.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8664.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8671.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8683.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8710.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8711.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'), array ('name' => 'IMG_8731.jpg', 'text' => '2013年 淡水清水祖師', 'desc' => '2013年 淡水清水祖師'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2015-0316-tianyuan-palace',
                 'text' => '淡水天元宮',
@@ -110,18 +110,18 @@ return array (
                 'updated_at' => '2015-03-16 23:59:59',
                 'pictures' => array (array ('name' => 'IMG_8206.jpg', 'text' => '淡水天元宮', 'desc' => '淡水天元宮'),array ('name' => 'IMG_8207.jpg', 'text' => '淡水天元宮', 'desc' => '淡水天元宮'),array ('name' => 'IMG_8219.jpg', 'text' => '淡水天元宮', 'desc' => '淡水天元宮'),array ('name' => 'IMG_8230.jpg', 'text' => '淡水天元宮', 'desc' => '淡水天元宮'),array ('name' => 'IMG_8233.jpg', 'text' => '淡水天元宮', 'desc' => '淡水天元宮'))
               ),
-              array (
-                'type' => 'demo',
-                'file' => '2015-111317-japan',
-                'text' => '去日本教召',
-                'keywords' => array ('日本', '京都', '銀閣寺', '哲學之道', '清水寺'),
-                'tags' => array ('日本', '京都', '銀閣寺', '哲學之道', '清水寺'),
-                'description' => "去日本教召",
-                'created_at' => '2015-11-13 00:00:00',
-                'updated_at' => '2015-11-17 23:59:59',
-                'pictures' => array (array ('name' => 'IMG_00001.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00003.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00009.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00021.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00023.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00024.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00027.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00028.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00030.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00032.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00038.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00039.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00041.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00045.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00047.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00048.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00049.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00050.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00054.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00056.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00062.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00063.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00066.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00069.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00081.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00086.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00087.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00089.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00092.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00094.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00096.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00099.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00116.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00125.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00126.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00129.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00132.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00134.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00151.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00152.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00153.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00154.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00155.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00157.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00158.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00160.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00165.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00166.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00178.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00179.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00188.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00200.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00212.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00213.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00224.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00233.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00241.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00247.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00265.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00266.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00268.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00271.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00273.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00276.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00286.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00298.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00305.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00349.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00373.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00374.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'))
-              ),
-              array (
+            // array (
+            //     'type' => 'demo',
+            //     'file' => '2015-111317-japan',
+            //     'text' => '去日本教召',
+            //     'keywords' => array ('日本', '京都', '銀閣寺', '哲學之道', '清水寺'),
+            //     'tags' => array ('日本', '京都', '銀閣寺', '哲學之道', '清水寺'),
+            //     'description' => "去日本教召",
+            //     'created_at' => '2015-11-13 00:00:00',
+            //     'updated_at' => '2015-11-17 23:59:59',
+            //     'pictures' => array (array ('name' => 'IMG_00001.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00003.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00009.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00021.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00023.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00024.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00027.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00028.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00030.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00032.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00038.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00039.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00041.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00045.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00047.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00048.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00049.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00050.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00054.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00056.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00062.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00063.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00066.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00069.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00081.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00086.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00087.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00089.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00092.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00094.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00096.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00099.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00116.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00125.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00126.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00129.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00132.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00134.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00151.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00152.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00153.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00154.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00155.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00157.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00158.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00160.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00165.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00166.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00178.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00179.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00188.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00200.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00212.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00213.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00224.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00233.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00241.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00247.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00265.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00266.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00268.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00271.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00273.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00276.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00286.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00298.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00305.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00349.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00373.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'),array ('name' => 'IMG_00374.jpg', 'text' => '去日本教召', 'desc' => '去日本教召'))
+            //   ),
+            array (
                 'type' => 'demo',
                 'file' => '2015-0607-roadrunner-21km',
                 'text' => '北港媽祖盃 21km 半馬路跑',
@@ -132,7 +132,7 @@ return array (
                 'updated_at' => '2015-06-07 23:59:59',
                 'pictures' => array (array ('name' => 'IMG_4956.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4959.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4960.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4961.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4962.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4964.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4965.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4970.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4971.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4974.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4975.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4976.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4977.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_4984.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_5003.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_5011.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'),array ('name' => 'IMG_5012.jpg', 'text' => '北港媽祖盃 21km 半馬路跑', 'desc' => '北港媽祖盃 21km 半馬路跑'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2014-0830-cooling-rack',
                 'text' => '[自製]60元筆電散熱架',
@@ -143,7 +143,7 @@ return array (
                 'updated_at' => '2014-08-30 23:59:59',
                 'pictures' => array (array ('name' => '01.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '03.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '04.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '05.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '06.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '07.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '08.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '09.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '10.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'),array ('name' => '11.jpg', 'text' => '[自製]60元筆電散熱架', 'desc' => '[自製]60元筆電散熱架'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2014-0503-sleeping-cat',
                 'text' => '愛睡覺的貓',
@@ -154,7 +154,7 @@ return array (
                 'updated_at' => '2014-05-03 23:59:59',
                 'pictures' => array (array ('name' => 'IMG_6835.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6839.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6846.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6854.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6919.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6924.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6925.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6926.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6927.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6929.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6931.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'),array ('name' => 'IMG_6951.jpg', 'text' => '愛睡覺的貓', 'desc' => '愛睡覺的貓'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2014-0323-tamsui-sunset',
                 'text' => '被融化的火紅老街',
@@ -165,7 +165,7 @@ return array (
                 'updated_at' => '2014-03-23 23:59:59',
                 'pictures' => array (array ('name' => 'img_0036.jpg', 'text' => '被融化的火紅老街', 'desc' => '被融化的火紅老街'),array ('name' => 'img_0037.jpg', 'text' => '被融化的火紅老街', 'desc' => '被融化的火紅老街'),array ('name' => 'img_0043.jpg', 'text' => '被融化的火紅老街', 'desc' => '被融化的火紅老街'),array ('name' => 'img_0057.jpg', 'text' => '被融化的火紅老街', 'desc' => '被融化的火紅老街'),array ('name' => 'img_0062.jpg', 'text' => '被融化的火紅老街', 'desc' => '被融化的火紅老街'),array ('name' => 'img_0065.jpg', 'text' => '被融化的火紅老街', 'desc' => '被融化的火紅老街'),array ('name' => 'img_0093.jpg', 'text' => '被融化的火紅老街', 'desc' => '被融化的火紅老街'),array ('name' => 'img_0096.jpg', 'text' => '被融化的火紅老街', 'desc' => '被融化的火紅老街'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2013-0202-sakura',
                 'text' => '冬季綻放奇蹟之櫻',
@@ -177,7 +177,7 @@ return array (
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'pictures' => array (array ('name' => 'IMG_2914.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'),array ('name' => 'IMG_3195.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'),array ('name' => 'IMG_3202.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'),array ('name' => 'IMG_3204.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'),array ('name' => 'IMG_3205.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'),array ('name' => 'IMG_3233.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'),array ('name' => 'IMG_3255.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'),array ('name' => 'IMG_3273.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'),array ('name' => 'IMG_3283.jpg', 'text' => '冬季綻放奇蹟之櫻', 'desc' => '冬季綻放奇蹟之櫻'))
               ),
-              array (
+            array (
                 'type' => 'demo',
                 'file' => '2013-0112-tamsui-old-street',
                 'text' => '淡水隨拍',
@@ -187,6 +187,92 @@ return array (
                 'created_at' => '2013-01-12 00:00:00',
                 'updated_at' => '2013-01-12 23:59:59',
                 'pictures' => array (array ('name' => 'IMG_0918.jpg', 'text' => '淡水隨拍', 'desc' => '淡水隨拍'),array ('name' => 'IMG_0933.jpg', 'text' => '淡水隨拍', 'desc' => '淡水隨拍'),array ('name' => 'IMG_0969.jpg', 'text' => '淡水隨拍', 'desc' => '淡水隨拍'),array ('name' => 'IMG_0976.jpg', 'text' => '淡水隨拍', 'desc' => '淡水隨拍'))
+              ),
+          )),
+        array ('type' => 'more', 'text' => 'OA 開箱文', 'file' => 'more-unboxing', 'sub' => array (
+            array (
+                'type' => 'demo',
+                'file' => '2016-0605-sailor-reglus',
+                'text' => 'SAILOR REGLUS 鋼筆',
+                'keywords' => array ('SAILOR', 'REGLUS', '鋼筆', '寫樂', '新青年', '開箱', '開箱文'),
+                'tags' => array ('鋼筆', 'SAILOR', '開箱'),
+                'description' => "今天來開箱一隻鋼筆！他叫做 <a href='http://www.sailor.co.jp/' target='_blank'>SAILOR</a>，是一隻日本牌的鋼筆！台灣譯名好像叫做寫樂，也是知名的鋼筆品牌喔！日前有購入一款 <a href='http://global.rakuten.com/zh-tw/store/bunguya/item/lamy15/' target='_blank'>LAMY Ulster 阿爾斯特</a> 因為歐美 F 尖對我來說還是太粗，再加上這幾天看鋼筆看的都火出來了！所以上午的 Code 寫完後立馬出發！",
+                'created_at' => '2016-06-05 00:00:00',
+                'updated_at' => '2016-06-05 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    '日本 SAILOR 寫樂 REGLUS 新青年鋼筆 - ZEUS // Design Studio' => 'http://www.zeusdesign.com.tw/article/11-日本 SAILOR 寫樂 REGLUS 新青年鋼筆'
+                  )
+              ),
+              array (
+                'type' => 'demo',
+                'file' => '2016-0429-apple-watch',
+                'text' => 'Apple Watch Sport',
+                'keywords' => array ('Apple', 'Watch', '開箱', '開箱文'),
+                'tags' => array ('Apple', 'Watch', '開箱文'),
+                'description' => "今天要來介紹一下 <a href='http://www.apple.com/tw/watch/' target='_blank'>Apple Watch</a>，不過這次的版本是 <b>Sport 運動版</b>！因為最近手機的電信合約剛好即將到期，又加上據說<b>不限速吃到飽即將漲價</b>..想當然爾所以的就趁著月底前，立馬去申辦了續約吃到飽，以及低價購入 Apple Watch Sport！",
+                'created_at' => '2016-04-29 00:00:00',
+                'updated_at' => '2016-04-29 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    'Apple Watch Sport 開箱文 - ZEUS // Design Studio' => 'http://www.zeusdesign.com.tw/article/9-Apple Watch Sport 開箱文'
+                  )
+              ),
+              array (
+                'type' => 'demo',
+                'file' => '2016-0222-porter-tanker-3way',
+                'text' => 'PORTER TANKER 3WAY 開箱文',
+                'keywords' => array ('PORTER', 'TANKER', '3WAY', 'PORTER TANKER 3WAY', 'PORTER TANKER', '開箱文', '開箱'),
+                'tags' => array ('PORTER', 'vívosmart', '開箱文'),
+                'description' => "今天開箱 PORTER 的 TANKER 3WAY 公事包！話說前些日子剛從日本回來的我，買了個小小 PORTER 包包，以滿足了一直想要擁有個 PORTER 的夢，但是發現老闆泰瑞總是邪惡的背著他的多功能小綠包在我面前晃，所以令我也動起了想買的念頭.. (摔",
+                'created_at' => '2016-02-22 00:00:00',
+                'updated_at' => '2016-02-22 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    'PORTER TANKER 3WAY 開箱文 - ZEUS // Design Studio' => 'http://www.zeusdesign.com.tw/article/8-PORTER TANKER 3WAY 開箱文'
+                  )
+              ),
+              array (
+                'type' => 'demo',
+                'file' => '2016-0201-vivosmart-hr',
+                'text' => 'vívosmart HR',
+                'keywords' => array ('GARMIN', 'vívosmart', 'vívosmart HR', 'HR', 'GARMIN', '心率', '開箱文', '開箱'),
+                'tags' => array ('GARMIN', 'vívosmart', '開箱文'),
+                'description' => "話說最近又看上了一款運動手環！說到運動手環，去年買的 <a href='http://www.garmin.com.tw/minisite/vivo/vivosmart/' target='_blank'>vívosmart</a> 算是這台 <a href='http://www.garmin.com.tw/minisite/vivo/vivosmart-hr/' target='_blank'>vívosmart HR</a> 的前身！去年就打算買可以記錄心率的穿戴裝置，但那時坊間有紀錄心率功能的穿戴裝置只有快上萬的運動型手錶才有，要不然就是需要配戴<a href='http://tw.running.biji.co/index.php?q=news&act=info&id=4935' target='_blank'>心率帶</a>才能紀錄心率，然而唯一有符合我要求的就是 <a href='http://www.apple.com/tw/watch/' target='_blank'>Apple Watch</a>。",
+                'created_at' => '2016-02-01 00:00:00',
+                'updated_at' => '2016-02-01 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    'vívosmart HR 開箱文 - ZEUS // Design Studio' => 'http://www.zeusdesign.com.tw/article/2-vívosmart HR 開箱文'
+                  )
+              ),
+              array (
+                'type' => 'demo',
+                'file' => '2012-1219-ipad-with-retina-display',
+                'text' => '配備 Retina 顯示器的 iPad',
+                'keywords' => array ('Apple', 'iPad with Retina display', 'iPad 4', 'iPad', '開箱文', '開箱'),
+                'tags' => array ('Apple', 'iPad', '開箱文'),
+                'description' => "雖然最近大家好像都主打 iPad mini 的文章，開箱文好像比較少 配備 Retina 顯示器的 iPad(iPad4)，但來發一篇！這算是久來的開箱文啦！話說 第一次買 <a href='http://www.apple.com/tw/' target='_blank'>Apple</a> 的產品，所以還是考慮的許久..最後還是不在官網上等了，在我還沒退燒之前直接快點擁有它！",
+                'created_at' => '2012-12-19 00:00:00',
+                'updated_at' => '2012-12-19 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    'iPad - 遲來的 iPad4 不專業開箱文 - 蘋果討論區 - Mobile01' => 'http://www.mobile01.com/topicdetail.php?f=563&t=3120100'
+                  )
+              ),
+              array (
+                'type' => 'demo',
+                'file' => '2010-1217-sym-gt125',
+                'text' => 'SYM GT 125 噴射 前碟煞版',
+                'keywords' => array ('SYM', 'GT125', '噴射', '前碟煞版', '開箱文', '開箱'),
+                'tags' => array ('SYM', 'GT125', '開箱文'),
+                'description' => "話說已經找了一陣子要買的車車，最後考慮了價錢、外觀、C/P值..等，所以選擇了這台 <a href='http://www.sym.com.tw/' target='_blank'>SYM</a> 的 GT125 五期噴射前碟煞版！",
+                'created_at' => '2010-12-17 00:00:00',
+                'updated_at' => '2010-12-17 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    'SYM(250cc以下) - [開箱] SYM GT 125 噴射 前碟煞版!! - 機車討論區 - Mobile01' => 'http://www.mobile01.com/topicdetail.php?f=660&t=1918824'
+                  )
               ),
           )),
       )),
@@ -513,7 +599,53 @@ return array (
           )),
 
       )),
-    array ('group' => 'JavaScript 套件、工具開發', 'title' => '', 'items' => array (
+    array ('group' => '前端套件、工具開發', 'title' => '', 'items' => array (
+        array (
+            'type' => 'demo',
+            'file' => 'material-web-design',
+            'text' => 'Material Web Design',
+            'keywords' => array ('Material', 'Gulp', 'Compass'),
+            'tags' => array ('Material', 'Gulp', 'Compass'),
+            'description' => "這套前端工具主要是參考 <a href='https://www.google.com/design/spec/material-design/introduction.html' target='_blank'>Material UI</a> 風格設計，並且這是一個藉由 <a href='http://compass-style.org/' target='_blank'>Compass</a>、<a href='http://www.w3schools.com/html/' target='_blank'>HTML</a> 以及 <a href='https://jquery.com/' target='_blank'>jQuery</a>..等各種前端工具實作的 Material UI Design for Web，開發者可以自行使用 scss 或者 css 來做修改，目前是使用 jQuery 來達到更多 UI 回饋效果。",
+            'created_at' => '2014-12-08 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'Live Demo' => 'http://comdan66.github.io/OA-material/',
+                'GitHub' => 'https://github.com/comdan66/OA-material',
+              ),
+            'resources' => array (
+                'Live Demo' => 'http://comdan66.github.io/OA-material/',
+                'GitHub' => 'https://github.com/comdan66/OA-material',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1418573892.A.E39.html',
+                'PTT Soft_Job 2' => 'https://www.ptt.cc/bbs/Soft_Job/M.1439537367.A.64B.html',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/766343336736367/',
+                'Facebook Front-End Developers Taiwan 2' => 'https://www.facebook.com/groups/f2e.tw/permalink/871517822885584/',
+                "Tedshd's GitHub" => 'https://github.com/tedshd/material_design_for_web',
+              )
+          ),
+        // array (
+        //     'type' => 'demo',
+        //     'file' => 'oaf2e',
+        //     'text' => 'Material Web Design',
+        //     'keywords' => array ('Material', 'Gulp', 'Compass'),
+        //     'tags' => array ('Material', 'Gulp', 'Compass'),
+        //     'description' => "這套前端工具主要是參考 <a href='https://www.google.com/design/spec/material-design/introduction.html' target='_blank'>Material UI</a> 風格設計，並且這是一個藉由 <a href='http://compass-style.org/' target='_blank'>Compass</a>、<a href='http://www.w3schools.com/html/' target='_blank'>HTML</a> 以及 <a href='https://jquery.com/' target='_blank'>jQuery</a>..等各種前端工具實作的 Material UI Design for Web，開發者可以自行使用 scss 或者 css 來做修改，目前是使用 jQuery 來達到更多 UI 回饋效果。",
+        //     'created_at' => '2014-12-08 00:00:00',
+        //     'updated_at' => date ('Y-m-d H:i:s'),
+        //     'main_links' => array (
+        //         'Live Demo' => 'http://comdan66.github.io/OA-material/',
+        //         'GitHub' => 'https://github.com/comdan66/OA-material',
+        //       ),
+        //     'resources' => array (
+        //         'Live Demo' => 'http://comdan66.github.io/OA-material/',
+        //         'GitHub' => 'https://github.com/comdan66/OA-material',
+        //         'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1418573892.A.E39.html',
+        //         'PTT Soft_Job 2' => 'https://www.ptt.cc/bbs/Soft_Job/M.1439537367.A.64B.html',
+        //         'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/766343336736367/',
+        //         'Facebook Front-End Developers Taiwan 2' => 'https://www.facebook.com/groups/f2e.tw/permalink/871517822885584/',
+        //         "Tedshd's GitHub" => 'https://github.com/tedshd/material_design_for_web',
+        //       )
+        //   ),
         array (
             'type' => 'demo',
             'file' => 'mobile-scroll-view',
@@ -585,7 +717,7 @@ return array (
                 'GitHub' => 'https://github.com/comdan66/OA-navbar',
               )),
         
-        array ('type' => 'more', 'text' => '更多 JavaScript 作品..', 'file' => 'more-javascript', 'sub' => array (
+        array ('type' => 'more', 'text' => '更多前端實作..', 'file' => 'more-f2e', 'sub' => array (
             array (
                 'type' => 'demo',
                 'file' => 'google-maps-menu',
@@ -673,37 +805,15 @@ return array (
               )
           ),
       )),
-    array ('group' => 'css 框架開發', 'title' => '', 'items' => array (
-        array (
-            'type' => 'demo',
-            'file' => 'material-web-design',
-            'text' => 'Material Web Design',
-            'keywords' => array ('Material', 'Gulp', 'Compass'),
-            'tags' => array ('Material', 'Gulp', 'Compass'),
-            'description' => "這套前端工具主要是參考 <a href='https://www.google.com/design/spec/material-design/introduction.html' target='_blank'>Material UI</a> 風格設計，並且這是一個藉由 <a href='http://compass-style.org/' target='_blank'>Compass</a>、<a href='http://www.w3schools.com/html/' target='_blank'>HTML</a> 以及 <a href='https://jquery.com/' target='_blank'>jQuery</a>..等各種前端工具實作的 Material UI Design for Web，開發者可以自行使用 scss 或者 css 來做修改，目前是使用 jQuery 來達到更多 UI 回饋效果。",
-            'created_at' => '2014-12-08 00:00:00',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-material/',
-                'GitHub' => 'https://github.com/comdan66/OA-material',
-              ),
-            'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-material/',
-                'GitHub' => 'https://github.com/comdan66/OA-material',
-                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1418573892.A.E39.html',
-                'PTT Soft_Job 2' => 'https://www.ptt.cc/bbs/Soft_Job/M.1439537367.A.64B.html',
-                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/766343336736367/',
-                'Facebook Front-End Developers Taiwan 2' => 'https://www.facebook.com/groups/f2e.tw/permalink/871517822885584/',
-                "Tedshd's GitHub" => 'https://github.com/tedshd/material_design_for_web',
-              )
-          )
-      )),
+    // array ('group' => 'css 框架開發', 'title' => '', 'items' => array (
+        
+    //   )),
     array ('group' => 'iOS 工具、app 開發', 'title' => '', 'items' => array (
         array (
             'type' => 'demo',
             'file' => 'catmap',
             'text' => 'CatMap',
-            'keywords' => array ('Instagram', 'Facebook'),
+            'keywords' => array ('iOS', 'Object-C', 'Instagram', 'Facebook'),
             'tags' => array ('iOS', 'Object-C', 'REMarkerClusterer', 'AFNetworking', 'AsyncImageView'),
             'description' => "此作是我第一個比較完整的 iOS 的 App，主要利用基本的 iOS 元件製作照相上傳、分享、地圖功能，以下是我一些學習的筆記與心得！",
             'created_at' => '2015-07-05 00:00:00',
@@ -723,313 +833,270 @@ return array (
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/MacDev/M.1436114088.A.832.html',
               )
           ),
-        // array (
-        //     'type' => 'demo',
-        //     'file' => 'oa-hud',
-        //     'text' => 'OAHUD',
-        //     'keywords' => array (),
-        //     'tags' => array (),
-        //     'description' => "",
-        //     'created_at' => '',
-        //     'updated_at' => date ('Y-m-d H:i:s'),
-        //     'main_links' => array (
-        //         'Live Demo' => '',
-        //         'GitHub' => '',
-        //       ),
-        //     'resources' => array (
-        //         'Live Demo' => '',
-        //         'GitHub' => '',
-        //         'Youtube' => '',
-        //         'PTT Soft_Job' => '',
-        //       )
-        //   )
+        array (
+            'type' => 'demo',
+            'file' => 'oa-hud',
+            'text' => 'OAHUD',
+            'keywords' => array ('iOS', 'Object-C', 'OAHUD', 'HUD', 'MBProgressHUD', 'DaiInboxHUD'),
+            'tags' => array ('iOS', 'Object-C'),
+            'description' => "因為看到很多 GitHub 上的專案都寫 HUD，這幾天再研究一種東西，一開始我還不知道怎去下關鍵字 Google，不過找著找著 漸漸有方向了！所以就找了一些範例，以及 Google 找資料亂寫亂測，然後有了一點點心得，就來分享一下，如果有觀念不正確請各位指教！",
+            'created_at' => '2015-07-09 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'Live Demo' => img_url ('views', 'oa-hud', '01.gif'),
+                'GitHub' => 'https://github.com/comdan66/OAHUD',
+              ),
+            'resources' => array (
+                'Live Demo' => img_url ('views', 'oa-hud', '01.gif'),
+                'GitHub' => 'https://github.com/comdan66/OAHUD',
+                'PTT MacDev' => 'https://www.ptt.cc/bbs/MacDev/M.1436456012.A.ACC.html',
+                'MBProgressHUD' => 'https://github.com/jdg/MBProgressHUD',
+                'DaiInboxHUD' => 'https://github.com/DaidoujiChen/DaiInboxHUD',
+                'make HUD by your self' => 'http://nobodyyu.github.io/2015/05/04/make-HUD-by-your-self/',
+              )
+          )
       )),
-    // array ('group' => '接案作品', 'title' => '', 'items' => array (
-    //     array (
-    //         'type' => 'demo',
-    //         'file' => 'zeusdesign',
-    //         'text' => '宙思設計',
-    //         'keywords' => array (),
-    //         'tags' => array (),
-    //         'description' => "",
-    //         'created_at' => '',
-    //         'updated_at' => date ('Y-m-d H:i:s'),
-    //         'main_links' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //           ),
-    //         'resources' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //             'Youtube' => '',
-    //             'PTT Soft_Job' => '',
-    //           )
-    //       ),
-    //     array ('type' => 'more', 'text' => '更多接案作品..', 'file' => 'more-works', 'sub' => array (
-    //       array (
-    //           'type' => 'demo',
-    //           'file' => 'hoga',
-    //           'text' => '嘉豪光學',
-    //           'keywords' => array (),
-    //           'tags' => array (),
-    //           'description' => "",
-    //           'created_at' => '',
-    //           'updated_at' => date ('Y-m-d H:i:s'),
-    //           'main_links' => array (
-    //               'Live Demo' => '',
-    //               'GitHub' => '',
-    //             ),
-    //           'resources' => array (
-    //               'Live Demo' => '',
-    //               'GitHub' => '',
-    //               'Youtube' => '',
-    //               'PTT Soft_Job' => '',
-    //             )
-    //         ),
-    //         array (
-    //             'type' => 'demo',
-    //             'file' => 'chitorch',
-    //             'text' => '奇拓',
-    //             'keywords' => array (),
-    //             'tags' => array (),
-    //             'description' => "",
-    //             'created_at' => '',
-    //             'updated_at' => date ('Y-m-d H:i:s'),
-    //             'main_links' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //               ),
-    //             'resources' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //                 'Youtube' => '',
-    //                 'PTT Soft_Job' => '',
-    //               )
-    //           ),
-    //         array (
-    //             'type' => 'demo',
-    //             'file' => 'bto',
-    //             'text' => '億進建築 BTO',
-    //             'keywords' => array (),
-    //             'tags' => array (),
-    //             'description' => "",
-    //             'created_at' => '',
-    //             'updated_at' => date ('Y-m-d H:i:s'),
-    //             'main_links' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //               ),
-    //             'resources' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //                 'Youtube' => '',
-    //                 'PTT Soft_Job' => '',
-    //               )
-    //           ),
-    //         array (
-    //             'type' => 'demo',
-    //             'file' => 'harmonizedesign',
-    //             'text' => '寬堂空間設計',
-    //             'keywords' => array (),
-    //             'tags' => array (),
-    //             'description' => "",
-    //             'created_at' => '',
-    //             'updated_at' => date ('Y-m-d H:i:s'),
-    //             'main_links' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //               ),
-    //             'resources' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //                 'Youtube' => '',
-    //                 'PTT Soft_Job' => '',
-    //               )
-    //           ),
-    //         array (
-    //             'type' => 'demo',
-    //             'file' => 'ofna',
-    //             'text' => 'OFNA',
-    //             'keywords' => array (),
-    //             'tags' => array (),
-    //             'description' => "",
-    //             'created_at' => '',
-    //             'updated_at' => date ('Y-m-d H:i:s'),
-    //             'main_links' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //               ),
-    //             'resources' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //                 'Youtube' => '',
-    //                 'PTT Soft_Job' => '',
-    //               )
-    //           ),
-    //         array (
-    //             'type' => 'demo',
-    //             'file' => 'vg',
-    //             'text' => '鉅臣 VG',
-    //             'keywords' => array (),
-    //             'tags' => array (),
-    //             'description' => "",
-    //             'created_at' => '',
-    //             'updated_at' => date ('Y-m-d H:i:s'),
-    //             'main_links' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //               ),
-    //             'resources' => array (
-    //                 'Live Demo' => '',
-    //                 'GitHub' => '',
-    //                 'Youtube' => '',
-    //                 'PTT Soft_Job' => '',
-    //               )
-    //           ),
-    //       )),
-    //   )),
-    // array ('group' => 'Java 作品開發', 'title' => '', 'items' => array (
-    //     array (
-    //         'type' => 'demo',
-    //         'file' => 'freshman-java-painter',
-    //         'text' => '大一 Java 小畫家',
-    //         'keywords' => array (),
-    //         'tags' => array (),
-    //         'description' => "",
-    //         'created_at' => '',
-    //         'updated_at' => date ('Y-m-d H:i:s'),
-    //         'main_links' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //           ),
-    //         'resources' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //             'Youtube' => '',
-    //             'PTT Soft_Job' => '',
-    //           )
-    //       ),
-    //     array (
-    //         'type' => 'demo',
-    //         'file' => 'sophomore-java-msn',
-    //         'text' => '大二 Java MSN',
-    //         'keywords' => array (),
-    //         'tags' => array (),
-    //         'description' => "",
-    //         'created_at' => '',
-    //         'updated_at' => date ('Y-m-d H:i:s'),
-    //         'main_links' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //           ),
-    //         'resources' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //             'Youtube' => '',
-    //             'PTT Soft_Job' => '',
-    //           )
-    //       ),
-    //     array (
-    //         'type' => 'demo',
-    //         'file' => 'sophomore-java-assembler',
-    //         'text' => '大二 Java Assembler',
-    //         'keywords' => array (),
-    //         'tags' => array (),
-    //         'description' => "",
-    //         'created_at' => '',
-    //         'updated_at' => date ('Y-m-d H:i:s'),
-    //         'main_links' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //           ),
-    //         'resources' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //             'Youtube' => '',
-    //             'PTT Soft_Job' => '',
-    //           )
-    //       ),
-    //     array (
-    //         'type' => 'demo',
-    //         'file' => 'junior-java-plurker',
-    //         'text' => '大三 Java Plurker',
-    //         'keywords' => array (),
-    //         'tags' => array (),
-    //         'description' => "",
-    //         'created_at' => '',
-    //         'updated_at' => date ('Y-m-d H:i:s'),
-    //         'main_links' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //           ),
-    //         'resources' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //             'Youtube' => '',
-    //             'PTT Soft_Job' => '',
-    //           )
-    //       ),
-    //   )),
-    // array ('group' => '其他', 'title' => '', 'items' => array (
-    //     array (
-    //         'type' => 'demo',
-    //         'file' => 'senior-arduino-micro-lit',
-    //         'text' => '大四 Arduino 新銳展翅創意競賽',
-    //         'keywords' => array (),
-    //         'tags' => array (),
-    //         'description' => "",
-    //         'created_at' => '',
-    //         'updated_at' => date ('Y-m-d H:i:s'),
-    //         'main_links' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //           ),
-    //         'resources' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //             'Youtube' => '',
-    //             'PTT Soft_Job' => '',
-    //           )
-    //       ),
-    //     array (
-    //         'type' => 'demo',
-    //         'file' => 'stylewall',
-    //         'text' => '風尚專案 STYLEWALL 多語系',
-    //         'keywords' => array (),
-    //         'tags' => array (),
-    //         'description' => "",
-    //         'created_at' => '',
-    //         'updated_at' => date ('Y-m-d H:i:s'),
-    //         'main_links' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //           ),
-    //         'resources' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //             'Youtube' => '',
-    //             'PTT Soft_Job' => '',
-    //           )
-    //       ),
-    //     array (
-    //         'type' => 'demo',
-    //         'file' => 'c-comic-book',
-    //         'text' => 'C語言 漫畫下載器',
-    //         'keywords' => array (),
-    //         'tags' => array (),
-    //         'description' => "",
-    //         'created_at' => '',
-    //         'updated_at' => date ('Y-m-d H:i:s'),
-    //         'main_links' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //           ),
-    //         'resources' => array (
-    //             'Live Demo' => '',
-    //             'GitHub' => '',
-    //             'Youtube' => '',
-    //             'PTT Soft_Job' => '',
-    //           )
-    //       ),
-    //   ))
+    array ('group' => '接案作品', 'title' => '', 'items' => array (
+        array (
+            'type' => 'demo',
+            'file' => 'zeusdesign',
+            'text' => '宙思設計',
+            'keywords' => array ('接案', '全端'),
+            'tags' => array ('接案'),
+            'description' => "宙思設計團隊，是一家服務廣泛，凡舉網頁、平面、包裝、印刷及攝影皆可製作的設計公司。也是我長期配合的接案公司，我多數都是承接宙思的前端切版、JavaScript 功能、後端 php 上稿、套版、系統架設的部分，而宙思設計主要著力於“設計”的產出，如果各位有相關需求其實可以與其洽詢！",
+            'created_at' => '2016-01-11 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'Live Demo' => 'http://www.zeusdesign.com.tw/',
+                'GitHub' => 'https://github.com/comdan66/zeusdesign',
+              ),
+            'resources' => array (
+                'Live Demo' => 'http://www.zeusdesign.com.tw/',
+                'GitHub' => 'https://github.com/comdan66/zeusdesign',
+                'Facebook 粉絲頁' => 'https://www.facebook.com/ZeusDesignStudio/',
+              )
+          ),
+        array ('type' => 'more', 'text' => '更多接案作品..', 'file' => 'more-works', 'sub' => array (
+          array (
+              'type' => 'demo',
+              'file' => 'hoga',
+              'text' => '嘉豪光學',
+              'keywords' => array ('接案', '全端'),
+              'tags' => array ('接案'),
+              'description' => "這是一個前、後端技術的外包案實作，其網站名稱為<a href='http://www.hogaoptical.com.tw' target='_blank'>嘉豪光學</a>，嘉豪光學有限公司為多國外知名品牌之總代理。於2007成立至今，憑著經營團隊專業的知識領域和熱誠的服務態度，產品銷售已涵蓋全台眼鏡商圈。",
+              'created_at' => '2016-03-21 00:00:00',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://www.hogaoptical.com.tw/',
+                  'GitHub' => 'https://github.com/comdan66/hoga',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://www.hogaoptical.com.tw/',
+                  'GitHub' => 'https://github.com/comdan66/hoga',
+                ),
+            ),
+          array (
+              'type' => 'demo',
+              'file' => 'chitorch',
+              'text' => '奇拓室內裝修設計',
+              'keywords' => array ('接案', '後端'),
+              'tags' => array ('接案'),
+              'description' => "這是一個後端技術的外包案實作，其網站名稱為<a href='http://www.chitorch.com/' target='_blank'>奇拓室內裝修設計</a>，奇拓室內裝修設計是我近年來第一個與<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>承接的網站外包案，不過這專案我並非為全端作業，而是只實作後端與系統的部分，前端刻板則由宙思設計所製作。",
+              'created_at' => '2014-12-03 00:00:00',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://www.chitorch.com/',
+                  'GitHub' => 'https://github.com/comdan66/chitorch',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://www.chitorch.com/',
+                  'GitHub' => 'https://github.com/comdan66/chitorch',
+                )
+            ),
+          array (
+              'type' => 'demo',
+              'file' => 'bto',
+              'text' => '億進建築經理',
+              'keywords' => array ('接案', '前端'),
+              'tags' => array ('接案'),
+              'description' => "這是一個前端技術的外包案實作，其網站名稱為<a href='http://www.egbto.com.tw/' target='_blank'>億進建築經理</a>，此專案主要負責前端部份，版型設計則由<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
+              'created_at' => '2015-12-07 00:00:00',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://www.egbto.com.tw/',
+                  'GitHub' => 'https://github.com/comdan66/bto',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://www.egbto.com.tw/',
+                  'GitHub' => 'https://github.com/comdan66/bto',
+                )
+            ),
+          array (
+              'type' => 'demo',
+              'file' => 'harmonizedesign',
+              'text' => '寬堂空間設計',
+              'keywords' => array ('接案', '全端', '視差滾動'),
+              'tags' => array ('接案'),
+              'description' => "這是一個前、後端技術的外包案實作，其網站名稱為<a href='http://www.harmonizedesign.com/' target='_blank'>寬堂空間設計</a>，此專案主要負責前端刻板、後端串接部份，版型設計則由<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
+              'created_at' => '2015-02-26 00:00:00',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://www.harmonizedesign.com/',
+                  'GitHub' => 'https://github.com/comdan66/harmonize',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://www.harmonizedesign.com/',
+                  'GitHub' => 'https://github.com/comdan66/harmonize',
+                  'The history of aeronautics' => 'http://jonathannicol.com/projects/parallax-scrolling/',
+                )
+            ),
+          array (
+              'type' => 'demo',
+              'file' => 'ofna',
+              'text' => '歐芙娜 OFNA',
+              'keywords' => array ('接案', '全端', '多國語系'),
+              'tags' => array ('接案'),
+              'description' => "這是一個前、後、系統端技術的外包案實作，其網站名稱為<a href='http://www.ofna-bio.com/' target='_blank'>歐芙娜 OFNA</a>，此專案主要負責前端刻板、後端串接、系統端部署部份，版型設計則由<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
+              'created_at' => '2015-04-03 00:00:00',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://www.ofna-bio.com/',
+                  'GitHub' => 'https://github.com/comdan66/ofna',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://www.ofna-bio.com/',
+                  'GitHub' => 'https://github.com/comdan66/ofna',
+                )
+            ),
+          array (
+              'type' => 'demo',
+              'file' => 'vg',
+              'text' => 'VG 鉅臣',
+              'keywords' => array ('接案', '前端'),
+              'tags' => array ('接案'),
+              'description' => "這是一個前端技術的外包案實作，其網站名稱為<a href='http://www.vgmold.com.tw/' target='_blank'>VG 鉅臣</a>，此專案主要負責前端刻板部份，版型設計則由<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
+              'created_at' => '2016-03-18',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://www.vgmold.com.tw/',
+                  'GitHub' => 'https://github.com/comdan66/vg',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://www.vgmold.com.tw/',
+                  'GitHub' => 'https://github.com/comdan66/vg',
+                )
+            ),
+          )),
+      )),
+    array ('group' => 'Java 作品開發', 'title' => '', 'items' => array (
+        array (
+            'type' => 'demo',
+            'file' => 'freshman-java-painter',
+            'text' => '大一 Java 小畫家',
+            'keywords' => array (),
+            'tags' => array (),
+            'description' => "此項作品是大學一年級的下學期高等程式設計的學期作業，因為實作讓我對<b>物件導向</b>語言的 <b>封裝</b>、<b>繼承</b>、<b>多型</b>..等特性更加熟悉！有別於上學期的 C，Java 可以利用 <a href='https://zh.wikipedia.org/wiki/Swing_(Java)' target='_blank'>GUI 介面</a>實作出我理想中的作品，並且可以以封裝成 <a href='https://en.wikipedia.org/wiki/JAR_(file_format)' target='_blank'>.jar</a> 的方式與朋友分享。",
+            'created_at' => '2008-05-01 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'GitHub' => 'https://github.com/comdan66/freshman-java-painter',
+              ),
+            'resources' => array (
+                'GitHub' => 'https://github.com/comdan66/freshman-java-painter',
+              )
+          ),
+        array (
+            'type' => 'demo',
+            'file' => 'sophomore-java-msn',
+            'text' => '大二 Java MSN',
+            'keywords' => array (),
+            'tags' => array (),
+            'description' => "因為學習 Java 語言而發現了有 <a href='https://zh.wikipedia.org/wiki/UDT' target='_blank'>UDT</a>、<a href='https://zh.wikipedia.org/wiki/傳輸控制協定' target='_blank'>TCP</a> 通訊協定的 <a href='https://en.wikipedia.org/wiki/Network_socket' target='_blank'>Socket</a> 物件可以使用，所以就在利用 <a href='https://zh.wikipedia.org/wiki/Swing_(Java)' target='_blank'>Java GUI</a> 與 Socket 做了簡單結合，由基本的 Java Socket 實作基本的<a href='https://zh.wikipedia.org/wiki/主從式架構' target='_blank'>主從式架構</a>的伺服端、客戶端，藉由伺服器的角色幫助客服端建立連線而達到通訊的功能，並且模擬 <a href='https://zh.wikipedia.org/wiki/對等網路' target='_blank'>p2p</a> 的連線機制，以自定義簡單的格式來達到基本的溝通串流。",
+            'created_at' => '2008-10-01 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'Live Demo' => 'https://www.youtube.com/watch?v=Z8ozcKeDsbk',
+                'GitHub' => 'https://github.com/comdan66/sophomore-java-msn',
+              ),
+            'resources' => array (
+                'GitHub' => 'https://github.com/comdan66/sophomore-java-msn',
+                'Youtube' => 'https://www.youtube.com/watch?v=Z8ozcKeDsbk',
+              )
+          ),
+        array (
+            'type' => 'demo',
+            'file' => 'sophomore-java-assembler',
+            'text' => '大二 Java Assembler',
+            'keywords' => array (),
+            'tags' => array (),
+            'description' => "為系統程式課程實作 <a href='https://en.wikipedia.org/wiki/Assembly_language#Assembler' target='_blank'>Assembler 組譯器</a>，主功能是將 <a href='https://en.wikipedia.org/wiki/SIC/XE' target='_blank'>SIC XE Literal</a> 的<a href='https://zh.wikipedia.org/wiki/汇编语言' target='_blank'>組合語言</a>編譯成<a href='https://zh.wikipedia.org/wiki机器语言' target='_blank'>機械語言</a>，借由實作這個轉換器的同時，更加的了解組合語言與機械語言間的關係與原理。當時會選擇使用 Java 是因為 <a href='https://zh.wikipedia.org/wiki/Swing_(Java)' target='_blank'>GUI</a> 介面更容易表現出理想的操作介面，更可以讓使用者更加方便轉換組合語言。",
+            'created_at' => '2009-05-01 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'GitHub' => 'https://github.com/comdan66/sophomore-java-assembler',
+              ),
+            'resources' => array (
+                'GitHub' => 'https://github.com/comdan66/sophomore-java-assembler',
+              )
+          ),
+        array (
+            'type' => 'demo',
+            'file' => 'junior-java-plurker',
+            'text' => '大三 Java Plurker',
+            'keywords' => array (),
+            'tags' => array (),
+            'description' => "此作品是當年大學三年級時期藉由<a href='https://www.plurk.com/' target='_blank'>噗浪</a>官方提供的 <a href='http://www.plurk.com/API' target='_blank'>API</a>、SDK 所實作的 <a href='https://zh.wikipedia.org/wiki/Swing_(Java)' target='_blank'>Java GUI</a> 程式，實作一套結合噗浪微網誌的社群管理軟體。此次功能包含了<b>軟體安裝</b>、<b>多角色登入</b>、<b>發訊息</b>、<b>回復訊息</b>、<b>智慧回復機器人</b>..等。",
+            'created_at' => '2009-04-01 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'Live Demo' => 'https://www.youtube.com/watch?v=12P3aX6LQac',
+                'GitHub' => 'https://github.com/comdan66/junior-java-plurker',
+              ),
+            'resources' => array (
+                'GitHub' => 'https://github.com/comdan66/junior-java-plurker',
+                'Youtube' => 'https://www.youtube.com/watch?v=12P3aX6LQac',
+              )
+          ),
+      )),
+    array ('group' => '其他', 'title' => '', 'items' => array (
+        array (
+            'type' => 'demo',
+            'file' => 'senior-arduino-micro-lit',
+            'text' => '大四 Arduino 新銳展翅創意競賽',
+            'keywords' => array (),
+            'tags' => array (),
+            'description' => "大三專題中使用了 <a href='https://www.arduino.cc/en/Main/ArduinoBoardUno' target='_blank'>Arduino UNO</a> 以及多項 Sensor 組合出多項功能作品，主要架構是以 Arduino 與各個裝置互相溝通，溝通的方式使用 <a href='https://en.wikipedia.org/wiki/XBee' target='_blank'>xbee</a> 無線套件。作品功能大致上是借由不同 Arduino 所收集到的資訊並彙集並且提供給駕駛者車況等安全資訊，所以算是基本版的<b>智慧型腳踏車</b>實作。",
+            'created_at' => '2010-04-01 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                '新銳展翅創意競賽' => 'http://micro.lit.edu.tw/',
+                // 'Live Demo' => '',
+                // 'GitHub' => '',
+              ),
+            'resources' => array (
+                '新銳展翅創意競賽' => 'http://micro.lit.edu.tw/',
+                // 'Live Demo' => '',
+                // 'GitHub' => '',
+                // 'Youtube' => '',
+                // 'PTT Soft_Job' => '',
+              )
+          ),
+        array (
+            'type' => 'demo',
+            'file' => 'c-comic-book',
+            'text' => 'C語言 漫畫下載器',
+            'keywords' => array (),
+            'tags' => array (),
+            'description' => "此實作是使用 <a href='https://zh.wikipedia.org/wiki/C语言' target='_blank'>C語言</a> Console 界面繪出模擬 <a href='https://zh.wikipedia.org/zh-tw/BBS' target='_blank'>BBS</a> 版型，並且利用 <a href='https://en.wikipedia.org/wiki/Wget' target='_blank'>wget</a> 將知名網站 <a href='http://www.comicbus.com/' target='_blank'>8comic</a> 上的原始碼轉譯出漫畫並下載，簡單說就是使用 C語言 製作一個<a href='https://zh.wikipedia.org/wiki/網路蜘蛛' target='_blank'>爬蟲</a>，並且以 Console 的方式模擬 BBS 介面的排版，然後將爬回來的數據以 <a href='http://www.w3schools.com/html/' target='_blank'>HTML</a> 方式開啟。",
+            'created_at' => '2012-11-17 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'GitHub' => 'https://github.com/comdan66/c-comic-book',
+              ),
+            'resources' => array (
+                'Live Demo' => '',
+                'GitHub' => 'https://github.com/comdan66/c-comic-book',
+              )
+          ),
+      ))
   );

@@ -81,6 +81,7 @@ $figureMinHeight: 250px;
       float: left;
       width: 300px;
       padding-left: 30px;
+      margin-right: 30px;
       padding-top: 30px;
     }
     @media screen and (min-width: 0) and (max-width: #{$mediaMobileWidth - 1px}) {
@@ -152,6 +153,10 @@ $figureMinHeight: 250px;
             color: rgba(95, 95, 95, 1.00);
           }
         }
+        span:first-child {
+          width: 63px;
+          text-align: right;
+        }
         a {
           @include a(1px, false);
         }
@@ -166,11 +171,10 @@ $figureMinHeight: 250px;
             left: -10px;
             display: inline-block;
             height: 1px;
-            width: 230px;
+            width: 260px;
             border-top: 1px dashed rgba(222, 222, 222, 1.00);
             @media screen and (min-width: 0) and (max-width: #{$mediaMobileWidth - 1px}) {
               left: 10px;
-              width: 250px;
             }
           }
         }

@@ -156,6 +156,7 @@
     }
   }
 
+  @media screen and (min-width: $mediaMobileWidth) {
   // @media screen and (min-width: 0px) and (max-width: #{$mediaTabletWidth - 1px}) {
     > a {
       figure {
@@ -173,6 +174,7 @@
         }
       }
     }
+  }
   // }
   @media screen and (min-width: $mediaTabletWidth) {
 

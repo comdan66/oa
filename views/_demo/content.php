@@ -32,8 +32,8 @@
             <li><b><?php echo $text;?></b>：<a href='<?php echo $main_link;?>' target='_blank'><b><?php echo $main_link;?></b></a></li>
     <?php } ?>
         </ul>
+        <br/>
 <?php }?>
-  <br/>
 
 <?php echo $_view;
       if (!(isset ($is_album) && $is_album)) { ?>

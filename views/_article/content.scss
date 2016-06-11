@@ -150,7 +150,6 @@ section.a {
       padding: 0;
       padding-bottom: 0;
       border-bottom-color: rgba(42, 90, 149, 0.25);
-      display: inline-block;
       text-decoration: none;
       font-weight: normal;
       color: rgba(105, 139, 180, 1.00);
@@ -160,7 +159,7 @@ section.a {
         &:before {
           content: '';
           position: absolute;
-          bottom: 3px;
+          bottom: 0;
           left: 0;
           display: inline-block;
           width: 100%;

@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+include_once '../core/controller.php';
+
+$html = Controller::load ()->demo (function ($view) {
+  return array (
+      'is_album' => true,
+    );
+});
+
+if (!defined ('ENV')) echo $html;
+else return $html;
