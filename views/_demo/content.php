@@ -43,7 +43,7 @@
 
 <?php
 if ($current['pictures']) { ?>
-  <div class='pics'>
+  <div class='pics album'>
 <?php
     foreach ($current['pictures'] as $i => $pictures) {
       if ($pictures) { ?>

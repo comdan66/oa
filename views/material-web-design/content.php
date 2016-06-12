@@ -1,4 +1,14 @@
-<p><a class='n' href='http://comdan66.github.io/OA-material/' target='_blank'><img width='800' alt="<?php echo $alt;?>" src='<?php echo img_url ('views', $current['file'], '02.jpg');?>' /></a><br/>▲ 各種 Material UI 元素</p>
+<div class='pics'>
+  <div class='pictures n1'>
+    <figure href='<?php echo base_url ($current['file'] . EXTENSION);?>'>
+      <img alt="各種 Material UI 元素 <?php echo $alt;?>" src="<?php echo img_url ('views', $current['file'], '02.jpg');?>" />
+      <figcaption data-description='各種 Material UI 元素'>各種 Material UI 元素</figcaption>
+    </figure>
+  </div>
+</div>
+<br />
+<br />
+<br />
 <br />
 <p>以下是基本的介紹：</p>
 <ul>

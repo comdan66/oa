@@ -8,5 +8,6 @@ $(function () {
   window.$body.find ('#_c ._c article a:not([href^=mailto])').each (function () { $(this).attr ('target', '_blank'); });
 
   $('.pics figure').imgLiquid ({verticalAlign: 'center'});
-  window.fns.initPhotoSwipeFromDOM ('.pics', 'figure');
+  window.fns.initPhotoSwipeFromDOM ('article', 'figure');
+  window.fns.initPhotoSwipeFromDOM ('.album', 'figure');
 });

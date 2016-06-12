@@ -6,10 +6,7 @@
 @import "_oa";
 
 @include font-face("frame", font-files("frame/frame.eot", "frame/frame.woff", "frame/frame.ttf", "frame/frame.svg"));
-// @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
 [class^="icon-"], [class*=" icon-"], [class^="fi-"], [class*=" fi-"] {font-family: 'frame', Roboto,'Helvetica Neue',Helvetica,Arial,'Hiragino Maru Gothic ProN','メイリオ','ヒラギノ丸ゴ ProN W4','微軟正黑體',Meiryo,'Droid Sans';speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1;@include font-smoothing(antialiased);}
-// [class^="icon-"], [class*=" icon-"] {font-family: 'icomoon', "微軟正黑體", "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;}
-
 .fi-m:before {
     content: "\e600";
 }
@@ -42,6 +39,15 @@
 }
 .fi-pics:before {
     content: "\e90e";
+}
+.fi-zi:before {
+    content: "\e903";
+}
+.fi-camera:before {
+    content: "\e90f";
+}
+.fi-gift:before {
+    content: "\e99f";
 }
 
 * {
@@ -1067,7 +1073,25 @@ body > footer {
     @include border-radius(2px);
     overflow: hidden;
     cursor: pointer;
-
+    &:hover {
+      &:before {
+        @include opacity(1);
+        @include text-shadow(0 0 10px rgba(0, 0, 0, .20), 0 0 1px rgba(0, 0, 0, .50));
+      }
+    }
+    &:before {
+      @include icomoon-font('frame') { content: "\e903"; };
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      padding: 10px;
+      color: rgba(255, 255, 255, 1);
+      font-size: 20px;
+      @include opacity(.9);
+      @include transition(all .3s);
+      @include text-shadow(0 0 10px rgba(0, 0, 0, .20), 0 0 1px rgba(0, 0, 0, .30));
+    }
 
     img {
       width: 100%;

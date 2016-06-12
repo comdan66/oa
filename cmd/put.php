@@ -14,21 +14,6 @@ echo "\n" . str_repeat ('=', 80) . "\n";
 echo ' ' . color ('◎ 執行開始 ◎', 'P') . "\n";
 echo str_repeat ('-', 80) . "\n";
 
-
-// // var_dump (S3::listBuckets ());
-// // var_dump (S3::getBucket ('pic.tku.ioa.tw'));
-// // var_dump (S3::putBucket ('xpic.tku.ioa.tw'));
-// // var_dump (S3::deleteBucket ('xpic.tku.ioa.tw'));
-// // var_dump (S3::putFile ('/Users/OA/www/oa/tmp/360.html', 'xpic.tku.ioa.tw', '360.html'));
-// // var_dump (S3::getObject ('xpic.tku.ioa.tw', '360.html', '/Users/OA/www/oa/360.html'));
-// // var_dump (S3::copyObject ('xpic.tku.ioa.tw', '360.html', 'xpic.tku.ioa.tw', '3602.html'));
-// // var_dump (S3::getBucketLocation ('xpic.tku.ioa.tw'));
-// // var_dump (S3::deleteObject ('xpic.tku.ioa.tw', '360.html'));
-// // var_dump (S3::getAuthenticatedURL ('xpic.tku.ioa.tw', '360.html', 10));
-// // var_dump (S3::listDistributions ());
-
-// exit ();
-
 // ========================================================================
 // ========================================================================
 // ========================================================================
