@@ -142,7 +142,7 @@ $i = 0;
 echo '- ' . (array_filter (array_map (function ($file) use ($s3_config, &$i, $c) {
   echo sprintf ("\r" . ' ➜ ' . color ('刪除 S3 上需要刪除的檔案(' . $c . ')', 'g') . " - % 3d%% ", ceil ((++$i * 100) / $c));
   return !S3::deleteObject ($s3_config['bucket'], $file['name']);
-}, $delete_files)) ? color ('刪除 S3 上需要刪除的檔案失敗！', 'r') : color ('刪除 S3 上所有檔案成功！', 'C')) . "\n";
+}, $delete_files)) ? color ('刪除 S3 上需要刪除的檔案失敗！', 'r') : color ('刪除 S3 上需要刪除的檔案成功！', 'C')) . "\n";
 echo str_repeat ('-', 80) . "\n";
 
 // ========================================================================

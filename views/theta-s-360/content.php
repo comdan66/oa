@@ -21,8 +21,8 @@
 <div class='pics'>
   <div class='pictures n2'>
     <figure href='<?php echo base_url ('theta-s-360' . EXTENSION . '#&gid=2&pid=1&id=0');?>'>
-      <img alt="GPS 資訊與地提 <?php echo $alt;?>" src="<?php echo img_url ('views', $current['file'], '05.jpg');?>" />
-      <figcaption data-description='Theta S 本身有 GPS 內建定位功能，所以在上傳時候可以使用 php 去讀取 exif 的經緯度資料，並一起新增於資料庫內，前端輸出再搭配 Google Maps 即可做出此相簿地圖的功能。'>GPS 資訊與地提</figcaption>
+      <img alt="GPS 資訊與地圖 <?php echo $alt;?>" src="<?php echo img_url ('views', $current['file'], '05.jpg');?>" />
+      <figcaption data-description='Theta S 本身有 GPS 內建定位功能，所以在上傳時候可以使用 php 去讀取 exif 的經緯度資料，並一起新增於資料庫內，前端輸出再搭配 Google Maps 即可做出此相簿地圖的功能。'>GPS 資訊與地圖</figcaption>
     </figure>
     <figure href='<?php echo base_url ('theta-s-360' . EXTENSION . '#&gid=2&pid=2&id=0');?>'>
       <img alt="複製網址功能 <?php echo $alt;?>" src="<?php echo img_url ('views', $current['file'], '06.jpg');?>" />
@@ -58,4 +58,4 @@
 <br/>
 <br/>
 <p><b>壓縮圖檔</b> 主要是因為檔案大怕前端傳輸太久，所以這次加入 <a href='https://tinypng.com/' target='_blank'>TinyPNG</a> 作為壓縮圖片的方式，以減少圖片大小，提升傳輸速度以及成本，原本用 <a href='https://compressor.io/' target='_blank'>https://compressor.io/</a> 但是處理時間花太久了，所以就先不慘用。</p>
-<p>這作品我故意分成兩個架構實作，在 GitHub 上分別是 <b>360</b>、<b>ThetaS</b> 兩包專案，基本上 <a href='http://360.ioa.tw/' target='_blank'>360</a> 是一包前後端寫在一起的專案，而 <a href='http://comdan66.github.io/ThetaS/index.html' target='_blank'>ThetaS</a> 則是純前端的架構，ThetaS 藉由 360 專案提供的 api 所實作的網站，而 360 則是架設在 AWS EC2 上面，ThetaS 則是架構在 <a href='https://pages.github.com/' target='_blank'>GitHub.io</a> 的服務上，會這樣拆開的原因主要是因為想練習前後端分離的架構模式，另一方面則是藉由 GitHub.io 的服務減低 AWS EC2 的負擔。</p>
+<p>這作品我故意分成兩個架構實作，在 GitHub 上分別是 <b>360</b>、<b>ThetaS</b> 兩包專案，基本上 <a href='http://360.ioa.tw/' target='_blank'>360</a> 是一包前後端寫在一起的專案，而 <a href='http://works.ioa.tw/ThetaS/' target='_blank'>ThetaS</a> 則是純前端的架構，ThetaS 藉由 360 專案提供的 api 所實作的網站，而 360 則是架設在 AWS EC2 上面，ThetaS 則是架構在 <a href='https://pages.github.com/' target='_blank'>GitHub.io</a> 的服務上，會這樣拆開的原因主要是因為想練習前後端分離的架構模式，另一方面則是藉由 GitHub.io 的服務減低 AWS EC2 的負擔。</p>

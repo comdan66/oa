@@ -315,7 +315,7 @@ return array (
             'resources' => array (
                 '後端 Live Demo' => 'http://360.ioa.tw/',
                 '後端 GitHub' => 'https://github.com/comdan66/360',
-                '前端 Live Demo' => 'http://comdan66.github.io/ThetaS/',
+                '前端 Live Demo' => 'http://works.ioa.tw/ThetaS/',
                 '前端 GitHub' => 'https://github.com/comdan66/ThetaS',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1450408446.A.009.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/919907694713263/',
@@ -332,11 +332,11 @@ return array (
             'created_at' => '2015-7-10 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/weather/index.html',
+                'Live Demo' => 'http://works.ioa.tw/weather/',
                 'GitHub' => 'https://github.com/comdan66/weather',
               ),
             'resources' => array (
-                '前端 Live Demo' => 'http://comdan66.github.io/weather/index.html',
+                '前端 Live Demo' => 'http://works.ioa.tw/weather/',
                 '前端 GitHub' => 'https://github.com/comdan66/weather',
                 '後端 GitHub' => 'https://github.com/comdan66/weather_php',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1438158895.A.071.html',
@@ -375,11 +375,11 @@ return array (
             'created_at' => '2015-05-04 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-richman/',
+                'Live Demo' => 'http://works.ioa.tw/OA-richman/',
                 'GitHub' => 'https://github.com/comdan66/OA-richman',
               ),
             'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-richman/',
+                'Live Demo' => 'http://works.ioa.tw/OA-richman/',
                 'GitHub' => 'https://github.com/comdan66/OA-richman',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1431526940.A.7B1.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/830618616975505/',
@@ -396,11 +396,11 @@ return array (
             'created_at' => '2014-12-03 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-maze/',
+                'Live Demo' => 'http://works.ioa.tw/OA-maze/',
                 'GitHub' => 'https://github.com/comdan66/OA-maze',
               ),
             'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-maze/',
+                'Live Demo' => 'http://works.ioa.tw/OA-maze/',
                 'GitHub' => 'https://github.com/comdan66/OA-maze',
               )
           ),
@@ -416,11 +416,11 @@ return array (
                 'created_at' => '2014-12-16 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://comdan66.github.io/blog/',
+                    'Live Demo' => 'http://works.ioa.tw/blog/',
                     'GitHub' => 'https://github.com/comdan66/blog',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://comdan66.github.io/blog/',
+                    'Live Demo' => 'http://works.ioa.tw/blog/',
                     'GitHub' => 'https://github.com/comdan66/blog',
                     'Youtube' => 'https://www.youtube.com/watch?v=pUBWKUEb7Do',
                     'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1419438051.A.B58.html',
@@ -541,11 +541,11 @@ return array (
                 'created_at' => '2015-01-28 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://comdan66.github.io/flickr/',
+                    'Live Demo' => 'http://works.ioa.tw/flickr/',
                     'GitHub' => 'https://github.com/comdan66/flickr',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://comdan66.github.io/flickr/',
+                    'Live Demo' => 'http://works.ioa.tw/flickr/',
                     'GitHub' => 'https://github.com/comdan66/flickr',
                   )
               ),
@@ -559,11 +559,11 @@ return array (
                 'created_at' => '2014-12-29 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://comdan66.github.io/u2/',
+                    'Live Demo' => 'http://works.ioa.tw/u2/',
                     'GitHub' => 'https://github.com/comdan66/u2',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://comdan66.github.io/u2/',
+                    'Live Demo' => 'http://works.ioa.tw/u2/',
                     'GitHub' => 'https://github.com/comdan66/u2',
                     'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1419871812.A.813.html',
                     'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/774027889301245/',
@@ -599,11 +599,11 @@ return array (
             'created_at' => '2014-12-08 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-material/',
+                'Live Demo' => 'http://works.ioa.tw/OA-material/',
                 'GitHub' => 'https://github.com/comdan66/OA-material',
               ),
             'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-material/',
+                'Live Demo' => 'http://works.ioa.tw/OA-material/',
                 'GitHub' => 'https://github.com/comdan66/OA-material',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1418573892.A.E39.html',
                 'PTT Soft_Job 2' => 'https://www.ptt.cc/bbs/Soft_Job/M.1439537367.A.64B.html',
@@ -622,11 +622,11 @@ return array (
         //     'created_at' => '2014-12-08 00:00:00',
         //     'updated_at' => date ('Y-m-d H:i:s'),
         //     'main_links' => array (
-        //         'Live Demo' => 'http://comdan66.github.io/OA-material/',
+        //         'Live Demo' => 'http://works.ioa.tw/OA-material/',
         //         'GitHub' => 'https://github.com/comdan66/OA-material',
         //       ),
         //     'resources' => array (
-        //         'Live Demo' => 'http://comdan66.github.io/OA-material/',
+        //         'Live Demo' => 'http://works.ioa.tw/OA-material/',
         //         'GitHub' => 'https://github.com/comdan66/OA-material',
         //         'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1418573892.A.E39.html',
         //         'PTT Soft_Job 2' => 'https://www.ptt.cc/bbs/Soft_Job/M.1439537367.A.64B.html',
@@ -637,6 +637,48 @@ return array (
         //   ),
         array (
             'type' => 'demo',
+            'file' => 'browser-console-qrcode',
+            'text' => '瀏覽器 Console 上畫 QR',
+            'keywords' => array ('Browser Console', 'QR Code'),
+            'tags' => array ('JavaScript'),
+            'description' => "來用瀏覽器除錯器畫一個屬於個人的彩蛋吧！使用瀏覽器 <a href='https://developer.chrome.com/devtools/docs/console' target='_blank'>Console.log</a> 的功能，再利用 <a href='http://www.w3schools.com/css/' target='_blank'>css</a> 語法調整樣式，製作有趣的個人彩蛋，本次使用 <a href='https://zh.wikipedia.org/zh-tw/QR碼' target='_blank'>QRCode</a> 當作實作範例，大家也可以改成自己的喲！Painting QR Code on the browser Console.",
+            'created_at' => '2016-06-13 01:50:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'Live Demo' => 'http://works.ioa.tw/browser_console_qrcode/',
+                'GitHub' => 'https://github.com/comdan66/browser_console_qrcode',
+              ),
+            'resources' => array (
+                'Live Demo' => 'http://works.ioa.tw/browser_console_qrcode/',
+                'GitHub' => 'https://github.com/comdan66/browser_console_qrcode',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1465179541.A.7AE.html',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1008440282526670/',
+                'Facebook JavaScript.tw' => 'https://www.facebook.com/groups/javascript.tw/permalink/786607411440599',
+
+              )),
+        array (
+            'type' => 'demo',
+            'file' => 'number-flipping-counter',
+            'text' => '數字翻轉計數器',
+            'keywords' => array ('數字翻轉計數器', '計數器'),
+            'tags' => array ('jQuery'),
+            'description' => "使用簡單的 JavaScript 與 SCSS 實作數字翻轉計數器，藉由設定每個計數器元素的 class 來達成不同數字的顯示，分別以 n0~n9 的 class 來設定子元素 top 的位置。",
+            'created_at' => '2016-06-13 01:50:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'Live Demo' => 'http://works.ioa.tw/number_flipping_counter/',
+                'GitHub' => 'https://github.com/comdan66/number_flipping_counter/',
+              ),
+            'resources' => array (
+                'Live Demo' => 'http://works.ioa.tw/number_flipping_counter/',
+                'GitHub' => 'https://github.com/comdan66/number_flipping_counter/',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1465779607.A.89F.html',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1012215045482527/',
+                'Facebook JavaScript.tw' => 'https://www.facebook.com/groups/javascript.tw/permalink/790143711086969',
+
+              )),
+        array (
+            'type' => 'demo',
             'file' => 'mobile-scroll-view',
             'text' => 'Mobile Scroll View',
             'keywords' => array ('scroll-view', 'scroll view', 'imgLiquid', 'jQuery', 'jQuery-UI', 'jQuery.UI.Touch-Punch', 'jQuery Extend'),
@@ -645,11 +687,11 @@ return array (
             'created_at' => '2016-03-14 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-mobileScrollView/',
+                'Live Demo' => 'http://works.ioa.tw/OA-mobileScrollView/',
                 'GitHub' => 'https://github.com/comdan66/OA-mobileScrollView',
               ),
             'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-mobileScrollView/',
+                'Live Demo' => 'http://works.ioa.tw/OA-mobileScrollView/',
                 'GitHub' => 'https://github.com/comdan66/OA-mobileScrollView',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1457948370.A.BE9.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/960507037319995/',
@@ -664,11 +706,11 @@ return array (
             'created_at' => '2014-11-28 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-imgLiquid/',
+                'Live Demo' => 'http://works.ioa.tw/OA-imgLiquid/',
                 'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
               ),
             'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-imgLiquid/',
+                'Live Demo' => 'http://works.ioa.tw/OA-imgLiquid/',
                 'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
               )),
         array (
@@ -681,11 +723,11 @@ return array (
             'created_at' => '2014-12-01 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-scrollSliderView/',
+                'Live Demo' => 'http://works.ioa.tw/OA-scrollSliderView/',
                 'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
               ),
             'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-scrollSliderView/',
+                'Live Demo' => 'http://works.ioa.tw/OA-scrollSliderView/',
                 'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
               )),
         array (
@@ -698,11 +740,11 @@ return array (
             'created_at' => '2014-12-04 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-navbar/',
+                'Live Demo' => 'http://works.ioa.tw/OA-navbar/',
                 'GitHub' => 'https://github.com/comdan66/OA-navbar',
               ),
             'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-navbar/',
+                'Live Demo' => 'http://works.ioa.tw/OA-navbar/',
                 'GitHub' => 'https://github.com/comdan66/OA-navbar',
               )),
         
@@ -717,11 +759,11 @@ return array (
                 'created_at' => '2015-11-05 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://comdan66.github.io/OA-googleMapsMenu/index.html',
+                    'Live Demo' => 'http://works.ioa.tw/OA-googleMapsMenu/',
                     'GitHub' => 'https://github.com/comdan66/OA-googleMapsMenu',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://comdan66.github.io/OA-googleMapsMenu/index.html',
+                    'Live Demo' => 'http://works.ioa.tw/OA-googleMapsMenu/',
                     'GitHub' => 'https://github.com/comdan66/OA-googleMapsMenu',
                   )
               ),
@@ -735,11 +777,11 @@ return array (
                 'created_at' => '2015-12-09 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://comdan66.github.io/TaipeiTowns/index.html',
+                    'Live Demo' => 'http://works.ioa.tw/TaipeiTowns/',
                     'GitHub' => 'https://github.com/comdan66/TaipeiTowns',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://comdan66.github.io/TaipeiTowns/index.html',
+                    'Live Demo' => 'http://works.ioa.tw/TaipeiTowns/',
                     'GitHub' => 'https://github.com/comdan66/TaipeiTowns',
                     'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/916800425023990/',
                     'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1449695345.A.4C2.html',
@@ -780,11 +822,11 @@ return array (
             'created_at' => '2015-08-26 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-ElasticaSearch/guide/index.html',
+                'Live Demo' => 'http://works.ioa.tw/OA-ElasticaSearch/',
                 'GitHub' => 'https://github.com/comdan66/OA-ElasticaSearch',
               ),
             'resources' => array (
-                'Live Demo' => 'http://comdan66.github.io/OA-ElasticaSearch/guide/index.html',
+                'Live Demo' => 'http://works.ioa.tw/OA-ElasticaSearch/',
                 'GitHub' => 'https://github.com/comdan66/OA-ElasticaSearch',
                 'PTT PHP' => 'https://www.ptt.cc/bbs/PHP/M.1440735206.A.FC7.html',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1440735487.A.4C1.html',

@@ -35,9 +35,8 @@ $html = Controller::load ()->article (function ($view) {
       "logo" => array ("@type" => "ImageObject", "url" => img_url ('amp_title.png'), "width" => 600, "height" => 60),
       "description" => mb_strimwidth (remove_ckedit_tag ($view->current['description']), 0, 150, '…','UTF-8'),
       "sameAs" => array (
-          "https://www.facebook.com/comdan66",
           "http://www.ioa.tw/",
-          "http://comdan66.github.io/",
+          "https://www.facebook.com/comdan66",
           "https://www.youtube.com/user/comdan66",
           "https://plus.google.com/u/0/+吳政賢",
           "https://picasaweb.google.com/108708350604082729522",
