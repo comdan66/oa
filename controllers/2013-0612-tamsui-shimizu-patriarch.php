@@ -7,10 +7,8 @@
 
 include_once '../core/controller.php';
 
-$html = Controller::load ()->demo (function ($view) {
-  return array (
-      'is_album' => true,
-    );
+$html = Controller::load ()->album (function ($view) {
+  return array ();
 });
 
 if (!defined ('ENV')) echo $html;

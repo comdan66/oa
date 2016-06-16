@@ -49,7 +49,7 @@ if ($current['pictures']) { ?>
       if ($pictures) { ?>
         <div class='pictures n<?php echo count ($pictures);?>'>
     <?php foreach ($pictures as $j => $picture) { ?>
-            <figure href='<?php echo base_url ($current['file'] . EXTENSION . '#&gid=' . ($i + 1) . '&pid=' . ($j + 1) . '&id=0');?>'>
+            <figure href='<?php echo base_url ($current['file'] . EXTENSION);?>'>
               <img alt="<?php echo $picture['text'];?> - <?php echo $_site_title;?>" src="<?php echo img_url ('views', $current['file'], $picture['name']);?>" />
               <figcaption data-description='<?php echo $picture['desc'];?>'><?php echo $picture['text'];?></figcaption>
             </figure>

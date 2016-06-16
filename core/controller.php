@@ -106,6 +106,14 @@ Class Controller {
     return $this;
   }
 
+  public function pure ($setting) {
+    if ($return = $setting ($this))
+      foreach ($return as $key => $value)
+        $this->add ($key, $value);
+    $this->add ('title', $this->current['text']);
+    return $this->add ('h1', $this->current['text'])
+                ->_view ('pure');
+  }
   public function more ($setting) {
     $return = $setting ($this);
     $og_path = FCPATH . 'assets' . DIRECTORY_SEPARATOR . (defined ('ENV') ? 'img' : 'img_ori') . DIRECTORY_SEPARATOR . 'og' . DIRECTORY_SEPARATOR;
@@ -221,6 +229,13 @@ Class Controller {
     $return = $setting ($this);
     return $this->_view ('article');
   }
+  public function album ($setting) {
+    return $this->add ('is_album', true)
+                ->demo ($setting);
+  }
+  public function unpacking ($setting) {
+    return $this->demo ($setting);
+  }
   public function demo ($setting) {
 
     $return = $setting ($this);
@@ -283,16 +298,19 @@ Class Controller {
         'site_title' => $this->site_title,
       )));
 
-    if ($type)
-      $content = $this->add_js ('_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js')
-                      ->add_css ('_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . '.css')
-                      ->load_view (VIEW . '_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . EXT, array_merge ($this->vars, array (
+    if ($type) {
+      if (file_exists (VIEW . ($tmp = '_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js')))
+        $this->add_js ($tmp);
+      if (file_exists (VIEW . ($tmp = '_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . '.css')))
+        $this->add_css ($tmp);
+      $content = $this->load_view (VIEW . '_' . $type . DIRECTORY_SEPARATOR . CONTENT_NAME . EXT, array_merge ($this->vars, array (
                           'current' => $this->current,
                           '_np' => $this->np,
                           '_site_title' => $this->site_title,
                           '_view' => $content
                         )));
-
+    }
+      
     if (file_exists (VIEW . ($tmp = $this->file . DIRECTORY_SEPARATOR . CONTENT_NAME . '.js')))
       $this->add_js ($tmp);
 

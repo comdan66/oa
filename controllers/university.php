@@ -4,30 +4,8 @@ include_once '../core/controller.php';
 
 $html = Controller::load ('index')->article (function ($view) {
   $description = '進入了大學後才正式學習的程式語言，而當時搭配基礎程式教學的工具則是C語言，我認為 C 對我日後學習程式來說的一項重要的基石，也因為 C 的指標、串列，對於電腦記憶體的管控有了初步的認識。因為高等程式語言課程，我選修了 Java，幸好有 C 的資料結構基礎，對於 Java 物件導向的觀念銜接上相對順利；Java 是我大學愛用的程式語言，主要因為可以使用 Graphical User Interface(GUI) 的介面設計，所以展現出來的畫面可以更加豐富，當時也是著做出多樣性的作品，如：Java 小畫家、串接噗浪 API 的應用程式、使用 Socket 實作模擬 MSN 的通訊程式、系統程式的 Assembler，這些都是利用 Java GUI 介面所設計的！';
-
-  $tags_list = array ();
-  foreach ($view->menus as $menu) {
-    if (isset ($menu['keywords'])) array_push ($tags_list, $menu['keywords']);
-    if (isset ($menu['tags'])) array_push ($tags_list, $menu['tags']);
-    if (isset ($menu['sub']) && $menu['sub'])
-      foreach ($menu['sub'] as $sub) {
-        if (isset ($sub['keywords'])) array_push ($tags_list, $sub['keywords']);
-        if (isset ($sub['tags'])) array_push ($tags_list, $sub['tags']);
-      }
-
-    if (isset ($menu['items']) && $menu['items'])
-      foreach ($menu['items'] as $items) {
-        if (isset ($items['keywords'])) array_push ($tags_list, $items['keywords']);
-        if (isset ($items['tags'])) array_push ($tags_list, $items['tags']);
-
-        if (isset ($items['sub']) && $items['sub'])
-          foreach ($items['sub'] as $sub) {
-            if (isset ($sub['keywords'])) array_push ($tags_list, $sub['keywords']);
-            if (isset ($sub['tags'])) array_push ($tags_list, $sub['tags']);
-          }
-      }
-  }
-  $tags = array_slice (array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), array_2d_to_1d ($tags_list))), 25, 25);
+  $tags_list = np_map ($view->menus, array ('keywords', 'tags'));
+  $tags = array_slice (array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), $tags_list)), 0, 25);
 
   if ($tags)
     foreach ($tags as $i => $tag)

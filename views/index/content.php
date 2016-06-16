@@ -30,10 +30,6 @@
   </section>
 </article>
 
-<article>
-  <section class='a'>
-  </section>
-</article>
 
 <div class='pics'>
   <div class='pictures n2'>

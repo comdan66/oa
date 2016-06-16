@@ -129,6 +129,32 @@ if (!function_exists ('oasort')) {
 }
 
 
+if (!function_exists ('np_map')) {
+  function np_map ($menus, $keys = array ('tags')) {
+    $return = array ();
+    foreach ($menus as $menu) {
+      foreach ($keys as $key)
+        if (isset ($menu[$key])) array_push ($return, $menu[$key]);
+
+      if (isset ($menu['sub']) && $menu['sub'])
+        foreach ($menu['sub'] as $sub)
+          foreach ($keys as $key)
+            if (isset ($sub[$key])) array_push ($return, $sub[$key]);
+
+      if (isset ($menu['items']) && $menu['items'])
+        foreach ($menu['items'] as $items) {
+          foreach ($keys as $key)
+            if (isset ($items[$key])) array_push ($return, $items[$key]);
+
+          if (isset ($items['sub']) && $items['sub'])
+            foreach ($items['sub'] as $sub)
+              foreach ($keys as $key)
+                if (isset ($sub[$key])) array_push ($return, $sub[$key]);
+        }
+    }
+    return  (array_2d_to_1d ($return));
+  }
+}
 if (!function_exists ('np')) {
   function np (&$menus, $file) {
     $items = array ();
@@ -151,7 +177,7 @@ if (!function_exists ('np')) {
         foreach ($oasort as $cc) { $d = array (); for ($i = 0; $i < $cc; $i++) array_push ($d, $item['pictures'][$j++]); array_push ($b, $d); }
         $item['pictures'] = $b;
 
-        if (in_array ($item['type'], array ('article', 'demo', 'album'))) {
+        if (in_array ($item['type'], array ('article', 'demo', 'album', 'search', 'unpacking'))) {
           array_push ($items, $item);
         } else if (in_array ($item['type'], array ('more', 'albums'))) {
           foreach ($item['sub'] as &$sub) {
@@ -168,7 +194,7 @@ if (!function_exists ('np')) {
             $b = array (); $j = 0; foreach ($oasort as $cc) { $d = array (); for ($i = 0; $i < $cc; $i++) array_push ($d, $sub['pictures'][$j++]); array_push ($b, $d); }
             $sub['pictures'] = $b;
 
-            if (in_array ($sub['type'], array ('article', 'demo', 'album'))) {
+            if (in_array ($sub['type'], array ('article', 'demo', 'album', 'unpacking', 'search'))) {
               if ($sub['active'] = $sub['file'] == $file)
                 $item['active'] = true;
 

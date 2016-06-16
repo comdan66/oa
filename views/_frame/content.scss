@@ -7,6 +7,7 @@
 
 @include font-face("frame", font-files("frame/frame.eot", "frame/frame.woff", "frame/frame.ttf", "frame/frame.svg"));
 [class^="icon-"], [class*=" icon-"], [class^="fi-"], [class*=" fi-"] {font-family: 'frame', Roboto,'Helvetica Neue',Helvetica,Arial,'Hiragino Maru Gothic ProN','メイリオ','ヒラギノ丸ゴ ProN W4','微軟正黑體',Meiryo,'Droid Sans';speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1;@include font-smoothing(antialiased);}
+
 .fi-m:before {
     content: "\e600";
 }
@@ -34,21 +35,42 @@
 .fi-mr:before {
     content: "\f607";
 }
-.fi-github:before {
-    content: "\e902";
-}
-.fi-pics:before {
-    content: "\e90e";
+.fi-cb:before {
+    content: "\e905";
 }
 .fi-zi:before {
     content: "\e903";
 }
-.fi-camera:before {
+.fi-ar:before {
+    content: "\f182";
+}
+.fi-cr:before {
+    content: "\f437";
+}
+.fi-li:before {
+    content: "\f438";
+}
+.fi-g:before {
+    content: "\e904";
+}
+.fi-gh:before {
+    content: "\e902";
+}
+.fi-p:before {
+    content: "\e90e";
+}
+.fi-ca:before {
     content: "\e90f";
 }
-.fi-gift:before {
-    content: "\e99f";
+.fi-sh:before {
+    content: "\e986";
 }
+.fi-st:before {
+    content: "\e604";
+}
+
+
+
 
 * {
   &, &:after, &:before {

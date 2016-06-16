@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?gwzpy1');
-    src:    url('fonts/icomoon.eot?gwzpy1#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?gwzpy1') format('truetype'),
-        url('fonts/icomoon.woff?gwzpy1') format('woff'),
-        url('fonts/icomoon.svg?gwzpy1#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?pdtrym');
+    src:    url('fonts/icomoon.eot?pdtrym#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?pdtrym') format('truetype'),
+        url('fonts/icomoon.woff?pdtrym') format('woff'),
+        url('fonts/icomoon.svg?pdtrym#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,16 +54,34 @@
 .icon-zi:before {
     content: "\e903";
 }
-.icon-github:before {
+.icon-ar:before {
+    content: "\f182";
+}
+.icon-cr:before {
+    content: "\f437";
+}
+.icon-li:before {
+    content: "\f438";
+}
+.icon-g:before {
+    content: "\e904";
+}
+.icon-gh:before {
     content: "\e902";
 }
-.icon-pics:before {
+.icon-cb:before {
+    content: "\e905";
+}
+.icon-p:before {
     content: "\e90e";
 }
-.icon-camera:before {
+.icon-ca:before {
     content: "\e90f";
 }
-.icon-gift:before {
-    content: "\e99f";
+.icon-sh:before {
+    content: "\e986";
+}
+.icon-st:before {
+    content: "\e604";
 }
 

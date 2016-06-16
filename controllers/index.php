@@ -3,29 +3,8 @@
 include_once '../core/controller.php';
 
 $html = Controller::load ()->article (function ($view) {
-  $tags_list = array ();
-  foreach ($view->menus as $menu) {
-    if (isset ($menu['keywords'])) array_push ($tags_list, $menu['keywords']);
-    if (isset ($menu['tags'])) array_push ($tags_list, $menu['tags']);
-    if (isset ($menu['sub']) && $menu['sub'])
-      foreach ($menu['sub'] as $sub) {
-        if (isset ($sub['keywords'])) array_push ($tags_list, $sub['keywords']);
-        if (isset ($sub['tags'])) array_push ($tags_list, $sub['tags']);
-      }
-
-    if (isset ($menu['items']) && $menu['items'])
-      foreach ($menu['items'] as $items) {
-        if (isset ($items['keywords'])) array_push ($tags_list, $items['keywords']);
-        if (isset ($items['tags'])) array_push ($tags_list, $items['tags']);
-
-        if (isset ($items['sub']) && $items['sub'])
-          foreach ($items['sub'] as $sub) {
-            if (isset ($sub['keywords'])) array_push ($tags_list, $sub['keywords']);
-            if (isset ($sub['tags'])) array_push ($tags_list, $sub['tags']);
-          }
-      }
-  }
-  $tags = array_slice (array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), array_2d_to_1d ($tags_list))), 0, 25);
+  $tags_list = np_map ($view->menus, array ('keywords', 'tags'));
+  $tags = array_slice (array_unique (array_merge (preg_split ('/, ?/', KEYWORDS), $tags_list)), 0, 25);
 
   $view->set_json_ld (array (
       "@context" => "http://schema.org",
@@ -37,6 +16,7 @@ $html = Controller::load ()->article (function ($view) {
       "sameAs" => array (
           "http://www.ioa.tw/",
           "https://www.facebook.com/comdan66",
+          "https://github.com/comdan66",
           "https://www.youtube.com/user/comdan66",
           "https://plus.google.com/u/0/+吳政賢",
           "https://picasaweb.google.com/108708350604082729522",
@@ -70,7 +50,8 @@ $html = Controller::load ()->article (function ($view) {
        ->add_meta (array ('property' => 'article:modified_time', 'content' => date ('c', strtotime ($view->current['updated_at']))))
        ->add_meta (array ('property' => 'article:published_time', 'content' => date ('c', strtotime ($view->current['created_at']))))
       
-       ->add ('message', '部分作品資料尚未準備齊全，努力更新中..');
+       // ->add ('message', '部分作品資料尚未準備齊全，努力更新中..')
+       ;
 });
 
 if (!defined ('ENV')) echo $html;

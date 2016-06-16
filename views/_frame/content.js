@@ -58,6 +58,7 @@ $(function () {
   window.$body.find ('#_c ._c #_np figure > a').imgLiquid ({verticalAlign: 'center'});
 
   window.fns = {};
+  window.vars = {};
   window.fns.console = function (color1, color2, qrs) {
     var css1 = "color:" + color1 + ";font-size:10px;margin:3px;text-shadow: 0 -6px " + color1 + ", 6px 0 " + color1 + ", 6px -6px " + color1 + ";", css2 = "color:" + color2 + ";font-size:10px;margin:3px;text-shadow: 0 -6px " + color2 + ", 6px 0 " + color2 + ", 6px -6px " + color2 + ";",qrt = '\\n';
     for (var i = 0, c = []; i < qrs.length; i++, qrt += '\\n') for (var j = 0; j < qrs[i].length; c.push (qrs[i][j] ? ('"' + css1 + '"') : ('"' + css2 + '"')), j++) qrt += qrs[i][j] ? "%c▇" : "%c▇";
