@@ -356,19 +356,19 @@ return array (
           ),
         array (
             'type' => 'demo',
-            'file' => 'activities-taipei',
+            'file' => 'taipei-activities',
             'text' => '台北 • 藝文活動',
             'keywords' => array ('藝文活動', '台北藝文活動', '台北藝文', '新北藝文', '雙北藝文', '新北藝文活動', '藝文'),
             'tags' => array ('AWS S3'),
-            'description' => "這是項利用<a href='http://data.ntpc.gov.tw/' target='_blank'>新北市政府資料開放平台</a>提供的<a href='http://data.ntpc.gov.tw/od/detail?oid=781B822E-214A-4B9A-B4DB-32C9F4626D98' target='_blank'>新北市政府文化局藝文活動</a> API 所製作的台北 • 藝文活動。使用 <a href='https://zh.wikipedia.org/zh-tw/PHP' target='_blank'>php</a> 將 API 資料取下來後編輯成 <a href='https://zh.wikipedia.org/zh-tw/HTML' target='_blank'>HTML</a> 頁面，並且放置到 <a href='https://aws.amazon.com/tw/s3/' target='_blank'>Amazon S3</a>。放置部署過程中同時將頁面所需的 <a href='https://zh.wikipedia.org/wiki/层叠样式表' target='_blank'>css</a>、<a href='https://zh.wikipedia.org/wiki/JavaScript' target='_blank'>JavaScript</a> 做好 Merge、Minify、Uglify，並且一起上傳至 S3。",
+            'description' => "這是項利用<a href='http://data.ntpc.gov.tw/' target='_blank'>新北市政府資料開放平台</a>提供的<a href='http://data.ntpc.gov.tw/od/detail?oid=781B822E-214A-4B9A-B4DB-32C9F4626D98' target='_blank'>新北市政府文化局藝文活動</a> API 所製作的台北 • 藝文活動。使用 <a href='https://zh.wikipedia.org/zh-tw/PHP' target='_blank'>php</a> 將 API 資料取下來後編輯成 <a href='https://zh.wikipedia.org/zh-tw/HTML' target='_blank'>HTML</a> 頁面，並且放置到 <a href='https://aws.amazon.com/tw/s3/' target='_blank'>Amazon S3</a>。放置部署過程中同時將頁面所需的 <a href='https://zh.wikipedia.org/wiki/层叠样式表' target='_blank'>css</a>、<a href='https://zh.wikipedia.org/wiki/JavaScript' target='_blank'>JavaScript</a>，並且一起上傳至 S3。",
             'created_at' => '2016-06-27 00:00:00',
             'updated_at' => '2016-06-29 00:00:00',
             'main_links' => array (
-                'Live Demo' => 'http://activities.taipei.ioa.tw/',
-                'GitHub' => 'https://github.com/comdan66/activities.taipei',
+                'Live Demo' => 'http://works.ioa.tw/taipei_activities/',
+                'GitHub' => 'https://github.com/comdan66/taipei_activities',
               ),
             'resources' => array (
-                'Live Demo' => 'http://activities.taipei.ioa.tw/',
+                'Live Demo' => 'http://works.ioa.tw/taipei_activities/',
                 'GitHub' => 'https://github.com/comdan66/activities.taipei',
               )
           ),
