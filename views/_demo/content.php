@@ -13,10 +13,10 @@
 <div class='i'>
   <figure>
     <a href='<?php echo $current['url'];?>' target='_blank'>
-      <img src='<?php echo avatar_url (MY_FB_UID);?>' />
+      <img src='<?php echo avatar_url (OA_FB_UID);?>' />
     </a>
   </figure>
-  <a href='<?php echo MY_FB_URL;?>' target='_blank'><?php echo MY_NAME;?></a><span>·</span>
+  <a href='<?php echo OA_FB_URL;?>' target='_blank'><?php echo OA;?></a><span>·</span>
   <time><?php echo date ('Y.m.d', strtotime (date ($current['created_at'])));?></time><span>·</span>
   <time datetime='<?php echo $current['created_at'];?>'><?php echo $current['created_at'];?></time>
 </div>
@@ -37,7 +37,7 @@
 
 <?php echo $_view;
       if (!(isset ($is_album) && $is_album)) { ?>
-        <p>以上就是這次 <?php echo $current['text'];?> 的開發心得如有任何問題<a href="mailto:<?php echo MY_MAIL;?>?subject=關於 iOA 的問題&body=Hi OA,%0D%0A%0D%0A    我在您的網站上看到有關於 <?php echo $current['text'];?> 的心得，以下是我的一些相關問題..">歡迎來信</a>討論。</p>
+        <p>以上就是這次 <?php echo $current['text'];?> 的開發心得如有任何問題<a href="mailto:<?php echo OA_MAIL;?>?subject=關於 iOA 的問題&body=Hi OA,%0D%0A%0D%0A    我在您的網站上看到有關於 <?php echo $current['text'];?> 的心得，以下是我的一些相關問題..">歡迎來信</a>討論。</p>
 <?php }?>
 </article>
 

@@ -21,9 +21,12 @@ define ('XML', '.xml');
 
 define ('NAME', ($temps = array_filter (explode (DIRECTORY_SEPARATOR, PATH))) ? end ($temps) : '');
 
-define ('OA', '吳政賢');
-define ('URL_OA', 'http://www.ioa.tw/');
-define ('URL_OA_FB', 'https://www.facebook.com/comdan66/');
-define ('URL_OA_FB_UID', '100000100541088');
-define ('URL_FB_APP_ID', '199589883770118');
-define ('URL_FB_ADMIN_ID', URL_OA_FB_UID);
+define ('ENV', 'build');
+
+define ('PATH_ASSETS', PATH . 'assets' . DIRECTORY_SEPARATOR);
+define ('PATH_JS', PATH_ASSETS . 'js' . DIRECTORY_SEPARATOR);
+define ('PATH_CSS', PATH_ASSETS . 'css' . DIRECTORY_SEPARATOR);
+
+define ('PATH_CORE', PATH . 'core' . DIRECTORY_SEPARATOR);
+define ('PATH_CONTROLLER', PATH . 'controllers' . DIRECTORY_SEPARATOR);
+define ('PATH_SITEMAP', PATH . 'sitemap' . DIRECTORY_SEPARATOR);

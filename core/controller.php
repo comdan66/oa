@@ -50,13 +50,13 @@ Class Controller {
          ->add_meta (array ('property' => 'og:url', 'content' => $this->np['c']['url']))
          ->add_meta (array ('property' => 'og:title', 'content' => ''))
          ->add_meta (array ('property' => 'og:description', 'content' => ''))
-         ->add_meta (array ('property' => 'fb:admins', 'content' => FB_ADMINS))
+         ->add_meta (array ('property' => 'fb:admins', 'content' => FB_ADMIN_ID))
          ->add_meta (array ('property' => 'fb:app_id', 'content' => FB_APP_ID))
          ->add_meta (array ('property' => 'og:locale', 'content' => 'zh_TW'))
          ->add_meta (array ('property' => 'og:locale:alternate', 'content' => 'en_US'))
          ->add_meta (array ('property' => 'og:type', 'content' => 'article'))
-         ->add_meta (array ('property' => 'article:author', 'content' => FB_ARTICLE_AUTHOR))
-         ->add_meta (array ('property' => 'article:publisher', 'content' => FB_ARTICLE_PUBLISHER))
+         ->add_meta (array ('property' => 'article:author', 'content' => FB_ARTICLE_AUTHOR_URL))
+         ->add_meta (array ('property' => 'article:publisher', 'content' => FB_ARTICLE_PUBLISHER_URL))
          ->add_meta (array ('property' => 'og:image', 'content' => $img = '', 'alt' => $this->site_title))
          ->add_meta (array ('property' => 'og:image:type', 'tag' => 'larger', 'content' => 'image/' . pathinfo ($img, PATHINFO_EXTENSION)))
          ->add_meta (array ('property' => 'og:image:width', 'content' => '1200'))
@@ -258,8 +258,8 @@ Class Controller {
         'datePublished' => date ('c', strtotime ($this->current['created_at'])),
         'dateModified' => date ('c', strtotime ($this->current['updated_at'])),
         'author' => array (
-            '@type' => 'Person', 'name' => MY_NAME, 'url' => MY_FB_URL,
-            'image' => array ('@type' => 'ImageObject', 'url' => avatar_url (MY_FB_UID, 300, 300), 'height' => 300, 'width' => 300)
+            '@type' => 'Person', 'name' => OA, 'url' => OA_FB_URL,
+            'image' => array ('@type' => 'ImageObject', 'url' => avatar_url (OA_FB_UID, 300, 300), 'height' => 300, 'width' => 300)
           ),
         'publisher' => array (
             '@type' => 'Organization', 'name' => $this->site_title,

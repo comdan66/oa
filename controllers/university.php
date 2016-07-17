@@ -25,8 +25,8 @@ $html = Controller::load ('index')->article (function ($view) {
       'datePublished' => date ('c', strtotime ($view->current['created_at'])),
       'dateModified' => date ('c', strtotime ($view->current['updated_at'])),
       'author' => array (
-          '@type' => 'Person', 'name' => MY_NAME, 'url' => MY_FB_URL,
-          'image' => array ('@type' => 'ImageObject', 'url' => avatar_url (MY_FB_UID, 300, 300), 'height' => 300, 'width' => 300)
+          '@type' => 'Person', 'name' => OA, 'url' => OA_FB_URL,
+          'image' => array ('@type' => 'ImageObject', 'url' => avatar_url (OA_FB_UID, 300, 300), 'height' => 300, 'width' => 300)
         ),
       'publisher' => array (
           '@type' => 'Organization', 'name' => $view->site_title,

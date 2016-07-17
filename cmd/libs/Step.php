@@ -14,6 +14,8 @@ class Step {
   public static $uploadDirs = array ();
   public static $s3Files = array ();
   public static $localFiles = array ();
+  public static $menus = array ();
+  public static $files = array ();
   
   public static function progress ($str, $c = 0) {
     $isStr = !is_numeric ($c);
@@ -42,7 +44,7 @@ class Step {
   }
   public static function showUrl () {
     echo "\n";
-    echo " " . self::color ('➜', 'R') . " " . self::color ('您的網址是', 'G') . "：" . self::color (PROTOCOL . BUCKET . '/' . NAME . '/', 'W') . "\n\n";
+    echo " " . self::color ('➜', 'R') . " " . self::color ('您的網址是', 'G') . "：" . self::color (PROTOCOL . BUCKET . '/', 'W') . "\n\n";
     echo str_repeat ('=', 80) . "\n";
   }
   public static function memoryUnit ($size) {
@@ -74,8 +76,17 @@ class Step {
     if ($str) Step::progress ($str, $c);
   }
   public static function init () {
-    $paths = array (PATH);
+    
+    $paths = array (PATH, PATH_CSS, PATH_JS, PATH_SITEMAP);
+
     Step::newLine ('-', '初始化環境與變數', count ($paths));
+
+    if ($errors = array_filter (array_map (function ($path) {
+        if (!file_exists ($path)) Step::mkdir777 ($path);
+        Step::progress ('初始化環境與變數');
+        return !(is_dir ($path) && is_writable ($path)) ? ' 目錄：' . $path : '';
+      }, $paths))) Step::error ($errors);
+
     Step::progress ('初始化環境與變數', '完成！');
   }
   public static function initS3 ($access, $secret) {
@@ -95,7 +106,7 @@ class Step {
         $files = array_filter ($files, function ($file) use ($uploadDir) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), $uploadDir['formats']); });
         Step::progress ('列出即將上傳所有檔案');
         return array_map (function ($file) {
-          
+
           if (MINIFY) {
             $bom = pack ('H*','EFBBBF');
             switch (pathinfo ($file, PATHINFO_EXTENSION)) {
@@ -112,12 +123,12 @@ class Step {
     Step::progress ('列出即將上傳所有檔案', '完成！');
   }
   public static function listS3Files () {
-    Step::newLine ('-', '列出 S3 上所有檔案', count ($list = S3::getBucket (BUCKET, NAME)));
+    Step::newLine ('-', '列出 S3 上所有檔案', count ($list = S3::getBucket (BUCKET)));
 
     try {
       Step::$s3Files = array_filter ($list, function ($file) {
         Step::progress ('列出 S3 上所有檔案');
-        return preg_match ('/^' . NAME . '\//', $file['name']);
+        return $file['name'];
       });
     } catch (Exception $e) {
       Step::error ($errors);
@@ -130,7 +141,7 @@ class Step {
 
     $files = array_filter (Step::$localFiles, function ($file) {
       foreach (Step::$s3Files as $s3File)
-        if (($s3File['name'] == (NAME . DIRECTORY_SEPARATOR . $file['uri'])) && ($s3File['hash'] == $file['md5']))
+        if (($s3File['name'] == $file['uri']) && ($s3File['hash'] == $file['md5']))
           return false;
       Step::progress ('過濾需要上傳檔案');
       return $file;
@@ -145,7 +156,7 @@ class Step {
     if ($errors = array_filter (array_map (function ($file) {
         try {
           Step::progress ('上傳檔案');
-          return !S3::putFile ($file['path'], BUCKET, NAME . DIRECTORY_SEPARATOR . $file['uri']) ? ' 檔案：' . $file['path'] : '';
+          return !S3::putFile ($file['path'], BUCKET, $file['uri']) ? ' 檔案：' . $file['path'] : '';
         } catch (Exception $e) {
           return ' 檔案：' . $file['path'];
         }
@@ -156,7 +167,7 @@ class Step {
     Step::newLine ('-', '過濾需要刪除檔案');
 
     $files = array_filter (Step::$s3Files, function ($s3File) {
-      foreach (Step::$localFiles as $localFile) if ($s3File['name'] == (NAME . DIRECTORY_SEPARATOR . $localFile['uri'])) return false;
+      foreach (Step::$localFiles as $localFile) if ($s3File['name'] == $localFile['uri']) return false;
       Step::progress ('過濾需要刪除檔案');
       return true;
     });
@@ -284,4 +295,122 @@ class Step {
 
     return true;
   }
+  public static function mkdir777 ($path) {
+    $oldmask = umask (0);
+    @mkdir ($path, 0777, true);
+    umask ($oldmask);
+    return true;
+  }
+  public static function deleteLastFiles () {
+    $html = array_filter (array_map (function ($file) { return PATH . $file; }, Step::directoryList (PATH)), function ($file) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), array ('html', 'txt')); });
+    $css = array_filter (array_map (function ($file) { return PATH_CSS . $file; }, Step::directoryList (PATH_CSS)), function ($file) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), array ('css')); });
+    $js = array_filter (array_map (function ($file) { return PATH_JS . $file; }, Step::directoryList (PATH_JS)), function ($file) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), array ('js')); });
+    $xml = array_filter (array_map (function ($file) { return PATH_SITEMAP . $file; }, Step::directoryList (PATH_SITEMAP)), function ($file) { return in_array (pathinfo ($file, PATHINFO_EXTENSION), array ('xml')); });
+
+    Step::newLine ('-', '清除檔案', count ($html) + count ($css) + count ($js) + count ($xml) + 1);
+
+    if ($errors = array_filter (array_map (function ($file) {
+        Step::progress ('清除檔案');
+        return file_exists ($file) && !unlink ($file) ? ' 檔案：' . $file : '';
+      }, array_merge ($html, $css, $js, $xml, array (PATH . 'robots' . TXT))))) Step::error ($errors);
+
+    Step::progress ('清除檔案', '完成！');
+  }
+  public static function loadPhp () {
+    Step::$menus = array ();
+    Step::newLine ('-', '載入 php', count ($groups = include (PATH_CORE . 'menus.php')));
+    
+    foreach ($groups as $group) {
+      foreach ($group['items'] as $menu) {
+        if (isset ($menu['file'])) array_push (Step::$menus, $menu['file'] . '.php');
+        if (isset ($menu['sub'])) foreach ($menu['sub'] as $sub) if (isset ($sub['file'])) array_push (Step::$menus, $sub['file'] . '.php');
+        if (isset ($menu['tabs'])) foreach ($menu['tabs'] as $tab) array_push (Step::$menus, $tab . '.php');
+      }
+      Step::progress ('載入 php');
+    }
+    Step::progress ('載入 php', '完成！');
+  }
+  public static function buildFiles () {
+    Step::$files = array ();
+    Step::mergeArrayRecursive (Step::directoryList (PATH_CONTROLLER), Step::$files, PATH_CONTROLLER);
+    Step::newLine ('-', '編譯檔案', count (Step::$files));
+
+    Step::$files = array_map (function ($file) {
+      Step::progress ('編譯檔案');
+      return array (
+          'name' => pathinfo (pathinfo ($file, PATHINFO_BASENAME), PATHINFO_FILENAME),
+          'content' => include_once ($file),
+        );
+    }, array_filter (Step::$files, function ($file) { return in_array (pathinfo ($file, PATHINFO_BASENAME), Step::$menus); }));
+
+    Step::progress ('編譯檔案', '完成！');
+  }
+  public static function writeHtmls () {
+    Step::newLine ('-', '寫入 HTML 檔案', count (Step::$files));
+
+    if ($errors = array_filter (array_map (function ($file) {
+      Step::progress ('寫入 HTML 檔案');
+      return !Step::writeFile (PATH . $file['name'] . HTML, $file['content']) ? ' 名稱：' . $file['name'] . HTML : '';
+    }, Step::$files))) Step::error ($errors);
+
+    Step::progress ('寫入 HTML 檔案', '完成！');
+  }
+  public static function writeSitemap () {
+    Step::newLine ('-', '寫入 Sitemap 檔案', count (Step::$files) + 2);
+
+    $sit_map = new Sitemap ($domain = PROTOCOL . rtrim (BUCKET, '/'));
+    $sit_map->setPath (PATH_SITEMAP);
+    $sit_map->setDomain ($domain);
+    $sit_map->addItem ('/', '0.5', 'weekly', date ('c'));
+    Step::progress ('寫入 Sitemap 檔案');
+    
+    foreach (Step::$files as $file) {
+      $sit_map->addItem ('/' . $file['name'] . HTML, '0.5', 'weekly', date ('c'));
+      Step::progress ('寫入 Sitemap 檔案');
+    }
+    $sit_map->createSitemapIndex ($domain . '/sitemap/', date ('c'));
+    Step::progress ('寫入 Sitemap 檔案');
+
+    Step::progress ('寫入 Sitemap', '完成！');
+  }
+  public static function writeRobotsTxt () {
+    Step::newLine ('-', '寫入 Robots TXT');
+
+    if (!write_file (PATH . 'robots' . TXT, 'Sitemap: ' . PROTOCOL . BUCKET . '/' . 'sitemap' . '/' . 'sitemap_index' . XML . "\n\n" . 'User-agent: *')) Step::error ();
+
+    Step::progress ('寫入 Robots TXT', '完成！');
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

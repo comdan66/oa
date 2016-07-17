@@ -16,6 +16,7 @@ define ('PATH_CMD_LIBS', PATH_CMD . 'libs' . DIRECTORY_SEPARATOR);
 include_once PATH_CMD_LIBS . 'defines' . PHP;
 include_once PATH_CMD_LIBS . 'Step' . PHP;
 include_once PATH_CMD_LIBS . 'Minify' . DIRECTORY_SEPARATOR . 'Min' . PHP;
+include_once PATH_CMD_LIBS . 'Sitemap' . PHP;
 
 Step::start ();
 
@@ -29,6 +30,7 @@ if (!(isset ($argv['-b'][0]) && ($bucket = trim ($argv['-b'][0], '/')) && isset 
 }
 
 define ('BUCKET', $bucket);
+define ('DOMAIN', BUCKET);
 define ('ACCESS', $access);
 define ('SECRET', $secret);
 define ('UPLOAD', isset ($argv['-u'][0]) && is_numeric ($tmp = $argv['-u'][0]) ? $tmp ? true : false : true);
@@ -36,6 +38,12 @@ define ('MINIFY', isset ($argv['-m'][0]) && is_numeric ($tmp = $argv['-m'][0]) ?
 
 // 開始執行
 Step::init ();
+Step::deleteLastFiles ();
+Step::loadPhp ();
+Step::buildFiles ();
+Step::writeHtmls ();
+Step::writeSitemap ();
+Step::writeRobotsTxt ();
 
 // ---------------
 if (!UPLOAD) {
@@ -69,6 +77,7 @@ $files = Step::filterS3Files ();
 Step::deletwS3Files ($files);
 // ---------------
 
+Step::deleteLastFiles ();
 Step::usage ();
 Step::end ();
 Step::showUrl ();

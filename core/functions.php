@@ -76,45 +76,7 @@ if (!function_exists ('merge_asset')) {
   }
 }
 
-// if (!function_exists ('directory_map')) {
-//   function directory_map ($source_dir, $directory_depth = 0, $hidden = false) {
-//     if ($fp = @opendir ($source_dir)) {
-//       $filedata = array ();
-//       $new_depth  = $directory_depth - 1;
-//       $source_dir = rtrim ($source_dir, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
 
-//       while (false !== ($file = readdir ($fp))) {
-//         if (!trim ($file, '.') || (($hidden == false) && ($file[0] == '.'))) continue;
-//         if ((($directory_depth < 1) || ($new_depth > 0)) && @is_dir ($source_dir . $file)) $filedata[$file] = directory_map ($source_dir . $file . DIRECTORY_SEPARATOR, $new_depth, $hidden);
-//         else $filedata[] = $file;
-//       }
-
-//       closedir ($fp);
-//       return $filedata;
-//     }
-
-//     return false;
-//   }
-// }
-// if (!function_exists ('directory_list')) {
-//   function directory_list ($source_dir, $hidden = false) {
-//     if ($fp = @opendir ($source_dir = rtrim ($source_dir, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR)) {
-//       $filedata = array ();
-//       while (false !== ($file = readdir ($fp))) if (!(!trim ($file, '.') || (($hidden == false) && ($file[0] == '.')))) array_push($filedata, $file);
-//       closedir ($fp);
-//       return $filedata;
-//     }
-//     return array ();
-//   }
-// }
-
-// if (!function_exists ('merge_array_recursive')) {
-//   function merge_array_recursive ($files, &$a, $k = null) {
-//     foreach ($files as $key => $file)
-//       if (is_array ($file)) $key . merge_array_recursive ($file, $a, ($k ? $k . DIRECTORY_SEPARATOR : '') . $key);
-//       else array_push ($a, ($k ? $k . DIRECTORY_SEPARATOR : '') . $file);
-//   }
-// }
 if (!function_exists ('oasort')) {
   function oasort ($n, $b = true) {
     if ($n == 0) return array ();
