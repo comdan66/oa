@@ -338,12 +338,13 @@ return array (
             'text' => 'Weather Maps 天氣地圖',
             'keywords' => array ('Weather Maps', '中央氣象局', 'Taiwan Weather', 'Weather', 'MarkerWithLabel', 'Geocoding API', 'Static Maps API', 'Street View API', 'navigator.geolocation'),
             'tags' => array ('Google Maps', 'Local Storage'),
-            'description' => "這項做主要是藉由<a href='http://www.cwb.gov.tw/V7/index.htm' target='_blank'>中央氣象局</a>的網站資料建置出來的，其中主要功能是可以藉由 <a href='https://www.google.com.tw/maps' target='_blank'>Google Maps</a> 查詢各地方的天氣預報概況，並且可以查看各個地區的每小時溫度變化，以及搭配使用 <a href='http://www.w3schools.com/html/html5_webstorage.asp' target='_blank'>localStorage</a> 來實作前端關注的功能。此作品著要分成兩個系統面，這次將前端、後端分別拆開，所以在 <a href='https://github.com/comdan66' target='_blank'>GitHub</a> 上面的專案會有兩個！",
+            'description' => "這項做主要是藉由<a href='http://www.cwb.gov.tw/V7/index.htm' target='_blank'>中央氣象局</a>的網站資料建置出來的，其中主要功能是可以藉由 <a href='https://www.google.com.tw/maps' target='_blank'>Google Maps</a> 查詢各地方的天氣預報概況，並且可以查看各個地區的每小時溫度變化，以及搭配使用 <a href='http://www.w3schools.com/html/html5_webstorage.asp' target='_blank'>localStorage</a> 來實作前端關注的功能。此作品主要利用 <a href='https://zh.wikipedia.org/zh-tw/PHP' target='_blank'>php</a> 取得資料，並且編譯成 <a href='https://zh.wikipedia.org/zh-tw/HTML' target='_blank'>HTML</a> 檔案上傳 <a href='https://aws.amazon.com/tw/s3/' target='_blank'>Amazon S3</a>，此架構不僅可以減少 <a href='https://aws.amazon.com/tw/ec2/' target='_blank'>Amazon EC2</a> 的負擔，更因為 HTML 檔案的關係，可以加強 <a href='https://zh.wikipedia.org/zh-tw/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96' target='_blank'>(SEO)</a> 效果。",
             'created_at' => '2015-7-10 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
                 'Live Demo' => 'http://works.ioa.tw/weather/',
                 'GitHub' => 'https://github.com/comdan66/weather',
+                'API doc' => 'http://works.ioa.tw/weather/api/doc/',
               ),
             'resources' => array (
                 '前端 Live Demo' => 'http://works.ioa.tw/weather/',

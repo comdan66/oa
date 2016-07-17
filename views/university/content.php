@@ -57,7 +57,7 @@
 
 <article>
   <section class='a'>
-    <p>大學後期都以網頁開發與學習為主，因為網頁作品的展現又比 Java(需要安裝 JDK) 更加容易讓朋友使用，於是便開始以時下各大知名網站為參考題目實作！作品包含了 <a href='<?php echo base_url ('senior-php-album', EXTENSION);?>' target='_blank'>相簿系統</a>、<a href='<?php echo base_url ('senior-box-blog', EXTENSION);?>' target='_blank'>部落格系統</a>、空間上傳、社群關係.. 等作品，更使用 <a href='<?php echo base_url ('senior-jquery-pokemon-game', EXTENSION);?>' target='_blank'>jQuery 實作遊戲</a>，這些作品我也都有收錄起來，有興趣的各位可以參考與討論！</p>
+    <p>大學後期都以網頁開發與學習為主，因為網頁作品的展現又比 Java(需要安裝 JDK) 更加容易讓朋友使用，於是便開始以時下各大知名網站為參考題目實作！作品包含了 <a href='<?php echo base_url ('senior-php-album' . EXTENSION);?>' target='_blank'>相簿系統</a>、<a href='<?php echo base_url ('senior-box-blog' . EXTENSION);?>' target='_blank'>部落格系統</a>、空間上傳、社群關係.. 等作品，更使用 <a href='<?php echo base_url ('senior-jquery-pokemon-game' . EXTENSION);?>' target='_blank'>jQuery 實作遊戲</a>，這些作品我也都有收錄起來，有興趣的各位可以參考與討論！</p>
   </section>
 </article>
 
@@ -67,11 +67,11 @@
       <img alt="php 實作相簿管理 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'php-album.jpg');?>" />
       <figcaption data-description='因為大三專題有接觸網頁設計，所以就利用課餘時間開發了簡單的一套相簿系統，這套系統是使用 php 版本 5.4 開發，內容包含基本的登入、上傳、編輯..等 Create、Read、Update、Delete(CRUD) 功能。'>php 實作相簿管理</figcaption>
     </figure>
-    <figure href='<?php echo base_url ('senior-box-blog', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('senior-box-blog' . EXTENSION);?>'>
       <img alt="php 空間、部落格 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'box-blog.jpg');?>" />
       <figcaption data-description='此作品是大四作品之一，因為製作了 相簿系統 完後有了更多對於網站開發的心得，於是就馬上開啟了新專案，逐步的開發這個平台，這個作品主要是加強了相簿系統，加入了 上傳檔案、部落格文章、隱私權限、好友管理... 等社群功能。'>php 空間、部落格</figcaption>
     </figure>
-    <figure href='<?php echo base_url ('senior-jquery-pokemon-game', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('senior-jquery-pokemon-game' . EXTENSION);?>'>
       <img alt="jQuery Game - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'jquery-pokemon-game.jpg');?>" />
       <figcaption data-description='大學期間學習網頁開發過程中，總是會有一些有趣的靈感，而我總是喜歡使用我所會的語言工具，去將想法實現出來，而使用 jQuery 製作遊戲也是我的一項小小里程碑。'>jQuery Game</figcaption>
     </figure>

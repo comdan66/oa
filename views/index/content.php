@@ -33,26 +33,26 @@
 
 <div class='pics'>
   <div class='pictures n2'>
-    <figure href='<?php echo base_url ('albums', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('albums' . EXTENSION);?>'>
       <img alt="2013年 北港迎媽祖 四媽金安瀾 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-01.jpg');?>" />
       <figcaption data-description='2013年北港迎媽祖是我第一年以數位單眼相機紀錄的一年，而此時正是四媽金安瀾入廟時三進三出的瞬間。'>2013年 北港迎媽祖 四媽金安瀾</figcaption>
     </figure>
-    <figure href='<?php echo base_url ('albums', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('albums' . EXTENSION);?>'>
       <img alt="北港真人藝閣 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-04.jpg');?>" />
       <figcaption data-description='北港的真人藝閣，在台灣已經很少見了，藝閣花車也是行之有年的傳統陣頭之一，藝閣花車從以往的人力抬拉，進而慢慢演進變成用獸力，直到今天的機械動力，藝閣的演進也是一種文化的演進與蛻變！'>北港真人藝閣</figcaption>
     </figure>
   </div>
 
   <div class='pictures n3'>
-    <figure href='<?php echo base_url ('albums', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('albums' . EXTENSION);?>'>
       <img alt="北港媽祖神轎上的轎錢 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-02.jpg');?>" />
       <figcaption data-description='目前只有北港的廟會神轎或者是北港朝天宮分靈的媽祖來進香或遶境時，轎頂才會繫上篙錢。據老一代的傳統下來，純黃無花紋是用在虎爺及將軍(或是王爺轎)，有花紋者則用在媽祖、觀音菩薩及佛祖神轎，原因是尊敬媽祖等為出三界(欲界、色界、無色界)之聖人，而結彩幡表示崇敬、慈悲及其威德，並用於祈福，以別於純黃無花紋表示霸氣及鎮煞。'>北港媽祖神轎上的轎錢</figcaption>
     </figure>
-    <figure href='<?php echo base_url ('albums', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('albums' . EXTENSION);?>'>
       <img alt="2015年 淡水清水祖師大拜拜 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-03.jpg');?>" />
       <figcaption data-description='在淡水做記錄，回想數年前當時的淡水大拜拜陣頭性質有蠻多的不同了，以前蠻常看到全身是血的乩童，近年來就很少見，而清昭誠也越來越有在地的特色了！'>2015年 淡水清水祖師大拜拜</figcaption>
     </figure>
-    <figure href='<?php echo base_url ('albums', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('albums' . EXTENSION);?>'>
       <img alt="2014年 金福綏土地公 入廟 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-05.jpg');?>" />
       <figcaption data-description='北港朝天宮除媽祖神轎、虎爺轎會喫炮以外，還有一頂神轎也不遑多讓，那就是 金福綏 土地公會；其實在這頂神轎上不只有土地公喔，大家常常忽略的另外一位 境主公，顧名思義，就是笨港境主，境主公為掌管廟境信仰範圍的土地神明，職責類似城隍、土地公。'>2014年 金福綏土地公 入廟</figcaption>
     </figure>
@@ -71,26 +71,26 @@
 
 <div class='pics'>
   <div class='pictures n2'>
-    <figure href='<?php echo base_url ('mazu', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('mazu' . EXTENSION);?>'>
       <img alt="北港迎媽祖網站 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-06.jpg');?>" />
       <figcaption data-description='這是一個熱愛北港廟會活動的非營利網站，主要希望能為地方古蹟、習俗活動帶來多一點的貢獻！更希望大家參與北港廟會活動的同時，能更加的融入北港當地的文化。網站出發點，其實單純的只想為北港媽祖三月十九繞境活動作宣傳，若您個是熱愛在地文化的朋友們，那一定來參與這盛會！若您是個道道地地的北港囝仔，那更可以將這個網站分享出去，讓台灣所有人更可以看得到北港的美。'>北港迎媽祖網站</figcaption>
     </figure>
-    <figure href='<?php echo base_url ('mazu', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('mazu' . EXTENSION);?>'>
       <img alt="響應式網頁設計的北港迎媽祖網站 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-07.jpg');?>" />
       <figcaption data-description='RWD 響應式設計也是一項必須完成的步驟，基於考量到現在多數使用者都是手機用戶，所以在每頁面上都加入響應式設計的考量，尤其在地圖頁面上，更是斟酌使用者需求，所以特別設計成地圖導向的內頁！'>響應式網頁設計的北港迎媽祖網站</figcaption>
     </figure>
   </div>
 
   <div class='pictures n3'>
-    <figure href='<?php echo base_url ('theta-s-360', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('theta-s-360' . EXTENSION);?>'>
       <img alt="360度全景 相簿實作 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-08.jpg');?>" />
       <figcaption data-description='這是一項特別的作品，由於近幾年全景攝影器材的進步，所以全景影片、全景照片漸漸的流行起來，而最近剛好也入購了 RICOH Theta S 全景攝影機，所以我便實作了一下 360度全景相簿，這作品我特意分成兩個專案，分別是純前端、純後端的角度切入！'>360度全景 相簿實作</figcaption>
     </figure>
-    <figure href='<?php echo base_url ('google-maps-richman', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('google-maps-richman' . EXTENSION);?>'>
       <img alt="Google Maps 大富翁 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-09.jpg');?>" />
       <figcaption data-description='這是一個使用 Google Maps JavaScript API 製作的大富翁遊戲！基本上是利用 Google Maps Markers 以及 Polyline 所建置出路線、節點、角色、計分、蓋房... 等設計！'>Google Maps 大富翁</figcaption>
     </figure>
-    <figure href='<?php echo base_url ('weather-maps', EXTENSION);?>'>
+    <figure href='<?php echo base_url ('weather-maps' . EXTENSION);?>'>
       <img alt="Weather Maps 天氣地圖 - <?php echo $site_title;?>" src="<?php echo img_url ('views', $current['file'], 'photo-10.jpg');?>" />
       <figcaption data-description='這項做主要是藉由中央氣象局的網站資料建置出來的，其中主要功能是可以藉由 Google Maps 查詢各地方的天氣預報概況，並且可以查看各個地區的每小時溫度變化，以及搭配使用 localStorage 來實作前端關注的功能。此作品著要分成兩個系統面，這次將前端、後端分別拆開，所以在 GitHub 上面的專案會有兩個！'>Weather Maps 天氣地圖</figcaption>
     </figure>
