@@ -91,8 +91,11 @@ class Step {
   }
   public static function initS3 ($access, $secret) {
     Step::newLine ('-', '初始化 S3 工具');
-
-    if (!S3::init ($access, $secret)) Step::error ();
+    
+    try {
+      if (!S3::init ($access, $secret)) throw new Exception ('初始化失敗！');
+    } catch (Exception $e) { Step::error (array (' ' . $e->getMessage ())); }
+    
     Step::progress ('初始化 S3 工具', '完成！');
   }
   public static function listLocalFiles () {
@@ -130,9 +133,7 @@ class Step {
         Step::progress ('列出 S3 上所有檔案');
         return $file['name'];
       });
-    } catch (Exception $e) {
-      Step::error ($errors);
-    }
+    } catch (Exception $e) { Step::error (array (' ' . $e->getMessage ())); }
 
     Step::progress ('列出 S3 上所有檔案', '完成！');
   }
@@ -157,9 +158,7 @@ class Step {
         try {
           Step::progress ('上傳檔案');
           return !S3::putFile ($file['path'], BUCKET, $file['uri']) ? ' 檔案：' . $file['path'] : '';
-        } catch (Exception $e) {
-          return ' 檔案：' . $file['path'];
-        }
+        } catch (Exception $e) { return ' 檔案：' . $file['path']; }
       }, $files))) Step::error ($errors);
     Step::progress ('上傳檔案', '完成！');
   }
@@ -183,9 +182,7 @@ class Step {
         try {
           Step::progress ('刪除 S3 上需要刪除的檔案');
           return !S3::deleteObject (BUCKET, $file['name']) ? ' 檔案：' . $file['name'] : '';
-        } catch (Exception $e) {
-          return ' 檔案：' . $file['name'];
-        }
+        } catch (Exception $e) { return ' 檔案：' . $file['name']; }
       }, $files))) Step::error ($errors);
     Step::progress ('刪除 S3 上需要刪除的檔案', '完成！');
   }
@@ -380,37 +377,4 @@ class Step {
 
     Step::progress ('寫入 Robots TXT', '完成！');
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
