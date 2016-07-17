@@ -19,10 +19,9 @@ class S3 {
   private static $__secret_key = NULL;
 
   public static function init ($access_key, $secret_key) {
-    // if (!(isset ($key['access_key']) && isset ($key['secret_key'])))
-      // return trigger_error (sprintf ("S3::init(): [%s] %s", 999, 'No access_key, secret_key'), E_USER_WARNING);
     self::$__access_key = $access_key;
     self::$__secret_key = $secret_key;
+    return true;
   }
 
   public static function listBuckets ($detailed = false) {
@@ -30,7 +29,7 @@ class S3 {
     $rest = $rest->getResponse ();
 
     if (($rest->error !== false) || ($rest->code !== 200))
-      return trigger_error (sprintf ("S3::listBuckets(): [%s] %s", $rest->code, 'Unexpected HTTP status'), E_USER_WARNING);
+      throw new Exception (sprintf ("S3::listBuckets(): [%s] %s", $rest->code, 'Unexpected HTTP status'));
 
     $results = array ();
     if (!isset ($rest->body->Buckets))
@@ -65,7 +64,7 @@ class S3 {
 
     $response = $rest->getResponse ();
     if (($response->error !== false) || ($response->code !== 200))
-      return trigger_error (sprintf ("S3::getBucket(): [%s] %s", $response->code, 'Unexpected HTTP status'), E_USER_WARNING);
+      throw new Exception (sprintf ("S3::getBucket(): [%s] %s", $response->code, 'Unexpected HTTP status'));
 
     $results = array ();
 
@@ -123,7 +122,7 @@ class S3 {
     $rest = $rest->getResponse ();
 
     if (($rest->error !== false) || ($rest->code !== 200))
-      return trigger_error (sprintf ("S3::putBucket(%s, $s, $s): [%s] %s", $bucket, $acl, $location, $rest->code, 'Unexpected HTTP status'));
+      throw new Exception (sprintf ("S3::putBucket(%s, $s, $s): [%s] %s", $bucket, $acl, $location, $rest->code, 'Unexpected HTTP status'));
 
     return true;
   }
@@ -132,7 +131,7 @@ class S3 {
     $rest = new S3Request ('DELETE', $bucket);
     $rest = $rest->getResponse ();
     if (($rest->error !== false) || ($rest->code !== 200))
-      return trigger_error (sprintf ("S3::deleteBucket(%s): [%s] %s", $bucket, $rest->code, 'Unexpected HTTP status'));
+      throw new Exception (sprintf ("S3::deleteBucket(%s): [%s] %s", $bucket, $rest->code, 'Unexpected HTTP status'));
 
     return true;
   }
@@ -142,7 +141,7 @@ class S3 {
   }
   public static function putFile ($filePath, $bucket, $s3Path, $acl = self::ACL_PUBLIC_READ, $metaHeaders = array (), $requestHeaders = array ()) {
     if (!(file_exists ($filePath) && is_file ($filePath) && is_readable ($filePath)))
-      return trigger_error ('S3::putFile(): Unable to open input file: ' . $filePath, E_USER_WARNING);
+      throw new Exception ('S3::putFile(): Unable to open input file: ' . $filePath);
 
     $rest = new S3Request ('PUT', $bucket, $s3Path);
 
@@ -158,33 +157,17 @@ class S3 {
     foreach ($metaHeaders as $h => $v) $rest->setAmzHeader ('x-amz-meta-' . $h, $v);
     
     if (!(($rest->size >= 0) && (($rest->fp !== false) || ($rest->data !== false))))
-      return trigger_error (sprintf ("S3::putObject(): [%s] %s", 0, 'Missing input parameters'), E_USER_WARNING);
+      throw new Exception (sprintf ("S3::putObject(): [%s] %s", 0, 'Missing input parameters'));
 
     $rest->getResponse ();
 
     if (($rest->response->error !== false) || ($rest->response->code !== 200))
-      return trigger_error (sprintf ("S3::putObject(): [%s] %s", $rest->response->code, 'Unexpected HTTP status'), E_USER_WARNING);
+      throw new Exception (sprintf ("S3::putObject(): [%s] %s", $rest->response->code, 'Unexpected HTTP status'));
 
     return true;
   }
 
   public static function __getMimeType (&$file) {
-    // $type = false;
-
-    // if (extension_loaded ('fileinfo') && isset ($_ENV['MAGIC']) && ($finfo = finfo_open (FILEINFO_MIME, $_ENV['MAGIC'])) !== false) {
-    //   if (($type = finfo_file ($finfo, $file)) !== false) {
-    //     $type = explode (' ', str_replace ('; charset=', ';charset=', $type));
-    //     $type = array_pop ($type);
-    //     $type = explode (';', $type);
-    //     $type = trim (array_shift ($type));
-    //   }
-    //   finfo_close ($finfo);
-    // } elseif (function_exists ('mime_content_type'))
-    //   $type = trim (mime_content_type ($file));
-
-    // if (($type !== false) && (strlen ($type) > 0))
-    //   return $type;
-
     return ($extension = self::getMimeByExtension ($file)) ? $extension : 'text/plain';//'application/octet-stream';
   }
 
@@ -198,12 +181,12 @@ class S3 {
     
     if ($saveTo !== false)
       if (($rest->fp = @fopen ($saveTo, 'wb')) !== false) $rest->file = realpath ($saveTo);
-      else return trigger_error (sprintf ("S3::getObject(%s, %s): [%s] %s",$bucket, $uri, 0, 'Unable to open save file for writing: ' . $saveTo));
+      throw new Exception (sprintf ("S3::getObject(%s, %s): [%s] %s",$bucket, $uri, 0, 'Unable to open save file for writing: ' . $saveTo));
 
     $rest->getResponse();
     
     if (($rest->response->error !== false) || ($rest->response->code !== 200))
-      return trigger_error (sprintf ("S3::getObject(%s, %s): [%s] %s",$bucket, $uri, $rest->response->code, 'Unexpected HTTP status'));
+      throw new Exception (sprintf ("S3::getObject(%s, %s): [%s] %s",$bucket, $uri, $rest->response->code, 'Unexpected HTTP status'));
 
     return $rest->response;
   }
@@ -213,7 +196,7 @@ class S3 {
     $rest = $rest->getResponse ();
 
     if (($rest->error !== false) || (($rest->code !== 200) && ($rest->code !== 404)))
-      return trigger_error (sprintf ("S3::getObjectInfo(%s, %s): [%s] %s", $bucket, $uri, $rest->code, 'Unexpected HTTP status'), E_USER_WARNING);
+      throw new Exception (sprintf ("S3::getObjectInfo(%s, %s): [%s] %s", $bucket, $uri, $rest->code, 'Unexpected HTTP status'));
 
     return $rest->code == 200 ? $returnInfo ? $rest->headers : true : false;
   }
@@ -237,7 +220,7 @@ class S3 {
     $rest = $rest->getResponse ();
 
     if (($rest->error !== false) || ($rest->code !== 200))
-      return trigger_error (sprintf ("S3::copyObject(%s, %s, %s, %s): [%s] %s", $srcBucket, $srcUri, $bucket, $uri, $rest->code, 'Unexpected HTTP status'), E_USER_WARNING);
+      throw new Exception (sprintf ("S3::copyObject(%s, %s, %s, %s): [%s] %s", $srcBucket, $srcUri, $bucket, $uri, $rest->code, 'Unexpected HTTP status'));
 
     return isset ($rest->body->LastModified, $rest->body->ETag) ? array ('time' => date ('Y-m-d H:i:s', strtotime ((String) $rest->body->LastModified)), 'hash' => substr ((String) $rest->body->ETag, 1, -1)) : false;
   }
@@ -247,7 +230,7 @@ class S3 {
     $rest->setParameter ('location', null);
     $rest = $rest->getResponse ();
     if (($rest->error !== false) || ($rest->code !== 200))
-      return trigger_error (sprintf ("S3::getBucketLocation(%s): [%s] %s", $bucket, $rest->code, 'Unexpected HTTP status'), E_USER_WARNING);
+      throw new Exception (sprintf ("S3::getBucketLocation(%s): [%s] %s", $bucket, $rest->code, 'Unexpected HTTP status'));
     return (isset ($rest->body[0]) && (((String)$rest->body[0]) !== '')) ? (String)$rest->body[0] : 'US';
   }
 
@@ -256,7 +239,7 @@ class S3 {
     $rest = $rest->getResponse ();
 
     if (($rest->error !== false) || ($rest->code !== 204))
-      return trigger_error (sprintf ("S3::deleteObject(): [%s] %s", $rest->code, 'Unexpected HTTP status'), E_USER_WARNING);
+      throw new Exception (sprintf ("S3::deleteObject(): [%s] %s", $rest->code, 'Unexpected HTTP status'));
 
     return true;
   }
