@@ -1156,7 +1156,7 @@ return array (
         array (
             'type' => 'demo',
             'file' => 'google-sheets-api-note',
-            'text' => 'Google 試算表 API',
+            'text' => '把 Google 試算表當資料庫，並取得 API',
             'keywords' => array ('Google 試算表', 'Google Sheets'),
             'tags' => array ('試算表'),
             'description' => "在 Google 的雲端硬碟服務中，<a href='https://apps.google.com/intx/zh-tw/products/sheets/' target='_blank'>試算表</a>是我特愛的樣服務之一，而在這個 Google 當道的世代..相信大家也都有使用過吧！用起來就跟 <a href='https://products.office.com/zh-tw/home' target='_blank'>Microsoft Office</a> 中的 <a href='https://support.office.com/zh-tw/excel' target='_blank'>Excel</a> 相似，都是表格系統的文件處理，而 Google 試算表其實不只提供了 Excel 的表格功能試算外，其實也提供了多項服務，像是與問卷<a href='https://apps.google.com/intx/zh-TW/products/forms/' target='_blank'>表單</a>結合，亦或者可以使用 <a href='https://zh.wikipedia.org/wiki/应用程序接口' target='_blank'>API</a> 取得文件內容.. 等功能。",
