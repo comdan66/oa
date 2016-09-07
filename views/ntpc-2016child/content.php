@@ -1,0 +1,2 @@
+<p>動畫是整個網站的主軸功能，在與 2015年的兒藝節官網不同的地方是，2015 是大量使用 <a href='http://api.jquery.com/animate/' target='_blank'>jQuery animate</a> 的功能，而 2016年則是使用 css3 的 <a href='http://www.w3schools.com/css/css3_animations.asp' target='_blank'>animation</a> 來呈現出動畫效果，藉由不同的時間差，依序的控制動畫，jQuery 則是扮演著次要功能，例如：skip。</p>
+<p>將動畫使用 css3 來實作主要是考量到前端網頁效能的問題，比起使用 jQuery 來實作，css 更能讓畫面流暢許多，專案開發過程中，使用 <a href='http://sass-lang.com/' target='_blank'>SCSS</a> 來開發，並且使用 <a href='http://compass-style.org/' target='_blank'>compass</a> 來編譯成 css，使開發前端專案事半功倍！</p>

@@ -937,6 +937,27 @@ return array (
                 'Facebook 粉絲頁' => 'https://www.facebook.com/ZeusDesignStudio/',
               )
           ),
+        array (
+            'type' => 'demo',
+            'file' => 'ntpc-2016child',
+            'text' => '2016 新北 兒藝節',
+            'keywords' => array ('接案', '前端', 'animation'),
+            'tags' => array ('接案', 'animation'),
+            'description' => "這是一個前端技術的外包案實作，其網站名稱為<a href='http://www.chitorch.com/' target='_blank'>2016 新北市兒童藝術節</a>，主要就是承接新北市 2016年 兒童藝術節的活動官網。此活動網站最具特色的地方是動畫的呈現，大家可以先點至 <a href='https://sasachu.github.io/2016child/' target='_blank'>GitHub Demo</a> 瀏覽動畫效果喔！",
+            'created_at' => '2016-06-18 00:00:00',
+            'updated_at' => date ('Y-m-d H:i:s'),
+            'main_links' => array (
+                'Live Demo' => 'http://www.ntpc-childartfestival.com.tw/',
+                'GitHub Demo' => 'https://sasachu.github.io/2016child/',
+                'GitHub' => 'https://github.com/SaSaChu/2016child',
+              ),
+            'resources' => array (
+                'Live Demo' => 'http://www.ntpc-childartfestival.com.tw/',
+                'GitHub Demo' => 'https://sasachu.github.io/2016child/',
+                'GitHub' => 'https://github.com/SaSaChu/2016child',
+                '2015 新北兒藝節' => 'http://www.jackie-imc.com/2015newtaipeicitycaf/',
+              )
+          ),
         array ('type' => 'more', 'text' => '更多接案作品..', 'file' => 'more-works', 'sub' => array (
           array (
               'type' => 'demo',
