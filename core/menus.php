@@ -729,59 +729,59 @@ return array (
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1457948370.A.BE9.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/960507037319995/',
               )),
-        array (
-            'type' => 'demo',
-            'file' => 'img-liquid',
-            'text' => "OA's imgLiquid",
-            'keywords' => array ('imgLiquid', 'position', 'absolute', 'jQuery', 'jQuery Extend'),
-            'tags' => array ('jQuery', 'imgLiquid'),
-            'description' => "imgLiquid 是一個處理前端圖片置中的 <a href='https://jquery.com/' target='_blank'>jQuery</a> Extend Function，其中參考了 <a href='https://github.com/karacas/imgLiquid' target='_blank'>imgLiquid</a>，但其架構與做法不大相同。",
-            'created_at' => '2014-11-28 00:00:00',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-imgLiquid/',
-                'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
-              ),
-            'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-imgLiquid/',
-                'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
-              )),
-        array (
-            'type' => 'demo',
-            'file' => 'jquery-scroll-slider-view',
-            'text' => "jQuery scrollSliderView",
-            'keywords' => array ('scrollSliderView', 'Scroll', 'SliderView', 'View', 'jQuery', 'jQuery Extend'),
-            'tags' => array ('jQuery'),
-            'description' => "scrollSliderView 這是一個前端 <a href='https://jquery.com/' target='_blank'>jQuery</a> Extend Function，主要架構於 jQuery，此版本是支援 <a href='http://www.ibest.tw/page01.php' target='_blank'>Responsive Web Design</a>(RWD) 的頁面。",
-            'created_at' => '2014-12-01 00:00:00',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-scrollSliderView/',
-                'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
-              ),
-            'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-scrollSliderView/',
-                'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
-              )),
-        array (
-            'type' => 'demo',
-            'file' => 'jquery-navbar',
-            'text' => "jQuery navbar",
-            'keywords' => array ('navbar', 'jQuery', 'jQuery Extend'),
-            'tags' => array ('jQuery'),
-            'description' => "<p>這是一個前端 <a href='https://jquery.com/' target='_blank'>jQuery</a> Extend Function，主要架構於 jQuery 以及 scss、sass。開發者可自行設定 scss變數、jQuery Extend Options 來更換樣式。</p>",
-            'created_at' => '2014-12-04 00:00:00',
-            'updated_at' => date ('Y-m-d H:i:s'),
-            'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-navbar/',
-                'GitHub' => 'https://github.com/comdan66/OA-navbar',
-              ),
-            'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-navbar/',
-                'GitHub' => 'https://github.com/comdan66/OA-navbar',
-              )),
         
         array ('type' => 'more', 'text' => '更多前端實作..', 'file' => 'more-f2e', 'sub' => array (
+          array (
+              'type' => 'demo',
+              'file' => 'img-liquid',
+              'text' => "OA's imgLiquid",
+              'keywords' => array ('imgLiquid', 'position', 'absolute', 'jQuery', 'jQuery Extend'),
+              'tags' => array ('jQuery', 'imgLiquid'),
+              'description' => "imgLiquid 是一個處理前端圖片置中的 <a href='https://jquery.com/' target='_blank'>jQuery</a> Extend Function，其中參考了 <a href='https://github.com/karacas/imgLiquid' target='_blank'>imgLiquid</a>，但其架構與做法不大相同。",
+              'created_at' => '2014-11-28 00:00:00',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://works.ioa.tw/OA-imgLiquid/',
+                  'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://works.ioa.tw/OA-imgLiquid/',
+                  'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
+                )),
+          array (
+              'type' => 'demo',
+              'file' => 'jquery-scroll-slider-view',
+              'text' => "jQuery scrollSliderView",
+              'keywords' => array ('scrollSliderView', 'Scroll', 'SliderView', 'View', 'jQuery', 'jQuery Extend'),
+              'tags' => array ('jQuery'),
+              'description' => "scrollSliderView 這是一個前端 <a href='https://jquery.com/' target='_blank'>jQuery</a> Extend Function，主要架構於 jQuery，此版本是支援 <a href='http://www.ibest.tw/page01.php' target='_blank'>Responsive Web Design</a>(RWD) 的頁面。",
+              'created_at' => '2014-12-01 00:00:00',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://works.ioa.tw/OA-scrollSliderView/',
+                  'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://works.ioa.tw/OA-scrollSliderView/',
+                  'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
+                )),
+          array (
+              'type' => 'demo',
+              'file' => 'jquery-navbar',
+              'text' => "jQuery navbar",
+              'keywords' => array ('navbar', 'jQuery', 'jQuery Extend'),
+              'tags' => array ('jQuery'),
+              'description' => "<p>這是一個前端 <a href='https://jquery.com/' target='_blank'>jQuery</a> Extend Function，主要架構於 jQuery 以及 scss、sass。開發者可自行設定 scss變數、jQuery Extend Options 來更換樣式。</p>",
+              'created_at' => '2014-12-04 00:00:00',
+              'updated_at' => date ('Y-m-d H:i:s'),
+              'main_links' => array (
+                  'Live Demo' => 'http://works.ioa.tw/OA-navbar/',
+                  'GitHub' => 'https://github.com/comdan66/OA-navbar',
+                ),
+              'resources' => array (
+                  'Live Demo' => 'http://works.ioa.tw/OA-navbar/',
+                  'GitHub' => 'https://github.com/comdan66/OA-navbar',
+                )),
             array (
                 'type' => 'demo',
                 'file' => 'google-maps-menu',
