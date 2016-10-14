@@ -382,6 +382,26 @@ return array (
               )),
         array (
             'type' => 'demo',
+            'file' => 'livemaps',
+            'text' => '聊天地圖 LiveMaps',
+            'keywords' => array ('livemaps', 'LiveMaps', 'Firebase', 'Realtime Database', 'Realtime'),
+            'tags' => array ('Firebase', 'Realtime'),
+            'description' => "LiveMaps 是一個即時地圖聊天室，讓你在世界上任何位置都可以發出自己的感想動態。每個人都可以在地圖分享著她在世界各地、城市角落的心情寫照，網站藉由 <a href='https://www.google.com.tw/' target='_blank'>Google</a> 所提供的 <a href='https://firebase.google.com/' target='_blank'>Firebase</a> 的 <a href='https://firebase.google.com/docs/database/' target='_blank'>Realtime Database</a> 以及 <a href='https://developers.google.com/maps/documentation/javascript/?hl=zh-tw' target='_blank'>Google Maps JavaScript API</a> 免費服務實作。<br/><br/>聊天地圖也是一個純前端技術的網站，仰賴 Firebase 的 Realtime 的特性，並且用於 Google Maps 上，讓使用者的定位可以即時分享，同時間也可以發佈動態；現階段只是初樣的 Prototype，之後會加入 <b>個人聊天室</b>、<b>上傳照片</b>、<b>Mobile App</b> 等功能！",
+            'created_at' => '2016-10-13 16:21:03',
+            'updated_at' => '2016-10-14 15:04:20',
+            'main_links' => array (
+                'Live Demo' => 'https://livemaps.ioa.tw/',
+                'GitHub' => 'https://github.com/comdan66/livemaps',
+              ),
+            'resources' => array (
+                'Live Demo' => 'https://livemaps.ioa.tw/',
+                'GitHub' => 'https://github.com/comdan66/livemaps',
+                // 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1467160346.A.EE9.html',
+                // 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1020671314636900/',
+              )
+          ),
+        array (
+            'type' => 'demo',
             'file' => 'taipei-activities',
             'text' => '台北 • 藝文活動',
             'keywords' => array ('藝文活動', '台北藝文活動', '台北藝文', '新北藝文', '雙北藝文', '新北藝文活動', '藝文'),
