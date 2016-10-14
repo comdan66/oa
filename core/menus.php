@@ -716,6 +716,26 @@ return array (
               )),
         array (
             'type' => 'demo',
+            'file' => 'oa-marker-clustering',
+            'text' => '標記叢集 Marker Clustering',
+            'keywords' => array ('MarkerClustering', 'Marker', 'Clustering'),
+            'tags' => array ('MarkerClustering', 'Google Maps'),
+            'description' => "各位 <a href='https://developers.google.com/maps/documentation/javascript/tutorial?hl=zh-tw' target='_blank'>Google 地圖</a>玩家都應該有過當 <a href='https://developers.google.com/maps/documentation/javascript/markers?hl=zh-tw' target='_blank'>Marker</a> 太多時，視角一拉遠後全部 Marker 擠在一起的困擾吧！沒錯 <a href='https://github.com/comdan66/OA-markerClustering' target='_blank'>OA's Marker Clustering</a> 就是要來處理這個困擾！網路上也有很多關於 Marker Clustering 的 Library，但想要比較能夠掌握概況以及視需求去做調整功能，所以刻了一套可以自訂 Marker Clustering 的地圖工具。",
+            'created_at' => '2016-10-03 10:22:04',
+            'updated_at' => '2016-10-06 02:35:59',
+            'main_links' => array (
+                'Live Demo' => 'http://works.ioa.tw/OA-markerClustering/',
+                'GitHub' => 'https://github.com/comdan66/OA-markerClustering/',
+              ),
+            'resources' => array (
+                'Live Demo' => 'http://works.ioa.tw/OA-markerClustering/',
+                'GitHub' => 'https://github.com/comdan66/OA-markerClustering/',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1475629747.A.CC8.html',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1089454517758579/',
+                'Facebook JavaScript.tw' => 'https://www.facebook.com/groups/javascript.tw/permalink/875068025927870',
+              )),
+        array (
+            'type' => 'demo',
             'file' => 'number-flipping-counter',
             'text' => '數字翻轉計數器',
             'keywords' => array ('數字翻轉計數器', '計數器'),
