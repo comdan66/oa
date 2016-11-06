@@ -58,4 +58,4 @@
 <br/>
 <br/>
 <p><b>壓縮圖檔</b> 主要是因為檔案大怕前端傳輸太久，所以這次加入 <a href='https://tinypng.com/' target='_blank'>TinyPNG</a> 作為壓縮圖片的方式，以減少圖片大小，提升傳輸速度以及成本，原本用 <a href='https://compressor.io/' target='_blank'>https://compressor.io/</a> 但是處理時間花太久了，所以就先不慘用。</p>
-<p>這作品我故意分成兩個架構實作，在 GitHub 上分別是 <b>360</b>、<b>ThetaS</b> 兩包專案，基本上 <a href='http://360.ioa.tw/' target='_blank'>360</a> 是一包前後端寫在一起的專案，而 <a href='http://works.ioa.tw/ThetaS/' target='_blank'>ThetaS</a> 則是純前端的架構，ThetaS 藉由 360 專案提供的 api 所實作的網站，而 360 則是架設在 AWS EC2 上面，ThetaS 則是架構在 <a href='https://pages.github.com/' target='_blank'>GitHub.io</a> 的服務上，會這樣拆開的原因主要是因為想練習前後端分離的架構模式，另一方面則是藉由 GitHub.io 的服務減低 AWS EC2 的負擔。</p>
+<p>這作品我故意分成兩個架構實作，在 GitHub 上分別是 <b>360</b>、<b>ThetaS</b> 兩包專案，基本上 <a href='http://360.ioa.tw/' target='_blank'>360</a> 是一包前後端寫在一起的專案，而 <a href='https://works.ioa.tw/ThetaS/index.html' target='_blank'>ThetaS</a> 則是純前端的架構，ThetaS 藉由 360 專案提供的 api 所實作的網站，而 360 則是架設在 AWS EC2 上面，ThetaS 則是架構在 <a href='https://pages.github.com/' target='_blank'>GitHub.io</a> 的服務上，會這樣拆開的原因主要是因為想練習前後端分離的架構模式，另一方面則是藉由 GitHub.io 的服務減低 AWS EC2 的負擔。</p>

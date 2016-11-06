@@ -69,4 +69,4 @@
 <br/>
 <br/>
 <br/>
-<p>最後！既然做成 S3 架構也有了 API 服務，既然取之於網路，那就一樣分享於網路，所幸我就連 <a href='<?php echo 'http://works.ioa.tw/weather/api/doc/';?>' target='_blank'>apiDoc</a> 一起建立，如此一來大家就可以一起使用我的資源，在我還沒有關閉我的服務之前，大家都可以使用喔！</p>
+<p>最後！既然做成 S3 架構也有了 API 服務，既然取之於網路，那就一樣分享於網路，所幸我就連 <a href='<?php echo 'https://works.ioa.tw/weather/api/doc/index.html';?>' target='_blank'>apiDoc</a> 一起建立，如此一來大家就可以一起使用我的資源，在我還沒有關閉我的服務之前，大家都可以使用喔！</p>

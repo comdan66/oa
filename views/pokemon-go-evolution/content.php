@@ -9,9 +9,9 @@
   <li>估算方式是藉由比率計算，故等級換算值會被互相約分除去，所以有無等級換算值不影響結果。</li>
   <li>因不知道個體數值，所以只能推算大約結果，而數值也僅供參考喔！不過藉由我自己實測結果，都有落在範圍值內。</li>
   <li>範圍公式：(進化前CP * 進化前最小CP) / 進化前最小CP 與 (進化前CP * 進化前最大CP) / 進化前最大CP。</li>
-  <li><a href='http://works.ioa.tw/evolution/maps.html' target='_blank'>巢穴地圖</a> 是使用各位網友回報的數據實作的，所以不是 100% 會出現的，一切僅供參考。</li>
-  <li><a href='http://works.ioa.tw/evolution/maps.html' target='_blank'>巢穴地圖</a> 的數據目前放置在 <a href='https://docs.google.com/spreadsheets/d/1fMYgcbQV0haZcoKTdUYZaoorKaFCl8cFIF0aD4KDpHM/edit#gid=0' target='_blank'>Google 文件</a> 上，藉由 Pokémon Go 同好玩家們共同編輯。</li>
+  <li><a href='https://works.ioa.tw/evolution/maps.html' target='_blank'>巢穴地圖</a> 是使用各位網友回報的數據實作的，所以不是 100% 會出現的，一切僅供參考。</li>
+  <li><a href='https://works.ioa.tw/evolution/maps.html' target='_blank'>巢穴地圖</a> 的數據目前放置在 <a href='https://docs.google.com/spreadsheets/d/1fMYgcbQV0haZcoKTdUYZaoorKaFCl8cFIF0aD4KDpHM/edit#gid=0' target='_blank'>Google 文件</a> 上，藉由 Pokémon Go 同好玩家們共同編輯。</li>
   <li>若想共同編輯 <a href='https://docs.google.com/spreadsheets/d/1fMYgcbQV0haZcoKTdUYZaoorKaFCl8cFIF0aD4KDpHM/edit#gid=0' target='_blank'>巢穴地圖 Google 文件</a> 的話，歡迎與 <a href='http://www.ioa.tw/' target='_blank'>我</a> 聯絡，亦或者發 <a href='mailto:comdan66@gmail.com?subject=Pokémon Go 巢穴地圖&body=Hi OA,%0D%0A%0D%0A 我在您的 Go Evolution！網站！我想參與編輯，不知道您是否可以幫我加入權限..' target='_blank'>E-Mail</a> 給他！</li>
   <li>網頁上的查詢都是 HTML、JavaScript 前端檔案處理，所以後端並不會存取任何使用者的查詢資料喔！</li>
-  <li><a href='http://works.ioa.tw/evolution/stops.html' target='_blank'>補給站、道館分佈地圖</a>，是我、小編們踏遍全台灣收集校正的！若是各位大大們想引用的話，請標註出處 <a href='http://works.ioa.tw/evolution/' target='_blank'>Go Evolution！</a></li>
+  <li><a href='https://works.ioa.tw/evolution/stops.html' target='_blank'>補給站、道館分佈地圖</a>，是我、小編們踏遍全台灣收集校正的！若是各位大大們想引用的話，請標註出處 <a href='https://works.ioa.tw/evolution/index.html' target='_blank'>Go Evolution！</a></li>
 </ul>

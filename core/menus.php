@@ -325,7 +325,7 @@ return array (
             'resources' => array (
                 '後端 Live Demo' => 'http://360.ioa.tw/',
                 '後端 GitHub' => 'https://github.com/comdan66/360',
-                '前端 Live Demo' => 'http://works.ioa.tw/ThetaS/',
+                '前端 Live Demo' => 'https://works.ioa.tw/ThetaS/index.html',
                 '前端 GitHub' => 'https://github.com/comdan66/ThetaS',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1450408446.A.009.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/919907694713263/',
@@ -342,12 +342,12 @@ return array (
             'created_at' => '2015-7-10 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/weather/',
+                'Live Demo' => 'https://works.ioa.tw/weather/index.html',
                 'GitHub' => 'https://github.com/comdan66/weather',
-                'API doc' => 'http://works.ioa.tw/weather/api/doc/',
+                'API doc' => 'https://works.ioa.tw/weather/api/doc/index.html',
               ),
             'resources' => array (
-                '前端 Live Demo' => 'http://works.ioa.tw/weather/',
+                '前端 Live Demo' => 'https://works.ioa.tw/weather/index.html',
                 '前端 GitHub' => 'https://github.com/comdan66/weather',
                 '後端 GitHub' => 'https://github.com/comdan66/weather_php',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1438158895.A.071.html',
@@ -355,31 +355,6 @@ return array (
                 '中央氣象局' => 'http://www.cwb.gov.tw/',
               )
           ),
-        array (
-            'type' => 'demo',
-            'file' => 'pokemon-go-evolution',
-            'text' => 'Pokémon Go 地圖',
-            'keywords' => array ('Pokémon', 'evolution', 'PokéStop'),
-            'tags' => array ('Pokémon'),
-            'description' => "這是一個 Pokémon Go 進化後 CP 推測工具，可以快速查詢寶可夢進化後的 CP 範圍值，同時藉由網友互助回報而建立的全台寶可夢巢穴位置，讓大家可以查詢各精靈在台灣的分佈，若大家想要共同編輯<a href='https://docs.google.com/spreadsheets/d/1fMYgcbQV0haZcoKTdUYZaoorKaFCl8cFIF0aD4KDpHM/edit#gid=0' target='_blank'>巢穴文件</a>可與網站作者聯絡，同時也可以查詢全台灣的補給站、道館的<a href='http://works.ioa.tw/evolution/stops.html' target='_blank'>分佈</a>。",
-            'created_at' => '2016-08-31 01:50:00',
-            'updated_at' => '2016-10-06 01:50:00',
-            'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/evolution/',
-                'GitHub' => 'https://github.com/comdan66/evolution/',
-                'PokeIV小助手' => 'http://works.ioa.tw/evolution/poke_iv.html',
-                '巢穴地圖文件' => 'https://docs.google.com/spreadsheets/d/1fMYgcbQV0haZcoKTdUYZaoorKaFCl8cFIF0aD4KDpHM/edit#gid=0',
-              ),
-            'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/evolution/',
-                'GitHub' => 'https://github.com/comdan66/evolution/',
-                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1470650059.A.EC4.html',
-                'PTT PokeMon' => 'https://www.ptt.cc/bbs/PokeMon/M.1472793302.A.9F0.html',
-                'PTT PokeMonGo 1' => 'https://www.ptt.cc/bbs/PokemonGO/M.1472805252.A.2A0.html',
-                'PTT PokeMonGo 2' => 'https://www.ptt.cc/bbs/PokemonGO/M.1475147103.A.B01.html',
-                'PTT PokeMonGo 3' => 'https://www.ptt.cc/bbs/PokemonGO/M.1475738122.A.064.html',
-                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1064416303595734/',
-              )),
         array (
             'type' => 'demo',
             'file' => 'livemaps',
@@ -396,10 +371,50 @@ return array (
             'resources' => array (
                 'Live Demo' => 'https://livemaps.ioa.tw/',
                 'GitHub' => 'https://github.com/comdan66/livemaps',
-                // 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1467160346.A.EE9.html',
-                // 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1020671314636900/',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1476670339.A.9A0.html',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1099222856781745/',
+                'Facebook JavaScript.tw' => 'https://www.facebook.com/groups/javascript.tw/permalink/883474571753882',
+                
+                'Facebook 分享集' => 'https://www.facebook.com/shares/view?id=883474571753882',
+                'Facebook 分享集 2' => 'https://www.facebook.com/comdan66/posts/1437654949581176',
+                
+                '三天開發出來的「聊天地圖」 - INSIDE 硬塞的網路趨勢觀察' => 'http://www.inside.com.tw/2016/10/17/livemaps',
+                '台灣工程師新創意　讓你在Google Maps上聊天 -- 上報 / 焦點' => 'http://www.upmedia.mg/news_info.php?SerialNo=5892',
+                '三天就上線的「聊天地圖」,才發現原來身邊有這麼多人 - 愛逛街' => 'http://iguang.tw/u/4380572/article/701767.html',
+                '交友軟體再進化？！即時「聊天地圖」讓你直接在Google Maps上聊天：偷窺路人動態超好玩！ - 優仕網-共產檔' => 'http://share.youthwant.com.tw/DC2091516.html',
+                "網友花三天開發出來的\"聊天地圖\"...這大概會成為一種新型態的社群互動模式啊 - 哈拉閒聊版 - wetalk - let's talk!" => 'https://www.wetalk.tw/thread-54756-1-1.html',
+                '交友軟體再進化？！即時「聊天地圖」讓你直接在Google Maps上聊天：偷窺路人動態超好玩！ - 夯話題 -  卡提諾論壇 - LiveMaps,聊天,地圖' => 'http://ck101.com/thread-3675762-1-1.html',
+                '卡提諾論壇｜CK101.COM - 動態時報' => 'https://www.facebook.com/ck101fans/posts/1244982832233152',
+                '遠見雜誌 - 前進的動力：不抓寶，改抓路人動態？台灣人推出 Google Map 版的「聊天地圖」' => 'http://www.gvm.com.tw/webonly_content_11773.html',
+                '台灣工程師開發「聊天地圖」：偷窺路人動態好玩，但不小心就變廢文集散地 XD | TechOrange' => 'https://buzzorange.com/techorange/2016/10/18/livemaps/',
               )
           ),
+        array (
+            'type' => 'demo',
+            'file' => 'pokemon-go-evolution',
+            'text' => 'Pokémon Go 地圖',
+            'keywords' => array ('Pokémon', 'evolution', 'PokéStop'),
+            'tags' => array ('Pokémon'),
+            'description' => "這是一個 Pokémon Go 進化後 CP 推測工具，可以快速查詢寶可夢進化後的 CP 範圍值，同時藉由網友互助回報而建立的全台寶可夢巢穴位置，讓大家可以查詢各精靈在台灣的分佈，若大家想要共同編輯<a href='https://docs.google.com/spreadsheets/d/1fMYgcbQV0haZcoKTdUYZaoorKaFCl8cFIF0aD4KDpHM/edit#gid=0' target='_blank'>巢穴文件</a>可與網站作者聯絡，同時也可以查詢全台灣的補給站、道館的<a href='https://works.ioa.tw/evolution/stops.html' target='_blank'>分佈</a>。",
+            'created_at' => '2016-08-31 01:50:00',
+            'updated_at' => '2016-10-06 01:50:00',
+            'main_links' => array (
+                'Live Demo' => 'https://works.ioa.tw/evolution/index.html',
+                'GitHub' => 'https://github.com/comdan66/evolution/',
+                'PokeIV小助手' => 'https://works.ioa.tw/evolution/poke_iv.html',
+                '巢穴地圖文件' => 'https://docs.google.com/spreadsheets/d/1fMYgcbQV0haZcoKTdUYZaoorKaFCl8cFIF0aD4KDpHM/edit#gid=0',
+              ),
+            'resources' => array (
+                'Live Demo' => 'https://works.ioa.tw/evolution/index.html',
+                'GitHub' => 'https://github.com/comdan66/evolution/',
+                'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1470650059.A.EC4.html',
+                'PTT PokeMon' => 'https://www.ptt.cc/bbs/PokeMon/M.1472793302.A.9F0.html',
+                'PTT PokeMonGo 1' => 'https://www.ptt.cc/bbs/PokemonGO/M.1472805252.A.2A0.html',
+                'PTT PokeMonGo 2' => 'https://www.ptt.cc/bbs/PokemonGO/M.1475147103.A.B01.html',
+                'PTT PokeMonGo 3' => 'https://www.ptt.cc/bbs/PokemonGO/M.1475738122.A.064.html',
+                'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1064416303595734/',
+                '藍色小惡魔 - 抓寶人生: 大家找寶貝失..' => 'https://pokeimp.blogspot.tw/2016/10/blog-post.html',
+              )),
         array (
             'type' => 'demo',
             'file' => 'taipei-activities',
@@ -410,11 +425,11 @@ return array (
             'created_at' => '2016-06-27 00:00:00',
             'updated_at' => '2016-06-29 00:00:00',
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/taipei_activities/',
+                'Live Demo' => 'https://works.ioa.tw/taipei_activities/index.html',
                 'GitHub' => 'https://github.com/comdan66/taipei_activities',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/taipei_activities/',
+                'Live Demo' => 'https://works.ioa.tw/taipei_activities/index.html',
                 'GitHub' => 'https://github.com/comdan66/activities.taipei',
                 '新北市政府資料開放平台' => 'http://data.ntpc.gov.tw/',
                 '新北市政府文化局藝文活動' => 'http://data.ntpc.gov.tw/od/detail?oid=781B822E-214A-4B9A-B4DB-32C9F4626D98',
@@ -433,11 +448,11 @@ return array (
             'created_at' => '2015-05-04 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-richman/',
+                'Live Demo' => 'https://works.ioa.tw/OA-richman/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-richman',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-richman/',
+                'Live Demo' => 'https://works.ioa.tw/OA-richman/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-richman',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1431526940.A.7B1.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/830618616975505/',
@@ -454,11 +469,11 @@ return array (
             'created_at' => '2014-12-03 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-maze/',
+                'Live Demo' => 'https://works.ioa.tw/OA-maze/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-maze',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-maze/',
+                'Live Demo' => 'https://works.ioa.tw/OA-maze/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-maze',
               )
           ),
@@ -494,11 +509,11 @@ return array (
                 'created_at' => '2014-12-16 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://works.ioa.tw/blog/',
+                    'Live Demo' => 'https://works.ioa.tw/blog/index.html',
                     'GitHub' => 'https://github.com/comdan66/blog',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://works.ioa.tw/blog/',
+                    'Live Demo' => 'https://works.ioa.tw/blog/index.html',
                     'GitHub' => 'https://github.com/comdan66/blog',
                     'Youtube' => 'https://www.youtube.com/watch?v=pUBWKUEb7Do',
                     'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1419438051.A.B58.html',
@@ -619,11 +634,11 @@ return array (
                 'created_at' => '2015-01-28 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://works.ioa.tw/flickr/',
+                    'Live Demo' => 'https://works.ioa.tw/flickr/index.html',
                     'GitHub' => 'https://github.com/comdan66/flickr',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://works.ioa.tw/flickr/',
+                    'Live Demo' => 'https://works.ioa.tw/flickr/index.html',
                     'GitHub' => 'https://github.com/comdan66/flickr',
                   )
               ),
@@ -637,11 +652,11 @@ return array (
                 'created_at' => '2014-12-29 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://works.ioa.tw/u2/',
+                    'Live Demo' => 'https://works.ioa.tw/u2/index.html',
                     'GitHub' => 'https://github.com/comdan66/u2',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://works.ioa.tw/u2/',
+                    'Live Demo' => 'https://works.ioa.tw/u2/index.html',
                     'GitHub' => 'https://github.com/comdan66/u2',
                     'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1419871812.A.813.html',
                     'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/774027889301245/',
@@ -677,11 +692,11 @@ return array (
             'created_at' => '2014-12-08 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-material/',
+                'Live Demo' => 'https://works.ioa.tw/OA-material/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-material',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-material/',
+                'Live Demo' => 'https://works.ioa.tw/OA-material/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-material',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1418573892.A.E39.html',
                 'PTT Soft_Job 2' => 'https://www.ptt.cc/bbs/Soft_Job/M.1439537367.A.64B.html',
@@ -700,11 +715,11 @@ return array (
         //     'created_at' => '2014-12-08 00:00:00',
         //     'updated_at' => date ('Y-m-d H:i:s'),
         //     'main_links' => array (
-        //         'Live Demo' => 'http://works.ioa.tw/OA-material/',
+        //         'Live Demo' => 'https://works.ioa.tw/OA-material/index.html',
         //         'GitHub' => 'https://github.com/comdan66/OA-material',
         //       ),
         //     'resources' => array (
-        //         'Live Demo' => 'http://works.ioa.tw/OA-material/',
+        //         'Live Demo' => 'https://works.ioa.tw/OA-material/index.html',
         //         'GitHub' => 'https://github.com/comdan66/OA-material',
         //         'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1418573892.A.E39.html',
         //         'PTT Soft_Job 2' => 'https://www.ptt.cc/bbs/Soft_Job/M.1439537367.A.64B.html',
@@ -723,11 +738,11 @@ return array (
             'created_at' => '2016-06-13 01:50:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/browser_console_qrcode/',
+                'Live Demo' => 'https://works.ioa.tw/browser_console_qrcode/index.html',
                 'GitHub' => 'https://github.com/comdan66/browser_console_qrcode',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/browser_console_qrcode/',
+                'Live Demo' => 'https://works.ioa.tw/browser_console_qrcode/index.html',
                 'GitHub' => 'https://github.com/comdan66/browser_console_qrcode',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1465179541.A.7AE.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1008440282526670/',
@@ -744,11 +759,11 @@ return array (
             'created_at' => '2016-10-03 10:22:04',
             'updated_at' => '2016-10-06 02:35:59',
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-markerClustering/',
+                'Live Demo' => 'https://works.ioa.tw/OA-markerClustering/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-markerClustering/',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-markerClustering/',
+                'Live Demo' => 'https://works.ioa.tw/OA-markerClustering/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-markerClustering/',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1475629747.A.CC8.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1089454517758579/',
@@ -764,11 +779,11 @@ return array (
             'created_at' => '2016-06-13 01:50:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/number_flipping_counter/',
+                'Live Demo' => 'https://works.ioa.tw/number_flipping_counter/index.html',
                 'GitHub' => 'https://github.com/comdan66/number_flipping_counter/',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/number_flipping_counter/',
+                'Live Demo' => 'https://works.ioa.tw/number_flipping_counter/index.html',
                 'GitHub' => 'https://github.com/comdan66/number_flipping_counter/',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1465779607.A.89F.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/1012215045482527/',
@@ -785,11 +800,11 @@ return array (
             'created_at' => '2016-03-14 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-mobileScrollView/',
+                'Live Demo' => 'https://works.ioa.tw/OA-mobileScrollView/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-mobileScrollView',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-mobileScrollView/',
+                'Live Demo' => 'https://works.ioa.tw/OA-mobileScrollView/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-mobileScrollView',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1457948370.A.BE9.html',
                 'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/960507037319995/',
@@ -806,11 +821,11 @@ return array (
               'created_at' => '2014-11-28 00:00:00',
               'updated_at' => date ('Y-m-d H:i:s'),
               'main_links' => array (
-                  'Live Demo' => 'http://works.ioa.tw/OA-imgLiquid/',
+                  'Live Demo' => 'https://works.ioa.tw/OA-imgLiquid/index.html',
                   'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
                 ),
               'resources' => array (
-                  'Live Demo' => 'http://works.ioa.tw/OA-imgLiquid/',
+                  'Live Demo' => 'https://works.ioa.tw/OA-imgLiquid/index.html',
                   'GitHub' => 'https://github.com/comdan66/OA-imgLiquid',
                 )),
           array (
@@ -823,11 +838,11 @@ return array (
               'created_at' => '2014-12-01 00:00:00',
               'updated_at' => date ('Y-m-d H:i:s'),
               'main_links' => array (
-                  'Live Demo' => 'http://works.ioa.tw/OA-scrollSliderView/',
+                  'Live Demo' => 'https://works.ioa.tw/OA-scrollSliderView/index.html',
                   'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
                 ),
               'resources' => array (
-                  'Live Demo' => 'http://works.ioa.tw/OA-scrollSliderView/',
+                  'Live Demo' => 'https://works.ioa.tw/OA-scrollSliderView/index.html',
                   'GitHub' => 'https://github.com/comdan66/OA-scrollSliderView',
                 )),
           array (
@@ -840,11 +855,11 @@ return array (
               'created_at' => '2014-12-04 00:00:00',
               'updated_at' => date ('Y-m-d H:i:s'),
               'main_links' => array (
-                  'Live Demo' => 'http://works.ioa.tw/OA-navbar/',
+                  'Live Demo' => 'https://works.ioa.tw/OA-navbar/index.html',
                   'GitHub' => 'https://github.com/comdan66/OA-navbar',
                 ),
               'resources' => array (
-                  'Live Demo' => 'http://works.ioa.tw/OA-navbar/',
+                  'Live Demo' => 'https://works.ioa.tw/OA-navbar/index.html',
                   'GitHub' => 'https://github.com/comdan66/OA-navbar',
                 )),
             array (
@@ -857,11 +872,11 @@ return array (
                 'created_at' => '2015-11-05 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://works.ioa.tw/OA-googleMapsMenu/',
+                    'Live Demo' => 'https://works.ioa.tw/OA-googleMapsMenu/index.html',
                     'GitHub' => 'https://github.com/comdan66/OA-googleMapsMenu',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://works.ioa.tw/OA-googleMapsMenu/',
+                    'Live Demo' => 'https://works.ioa.tw/OA-googleMapsMenu/index.html',
                     'GitHub' => 'https://github.com/comdan66/OA-googleMapsMenu',
                   )
               ),
@@ -875,11 +890,11 @@ return array (
                 'created_at' => '2015-12-09 00:00:00',
                 'updated_at' => date ('Y-m-d H:i:s'),
                 'main_links' => array (
-                    'Live Demo' => 'http://works.ioa.tw/TaipeiTowns/',
+                    'Live Demo' => 'https://works.ioa.tw/TaipeiTowns/index.html',
                     'GitHub' => 'https://github.com/comdan66/TaipeiTowns',
                   ),
                 'resources' => array (
-                    'Live Demo' => 'http://works.ioa.tw/TaipeiTowns/',
+                    'Live Demo' => 'https://works.ioa.tw/TaipeiTowns/index.html',
                     'GitHub' => 'https://github.com/comdan66/TaipeiTowns',
                     'Facebook Front-End Developers Taiwan' => 'https://www.facebook.com/groups/f2e.tw/permalink/916800425023990/',
                     'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1449695345.A.4C2.html',
@@ -920,11 +935,11 @@ return array (
             'created_at' => '2015-08-26 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-ElasticaSearch/',
+                'Live Demo' => 'https://works.ioa.tw/OA-ElasticaSearch/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-ElasticaSearch',
               ),
             'resources' => array (
-                'Live Demo' => 'http://works.ioa.tw/OA-ElasticaSearch/',
+                'Live Demo' => 'https://works.ioa.tw/OA-ElasticaSearch/index.html',
                 'GitHub' => 'https://github.com/comdan66/OA-ElasticaSearch',
                 'PTT PHP' => 'https://www.ptt.cc/bbs/PHP/M.1440735206.A.FC7.html',
                 'PTT Soft_Job' => 'https://www.ptt.cc/bbs/Soft_Job/M.1440735487.A.4C1.html',
