@@ -190,7 +190,21 @@ return array (
               ),
           )),
         array ('type' => 'more', 'text' => 'OA 開箱文', 'file' => 'more-unboxing', 'sub' => array (
-            array (
+              array (
+                'type' => 'unpacking',
+                'file' => '2017-0104-porter-amaze-2way',
+                'text' => 'PORTER AMAZE 2WAY 開箱文',
+                'keywords' => array ('PORTER', 'AMAZE', '2WAY', 'PORTER AMAZE 2WAY', 'PORTER AMAZE', '開箱文', '開箱'),
+                'tags' => array ('PORTER', '開箱文'),
+                'description' => "似乎每到一次日本，就帶回一個 PORTER 包包，已經成為我的習慣了，之前已經入手了兩個 PORTER 包了，他們都是 PORTER TANKER 系列的，開箱可以看<a href='https://www.zeusdesign.com.tw/article/8-PORTER%20TANKER%203WAY%20%E9%96%8B%E7%AE%B1%E6%96%87.html' target='_blank'>這篇</a>。而今天開的則是另一個系列，他是 PORTER AMAZE 系列的包包，比較偏向公事包的樣式，其中 AMAZE 系列中有著很多不同款式的包，而這次我買的則是 2WAY 樣式！",
+                'created_at' => '2017-01-04 00:00:00',
+                'updated_at' => '2017-01-04 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    'PORTER AMAZE 2WAY 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/17-PORTER AMAZE 2WAY 開箱文.html'
+                  )
+              ),
+              array (
                 'type' => 'unpacking',
                 'file' => '2016-0605-sailor-reglus',
                 'text' => 'SAILOR REGLUS 鋼筆',
@@ -201,7 +215,7 @@ return array (
                 'updated_at' => '2016-06-05 00:00:00',
                 'pictures' => array (),
                 'resources' => array (
-                    '日本 SAILOR 寫樂 REGLUS 新青年鋼筆 - ZEUS // Design Studio' => 'http://www.zeusdesign.com.tw/article/11-日本 SAILOR 寫樂 REGLUS 新青年鋼筆'
+                    '日本 SAILOR 寫樂 REGLUS 新青年鋼筆 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/11-日本 SAILOR 寫樂 REGLUS 新青年鋼筆.html'
                   )
               ),
               array (
@@ -215,7 +229,7 @@ return array (
                 'updated_at' => '2016-04-29 00:00:00',
                 'pictures' => array (),
                 'resources' => array (
-                    'Apple Watch Sport 開箱文 - ZEUS // Design Studio' => 'http://www.zeusdesign.com.tw/article/9-Apple Watch Sport 開箱文'
+                    'Apple Watch Sport 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/9-Apple Watch Sport 開箱文.html'
                   )
               ),
               array (
@@ -223,13 +237,13 @@ return array (
                 'file' => '2016-0222-porter-tanker-3way',
                 'text' => 'PORTER TANKER 3WAY 開箱文',
                 'keywords' => array ('PORTER', 'TANKER', '3WAY', 'PORTER TANKER 3WAY', 'PORTER TANKER', '開箱文', '開箱'),
-                'tags' => array ('PORTER', 'vívosmart', '開箱文'),
+                'tags' => array ('PORTER', '開箱文'),
                 'description' => "今天開箱 PORTER 的 TANKER 3WAY 公事包！話說前些日子剛從日本回來的我，買了個小小 PORTER 包包，以滿足了一直想要擁有個 PORTER 的夢，但是發現老闆泰瑞總是邪惡的背著他的多功能小綠包在我面前晃，所以令我也動起了想買的念頭.. (摔",
                 'created_at' => '2016-02-22 00:00:00',
                 'updated_at' => '2016-02-22 00:00:00',
                 'pictures' => array (),
                 'resources' => array (
-                    'PORTER TANKER 3WAY 開箱文 - ZEUS // Design Studio' => 'http://www.zeusdesign.com.tw/article/8-PORTER TANKER 3WAY 開箱文'
+                    'PORTER TANKER 3WAY 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/8-PORTER TANKER 3WAY 開箱文.html'
                   )
               ),
               array (
@@ -243,7 +257,7 @@ return array (
                 'updated_at' => '2016-02-01 00:00:00',
                 'pictures' => array (),
                 'resources' => array (
-                    'vívosmart HR 開箱文 - ZEUS // Design Studio' => 'http://www.zeusdesign.com.tw/article/2-vívosmart HR 開箱文'
+                    'vívosmart HR 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/2-vívosmart HR 開箱文.html'
                   )
               ),
               array (
@@ -1008,11 +1022,11 @@ return array (
             'created_at' => '2016-01-11 00:00:00',
             'updated_at' => date ('Y-m-d H:i:s'),
             'main_links' => array (
-                'Live Demo' => 'http://www.zeusdesign.com.tw/',
+                'Live Demo' => 'https://www.zeusdesign.com.tw/',
                 'GitHub' => 'https://github.com/comdan66/zeusdesign',
               ),
             'resources' => array (
-                'Live Demo' => 'http://www.zeusdesign.com.tw/',
+                'Live Demo' => 'https://www.zeusdesign.com.tw/',
                 'GitHub' => 'https://github.com/comdan66/zeusdesign',
                 'Facebook 粉絲頁' => 'https://www.facebook.com/ZeusDesignStudio/',
               )
@@ -1063,7 +1077,7 @@ return array (
               'text' => '奇拓室內裝修設計',
               'keywords' => array ('接案', '後端'),
               'tags' => array ('接案'),
-              'description' => "這是一個後端技術的外包案實作，其網站名稱為<a href='http://www.chitorch.com/' target='_blank'>奇拓室內裝修設計</a>，奇拓室內裝修設計是我近年來第一個與<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>承接的網站外包案，不過這專案我並非為全端作業，而是只實作後端與系統的部分，前端刻板則由宙思設計所製作。",
+              'description' => "這是一個後端技術的外包案實作，其網站名稱為<a href='http://www.chitorch.com/' target='_blank'>奇拓室內裝修設計</a>，奇拓室內裝修設計是我近年來第一個與<a href='https://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>承接的網站外包案，不過這專案我並非為全端作業，而是只實作後端與系統的部分，前端刻板則由宙思設計所製作。",
               'created_at' => '2014-12-03 00:00:00',
               'updated_at' => date ('Y-m-d H:i:s'),
               'main_links' => array (
@@ -1081,7 +1095,7 @@ return array (
               'text' => '億進建築經理',
               'keywords' => array ('接案', '前端'),
               'tags' => array ('接案'),
-              'description' => "這是一個前端技術的外包案實作，其網站名稱為<a href='http://www.egbto.com.tw/' target='_blank'>億進建築經理</a>，此專案主要負責前端部份，版型設計則由<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
+              'description' => "這是一個前端技術的外包案實作，其網站名稱為<a href='http://www.egbto.com.tw/' target='_blank'>億進建築經理</a>，此專案主要負責前端部份，版型設計則由<a href='https://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
               'created_at' => '2015-12-07 00:00:00',
               'updated_at' => date ('Y-m-d H:i:s'),
               'main_links' => array (
@@ -1099,7 +1113,7 @@ return array (
               'text' => '寬堂空間設計',
               'keywords' => array ('接案', '全端', '視差滾動'),
               'tags' => array ('接案'),
-              'description' => "這是一個前、後端技術的外包案實作，其網站名稱為<a href='http://www.harmonizedesign.com/' target='_blank'>寬堂空間設計</a>，此專案主要負責前端刻板、後端串接部份，版型設計則由<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
+              'description' => "這是一個前、後端技術的外包案實作，其網站名稱為<a href='http://www.harmonizedesign.com/' target='_blank'>寬堂空間設計</a>，此專案主要負責前端刻板、後端串接部份，版型設計則由<a href='https://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
               'created_at' => '2015-02-26 00:00:00',
               'updated_at' => date ('Y-m-d H:i:s'),
               'main_links' => array (
@@ -1118,7 +1132,7 @@ return array (
               'text' => '歐芙娜 OFNA',
               'keywords' => array ('接案', '全端', '多國語系'),
               'tags' => array ('接案'),
-              'description' => "這是一個前、後、系統端技術的外包案實作，其網站名稱為<a href='http://www.ofna-bio.com/' target='_blank'>歐芙娜 OFNA</a>，此專案主要負責前端刻板、後端串接、系統端部署部份，版型設計則由<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
+              'description' => "這是一個前、後、系統端技術的外包案實作，其網站名稱為<a href='http://www.ofna-bio.com/' target='_blank'>歐芙娜 OFNA</a>，此專案主要負責前端刻板、後端串接、系統端部署部份，版型設計則由<a href='https://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
               'created_at' => '2015-04-03 00:00:00',
               'updated_at' => date ('Y-m-d H:i:s'),
               'main_links' => array (
@@ -1136,7 +1150,7 @@ return array (
               'text' => 'VG 鉅臣',
               'keywords' => array ('接案', '前端'),
               'tags' => array ('接案'),
-              'description' => "這是一個前端技術的外包案實作，其網站名稱為<a href='http://www.vgmold.com.tw/' target='_blank'>VG 鉅臣</a>，此專案主要負責前端刻板部份，版型設計則由<a href='http://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
+              'description' => "這是一個前端技術的外包案實作，其網站名稱為<a href='http://www.vgmold.com.tw/' target='_blank'>VG 鉅臣</a>，此專案主要負責前端刻板部份，版型設計則由<a href='https://www.zeusdesign.com.tw/' target='_blank'>宙思設計</a>所製作。",
               'created_at' => '2016-03-18',
               'updated_at' => date ('Y-m-d H:i:s'),
               'main_links' => array (

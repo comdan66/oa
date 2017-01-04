@@ -14,7 +14,7 @@ define ('EXTENSION', defined('ENV') ? '.html' : '.php');
 define ('FCPATH', implode (DIRECTORY_SEPARATOR, explode (DIRECTORY_SEPARATOR, dirname (str_replace (pathinfo (__FILE__, PATHINFO_BASENAME), '', __FILE__)))) . '/');
 
 if (!defined ('PROTOCOL')) define ('PROTOCOL', "http://");
-if (!defined ('DOMAIN')) define ('DOMAIN', 'oa.ioa.tw');
+if (!defined ('DOMAIN')) define ('DOMAIN', 'dev.www.ioa.tw');
 
 define ('VIEW_NAME', 'views' . DIRECTORY_SEPARATOR);
 define ('VIEW', FCPATH . VIEW_NAME);
