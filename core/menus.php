@@ -201,7 +201,10 @@ return array (
                 'updated_at' => '2017-01-04 00:00:00',
                 'pictures' => array (),
                 'resources' => array (
-                    'PORTER AMAZE 2WAY 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/17-PORTER AMAZE 2WAY 開箱文.html'
+                    'PORTER AMAZE 2WAY 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/17-PORTER AMAZE 2WAY 開箱文.html',
+                    '吉田カバンホームページ | YOSHIDA ＆ CO., LTD.' => 'http://www.yoshidakaban.com/',
+                    '表參道 Kura Chika Yoshida - 東京旅遊 | ULifestyle Travel' => 'http://travel.ulifestyle.com.hk/DetailSpot.php?id=ADkRYhEoA3M',
+                    '[轉錄] PORTER超詳細大哉問' => 'https://www.ptt.cc/man/bag/DDC5/D59E/D233/D293/M.1158196303.A.763.html',
                   )
               ),array (
                 'type' => 'unpacking',
@@ -214,7 +217,9 @@ return array (
                 'updated_at' => '2016-08-20 00:00:00',
                 'pictures' => array (),
                 'resources' => array (
-                    'PORTER AMAZE 2WAY 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/Plantronics BackBeat FIT 運動無線藍牙耳機 開箱文.html'
+                    'Plantronics BackBeat FIT 運動無線藍牙耳機 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/Plantronics BackBeat FIT 運動無線藍牙耳機 開箱文.html',
+                    'Plantronics 官網' => 'http://www.plantronics.com/us/product/backbeat-fit',
+                    'PChome 賣場' => 'http://24h.pchome.com.tw/prod/DGBT0Y-A900569PA'
                   )
               ),
               array (
