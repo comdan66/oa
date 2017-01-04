@@ -234,7 +234,8 @@ Class Controller {
                 ->demo ($setting);
   }
   public function unpacking ($setting) {
-    return $this->demo ($setting);
+    return $this->add ('is_album', true)
+                ->demo ($setting);
   }
   public function demo ($setting) {
 
