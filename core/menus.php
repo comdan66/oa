@@ -203,6 +203,19 @@ return array (
                 'resources' => array (
                     'PORTER AMAZE 2WAY 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/17-PORTER AMAZE 2WAY 開箱文.html'
                   )
+              ),array (
+                'type' => 'unpacking',
+                'file' => '2016-0820-plantronics-backbeat-fit',
+                'text' => 'Plantronics BackBeat FIT 開箱文',
+                'keywords' => array ('藍芽運動耳機', '藍芽耳機', '運動耳機', '耳機', 'Plantronics', 'BackBeat', 'FIT', 'Plantronics BackBeat FIT', 'Plantronics BackBeat', '開箱文', '開箱'),
+                'tags' => array ('Plantronics', '開箱文', '藍芽運動耳機'),
+                'description' => "話說最近開始跑步了，通常跑步都會習慣戴耳機聽廣播、音樂的我發現，我的有線耳機斷掉惹！於是就開始新耳機獵頭！在上了 Ptt 路跑版上爬了一下，大致上版有都有推薦這款 <a href='http://www.plantronics.com/us/product/backbeat-fit' target='_blank'>Plantronics BackBeat FIT</a> 運動無線藍牙耳機，大家都推說，戴上了他就彷彿忘記帶耳機的舒適感！我因為還沒有帶過無線耳機的體驗，所以就有點動心啦！",
+                'created_at' => '2016-08-20 00:00:00',
+                'updated_at' => '2016-08-20 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    'PORTER AMAZE 2WAY 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/Plantronics BackBeat FIT 運動無線藍牙耳機 開箱文.html'
+                  )
               ),
               array (
                 'type' => 'unpacking',
