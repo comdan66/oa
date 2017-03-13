@@ -192,6 +192,22 @@ return array (
         array ('type' => 'more', 'text' => 'OA 開箱文', 'file' => 'more-unboxing', 'sub' => array (
               array (
                 'type' => 'unpacking',
+                'file' => '2017-0310-nintendo-switch',
+                'text' => 'Nintendo Switch 開箱文',
+                'keywords' => array ('Nintendo', 'Switch', '開箱文', '開箱'),
+                'tags' => array ('Nintendo', '開箱文'),
+                'description' => "<p>今天要開箱的不是電腦也不是一般 3C 器材，而次去年大家廣泛討論的&nbsp;<a href=\"http://www.nintendo.tw/\" target=\"_blank\">Nintendo</a>&nbsp;次世代主機&nbsp;<a href=\"http://www.nintendo.com/switch/\" target=\"_blank\">Nintendo Switch</a>！這款主機相信大家多多少少有在 <a href=\"https://www.youtube.com/watch?v=f5uik5fgIaI\" target=\"_blank\">Youtube</a> 上面看到介紹影片，之所以這麼出名我覺得主要是兩個要點，1. 桌機、手持都可以玩 2. 舔卡的行銷風潮，以下就來開箱 Nintendo Switch 啦！</p>",
+                'created_at' => '2017-03-10 00:00:00',
+                'updated_at' => '2017-03-10 00:00:00',
+                'pictures' => array (),
+                'resources' => array (
+                    'Nintendo Switch 開箱文 - ZEUS // Design Studio' => 'https://www.zeusdesign.com.tw/article/29-Nintendo Switch 開箱文.html',
+                    'Nintendo Switch™ - Official site – Nintendo gaming system' => 'http://www.nintendo.com/switch/',
+                    'Nintendo Switch｜任天堂(香港)有限公司' => 'http://www.nintendo.com.hk/hardware/switch/',
+                    '1-2-Switch for Nintendo Switch - Nintendo Game Details' => 'http://www.nintendo.com/games/detail/1-2-switch',
+                  )
+              ), array (
+                'type' => 'unpacking',
                 'file' => '2017-0104-porter-amaze-2way',
                 'text' => 'PORTER AMAZE 2WAY 開箱文',
                 'keywords' => array ('PORTER', 'AMAZE', '2WAY', 'PORTER AMAZE 2WAY', 'PORTER AMAZE', '開箱文', '開箱'),
